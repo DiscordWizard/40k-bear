@@ -1688,6 +1688,7 @@
 #include "code\modules\mob\living\carbon\human\species\races\krootboys.dm"
 #include "code\modules\mob\living\carbon\human\species\races\nids.dm"
 #include "code\modules\mob\living\carbon\human\species\races\tau.dm"
+#include "code\modules\mob\living\carbon\human\species\races\unathi.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\abilities.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\ork_species.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\orks.dm"
