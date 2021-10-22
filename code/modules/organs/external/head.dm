@@ -128,6 +128,13 @@
 			if(hair_style.do_colouration && islist(h_col) && h_col.len >= 3)
 				hair_s.Blend(rgb(h_col[1], h_col[2], h_col[3]), hair_style.blend)
 			res.overlays |= hair_s
+
+// BEARHAMMER EDIT START - FURRY CODE HERE: ear overlays for the head
+	var/icon/ears_s = owner.get_ears_overlay()
+	if (ears_s)
+		res.overlays |= ears_s
+// BEARHAMMER EDIT END
+
 	return res
 
 

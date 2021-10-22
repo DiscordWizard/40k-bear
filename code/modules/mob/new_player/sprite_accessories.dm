@@ -29,7 +29,7 @@
 	var/gender = NEUTER
 
 	// Restrict some styles to specific species
-	var/list/species_allowed = list(SPECIES_HUMAN)
+	var/list/species_allowed = list() // BEARHAMMER EDIT - removes human limitation
 
 	// Whether or not the accessory can be affected by colouration
 	var/do_colouration = 1
@@ -54,7 +54,7 @@
 	name = "Bald"
 	icon_state = "bald"
 	gender = MALE
-	species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI)
+	//species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI) // BEARHAMMER EDIT - removes human limitation
 	flags = VERY_SHORT
 
 /datum/sprite_accessory/hair/short
@@ -185,19 +185,19 @@
 	name = "Bobcurl"
 	icon_state = "hair_bobcurl"
 	gender = FEMALE
-	species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI)
+	//species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI) // BEARHAMMER EDIT - removes human limitation
 
 /datum/sprite_accessory/hair/bob
 	name = "Bob"
 	icon_state = "hair_bobcut"
 	gender = FEMALE
-	species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI)
+	//species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI) // BEARHAMMER EDIT - removes human limitation
 
 /datum/sprite_accessory/hair/bobcutalt
 	name = "Chin Length Bob"
 	icon_state = "hair_bobcutalt"
 	gender = FEMALE
-	species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI)
+	//species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI) // BEARHAMMER EDIT - removes human limitation
 
 /datum/sprite_accessory/hair/bowl
 	name = "Bowl"
@@ -208,7 +208,7 @@
 	name = "Buzzcut"
 	icon_state = "hair_buzzcut"
 	gender = MALE
-	species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI)
+	//species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI) // BEARHAMMER EDIT - removes human limitation
 	flags = VERY_SHORT
 
 /datum/sprite_accessory/hair/crew
@@ -330,7 +330,7 @@
 /datum/sprite_accessory/hair/spiky
 	name = "Spiky"
 	icon_state = "hair_spikey"
-	species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI)
+	//species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI) // BEARHAMMER EDIT - removes human limitation
 
 /datum/sprite_accessory/hair/kusangi
 	name = "Kusanagi Hair"
@@ -710,7 +710,7 @@ May God have mercy.
 	name = "Shaved"
 	icon_state = "bald"
 	gender = NEUTER
-	species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_TAJARA,SPECIES_SKRELL,SPECIES_VOX,SPECIES_IPC)
+	//species_allowed = list(SPECIES_HUMAN,SPECIES_UNATHI,SPECIES_TAJARA,SPECIES_SKRELL,SPECIES_VOX,SPECIES_IPC) // BEARHAMMER EDIT - removes human limitation
 
 /datum/sprite_accessory/facial_hair/broken_man
 	name = "Broken Man"

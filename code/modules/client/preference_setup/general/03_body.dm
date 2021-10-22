@@ -137,7 +137,7 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	user << browse_rsc(pref.preview_icon, "previewicon.png")
 
 	var/datum/species/mob_species = all_species[pref.species]
-	. += "<table><tr style='vertical-align:top'><td><b>Body</b> "
+	. += "<table><tr style='vertical-align:top; width: 100%'><td width=15%><b>Body</b> "
 	. += "(<a href='?src=\ref[src];random=1'>&reg;</A>)"
 	. += "<br>"
 	//. += "Species: <a href='?src=\ref[src];show_species=1'>[pref.species]</a><br>"
@@ -254,11 +254,76 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	if(has_flag(mob_species, HAS_SKIN_COLOR))
 		. += "<a href='?src=\ref[src];skin_color=1'>Body</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_skin, 2)][num2hex(pref.g_skin, 2)][num2hex(pref.b_skin, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_skin, 2)][num2hex(pref.g_skin, 2)][num2hex(pref.b_skin)]'><tr><td>__</td></tr></table></font><br>"
 
+//////////////////////////////////////////////////////////////////////////////////////////
+// BEARHAMMER EDIT START - Adding species stuff and formatting the character creator up //
+//////////////////////////////////////////////////////////////////////////////////////////
+
+	. += "</td><td width=28%><br>Species: "
+	. += "<a href='?src=\ref[src];show_species=1'>[pref.species]</a><br>"
+
 	. += "<br><a href='?src=\ref[src];marking_style=1'>Body Markings +</a><br>"
 	for(var/M in pref.body_markings)
-		. += "[M] <a href='?src=\ref[src];marking_remove=[M]'>-</a> <a href='?src=\ref[src];marking_color=[M]'>Color</a>"
+		. += "[M] [pref.body_markings.len > 1 ? "<a href='?src=\ref[src];marking_up=[M]'>&#708;</a> <a href='?src=\ref[src];marking_down=[M]'>&#709;</a> " : ""]<a href='?src=\ref[src];marking_remove=[M]'>-</a> <a href='?src=\ref[src];marking_color=[M]'>Color</a>"
 		. += "<font face='fixedsys' size='3' color='[pref.body_markings[M]]'><table style='display:inline;' bgcolor='[pref.body_markings[M]]'><tr><td>__</td></tr></table></font>"
 		. += "<br>"
+
+	var/ear_display = "Normal"
+	if(pref.ear_style && (pref.ear_style in ear_styles_list))
+		var/datum/sprite_accessory/ears/instance = ear_styles_list[pref.ear_style]
+		ear_display = instance.name
+
+	else if(pref.ear_style)
+		ear_display = "REQUIRES UPDATE"
+	. += "</td><td width=35%><b>Ears</b><br>"
+	. += " Style: <a href='?src=\ref[src];ear_style=1'>[ear_display]</a><br>"
+	if(ear_styles_list[pref.ear_style])
+		var/datum/sprite_accessory/ears/ear = ear_styles_list[pref.ear_style]
+		if (ear.do_colouration)
+			. += "<a href='?src=\ref[src];ear_color=1'>Change Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_ears, 2)][num2hex(pref.g_ears, 2)][num2hex(pref.b_ears, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_ears, 2)][num2hex(pref.g_ears, 2)][num2hex(pref.b_ears, 2)]'><tr><td>__</td></tr></table> </font><br>"
+		if (ear.extra_overlay)
+			. += "<a href='?src=\ref[src];ear_color2=1'>Change Secondary Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_ears2, 2)][num2hex(pref.g_ears2, 2)][num2hex(pref.b_ears2, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_ears2, 2)][num2hex(pref.g_ears2, 2)][num2hex(pref.b_ears2, 2)]'><tr><td>__</td></tr></table> </font><br>"
+
+	var/tail_display = "Normal"
+	if(pref.tail_style && (pref.tail_style in tail_styles_list))
+		var/datum/sprite_accessory/tail/instance = tail_styles_list[pref.tail_style]
+		tail_display = instance.name
+	else if(pref.tail_style)
+		tail_display = "REQUIRES UPDATE"
+	. += "<b>Tail</b><br>"
+	. += " Style: <a href='?src=\ref[src];tail_style=1'>[tail_display]</a><br>"
+
+	if(tail_styles_list[pref.tail_style])
+		var/datum/sprite_accessory/tail/T = tail_styles_list[pref.tail_style]
+		if (T.do_colouration)
+			. += "<a href='?src=\ref[src];tail_color=1'>Change Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_tail, 2)][num2hex(pref.g_tail, 2)][num2hex(pref.b_tail, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_tail, 2)][num2hex(pref.g_tail, 2)][num2hex(pref.b_tail, 2)]'><tr><td>__</td></tr></table> </font><br>"
+		if (T.extra_overlay)
+			. += "<a href='?src=\ref[src];tail_color2=1'>Change Secondary Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_tail2, 2)][num2hex(pref.g_tail2, 2)][num2hex(pref.b_tail2, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_tail2, 2)][num2hex(pref.g_tail2, 2)][num2hex(pref.b_tail2, 2)]'><tr><td>__</td></tr></table> </font><br>"
+
+	var/wing_display = "Normal"
+	if(pref.wing_style && (pref.wing_style in wing_styles_list))
+		var/datum/sprite_accessory/wing/instance = wing_styles_list[pref.wing_style]
+		wing_display = instance.name
+	else if(pref.wing_style)
+		wing_display = "REQUIRES UPDATE"
+	. += "<b>Wing</b><br>"
+	. += " Style: <a href='?src=\ref[src];wing_style=1'>[wing_display]</a><br>"
+
+	if(wing_styles_list[pref.wing_style])
+		var/datum/sprite_accessory/wing/T = wing_styles_list[pref.wing_style]
+		if (T.do_colouration)
+			. += "<a href='?src=\ref[src];wing_color=1'>Change Color</a> <font face='fixedsys' size='3' color='#[num2hex(pref.r_wing, 2)][num2hex(pref.g_wing, 2)][num2hex(pref.b_wing, 2)]'><table style='display:inline;' bgcolor='#[num2hex(pref.r_wing, 2)][num2hex(pref.g_wing, 2)][num2hex(pref.b_wing, 2)]'><tr><td>__</td></tr></table> </font><br>"
+
+
+	. += "</td><td width=25%><b>Custom Species Name</b> "
+	. += "<a href='?src=\ref[src];custom_species=1'>[pref.custom_species ? pref.custom_species : "-Input Name-"]</a><br>"
+	. += "<br>"
+	. += "<b>Scale:</b> <a href='?src=\ref[src];size_multiplier=1'>[round(pref.size_multiplier*100)]%</a><br>"
+	. += "<b>Scaled Appearance:</b> <a [pref.fuzzy ? "" : ""] href='?src=\ref[src];toggle_fuzzy=1'><b>[pref.fuzzy ? "Fuzzy" : "Sharp"]</b></a><br>"
+	. += "<br>"
+
+/////////////////////////
+// BEARHAMMER EDIT END //
+/////////////////////////
 
 	. = jointext(.,null)
 
@@ -589,6 +654,148 @@ var/global/list/valid_bloodtypes = list("A+", "A-", "B+", "B-", "AB+", "AB-", "O
 	else if(href_list["cycle_bg"])
 		pref.bgstate = next_in_list(pref.bgstate, pref.bgstate_options)
 		return TOPIC_REFRESH_UPDATE_PREVIEW
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// BEARHAMMER EDIT START - Adding species stuff and formatting the character creator up //
+//////////////////////////////////////////////////////////////////////////////////////////
+
+	else if(href_list["marking_up"])
+		var/M = href_list["marking_up"]
+		var/start = pref.body_markings.Find(M)
+		if(start != 1) //If we're not the beginning of the list, swap with the previous element.
+			moveElement(pref.body_markings, start, start-1)
+		else //But if we ARE, become the final element -ahead- of everything else.
+			moveElement(pref.body_markings, start, pref.body_markings.len+1)
+		return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["marking_down"])
+		var/M = href_list["marking_down"]
+		var/start = pref.body_markings.Find(M)
+		if(start != pref.body_markings.len) //If we're not the end of the list, swap with the next element.
+			moveElement(pref.body_markings, start, start+2)
+		else //But if we ARE, become the first element -behind- everything else.
+			moveElement(pref.body_markings, start, 1)
+		return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["ear_style"])
+		// Construct the list of names allowed for this user.
+		var/list/pretty_ear_styles = list("Normal" = null)
+		for(var/path in ear_styles_list)
+			var/datum/sprite_accessory/ears/instance = ear_styles_list[path]
+			if((!instance.ckeys_allowed) || (usr.ckey in instance.ckeys_allowed))
+				pretty_ear_styles[instance.name] = path
+
+		// Present choice to user
+		var/new_ear_style = input(user, "Pick ears", "Character Preference", pref.ear_style) as null|anything in pretty_ear_styles
+		if(new_ear_style)
+			pref.ear_style = pretty_ear_styles[new_ear_style]
+
+		return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["ear_color"])
+		var/new_earc = input(user, "Choose your character's ear colour:", "Character Preference",
+			rgb(pref.r_ears, pref.g_ears, pref.b_ears)) as color|null
+		if(new_earc)
+			pref.r_ears = hex2num(copytext(new_earc, 2, 4))
+			pref.g_ears = hex2num(copytext(new_earc, 4, 6))
+			pref.b_ears = hex2num(copytext(new_earc, 6, 8))
+			return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["ear_color2"])
+		var/new_earc2 = input(user, "Choose your character's ear colour:", "Character Preference",
+			rgb(pref.r_ears2, pref.g_ears2, pref.b_ears2)) as color|null
+		if(new_earc2)
+			pref.r_ears2 = hex2num(copytext(new_earc2, 2, 4))
+			pref.g_ears2 = hex2num(copytext(new_earc2, 4, 6))
+			pref.b_ears2 = hex2num(copytext(new_earc2, 6, 8))
+			return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["tail_style"])
+		// Construct the list of names allowed for this user.
+		var/list/pretty_tail_styles = list("Normal" = null)
+		for(var/path in tail_styles_list)
+			var/datum/sprite_accessory/tail/instance = tail_styles_list[path]
+			if((!instance.ckeys_allowed) || (user.ckey in instance.ckeys_allowed))
+				pretty_tail_styles[instance.name] = path
+
+		// Present choice to user
+		var/new_tail_style = input(user, "Pick tails", "Character Preference", pref.tail_style) as null|anything in pretty_tail_styles
+		if(new_tail_style)
+			pref.tail_style = pretty_tail_styles[new_tail_style]
+
+		return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["tail_color"])
+		var/new_tailc = input(user, "Choose your character's tail/taur colour:", "Character Preference",
+			rgb(pref.r_tail, pref.g_tail, pref.b_tail)) as color|null
+		if(new_tailc)
+			pref.r_tail = hex2num(copytext(new_tailc, 2, 4))
+			pref.g_tail = hex2num(copytext(new_tailc, 4, 6))
+			pref.b_tail = hex2num(copytext(new_tailc, 6, 8))
+			return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["tail_color2"])
+		var/new_tailc2 = input(user, "Choose your character's secondary tail/taur colour:", "Character Preference",
+			rgb(pref.r_tail2, pref.g_tail2, pref.b_tail2)) as color|null
+		if(new_tailc2)
+			pref.r_tail2 = hex2num(copytext(new_tailc2, 2, 4))
+			pref.g_tail2 = hex2num(copytext(new_tailc2, 4, 6))
+			pref.b_tail2 = hex2num(copytext(new_tailc2, 6, 8))
+			return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["wing_style"])
+		// Construct the list of names allowed for this user.
+		var/list/pretty_wing_styles = list("Normal" = null)
+		for(var/path in wing_styles_list)
+			var/datum/sprite_accessory/wing/instance = wing_styles_list[path]
+			if((!instance.ckeys_allowed) || (user.ckey in instance.ckeys_allowed))
+				pretty_wing_styles[instance.name] = path
+
+		// Present choice to user
+		var/new_wing_style = input(user, "Pick wings", "Character Preference", pref.wing_style) as null|anything in pretty_wing_styles
+		if(new_wing_style)
+			pref.wing_style = pretty_wing_styles[new_wing_style]
+
+		return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["wing_color"])
+		var/new_wingc = input(user, "Choose your character's wing colour:", "Character Preference",
+			rgb(pref.r_wing, pref.g_wing, pref.b_wing)) as color|null
+		if(new_wingc)
+			pref.r_wing = hex2num(copytext(new_wingc, 2, 4))
+			pref.g_wing = hex2num(copytext(new_wingc, 4, 6))
+			pref.b_wing = hex2num(copytext(new_wingc, 6, 8))
+			return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["toggle_clothing"])
+		pref.dress_mob = !pref.dress_mob
+		return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["custom_species"])
+		var/raw_choice = sanitize(input(user, "Input your custom species name:",
+			"Character Preference", pref.custom_species) as null|text, MAX_NAME_LEN)
+		if (CanUseTopic(user))
+			pref.custom_species = raw_choice
+		return TOPIC_REFRESH
+
+	else if(href_list["size_multiplier"])
+		var/new_size = input(user, "Choose your character's size, ranging from  80% to 120%", "Set Size") as num|null
+		if (!IsInRange(new_size, 80, 120))
+			pref.size_multiplier = 1
+			to_chat(user, "<span class='notice'>Invalid size.</span>")
+			return TOPIC_REFRESH_UPDATE_PREVIEW
+		else if(new_size)
+			pref.size_multiplier = (new_size/100)
+			return TOPIC_REFRESH_UPDATE_PREVIEW
+
+	else if(href_list["toggle_fuzzy"])
+		pref.fuzzy = pref.fuzzy ? 0 : 1;
+		return TOPIC_REFRESH
+
+//////////////////////////
+// BEARHAMMER EDIT END //
+////////////////////////
+
 
 	return ..()
 

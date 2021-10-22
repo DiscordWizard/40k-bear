@@ -19,6 +19,7 @@
 		/datum/unarmed_attack/punch,
 		/datum/unarmed_attack/bite
 		)
+	spawn_flags = SPECIES_IS_RESTRICTED //BEARHAMMER EDIT
 
 /mob/living/carbon/human
 	var/new_skitarii = SPECIES_SKITARII

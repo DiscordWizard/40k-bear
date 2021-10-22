@@ -29,6 +29,7 @@ Astartes
 	sexybits_location = BP_GROIN
 	species_flags = SPECIES_FLAG_NO_PAIN|SPECIES_FLAG_NO_POISON|SPECIES_FLAG_NO_EMBED|SPECIES_FLAG_NO_SCAN
 	inherent_verbs = list()
+	spawn_flags = SPECIES_IS_RESTRICTED //BEARHAMMER EDIT
 
 	burn_mod = 1.0
 	brute_mod = 1.0

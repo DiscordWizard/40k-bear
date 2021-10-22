@@ -2514,6 +2514,13 @@
 #include "maps\~mapsystem\maps_jobs.dm"
 #include "maps\~mapsystem\maps_unit_testing.dm"
 #include "maps\~unit_tests\unit_testing.dm"
+#include "z_modular_bear\code\_defines\size.dm"
+#include "z_modular_bear\code\_helpers\global_lists.dm"
+#include "z_modular_bear\code\modules\client\preferences.dm"
+#include "z_modular_bear\code\modules\language\furry.dm"
+#include "z_modular_bear\code\modules\mob\living\carbon\human\species\station\furry.dm"
+#include "z_modular_bear\code\modules\mob\new_player\body_markings.dm"
+#include "z_modular_bear\code\modules\mob\new_player\sprite_accesories.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
 // This is a buffer
