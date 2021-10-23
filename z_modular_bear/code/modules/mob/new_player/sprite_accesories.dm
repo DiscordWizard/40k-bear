@@ -1281,7 +1281,7 @@ var/global/list/wing_icon_cache = list()
 //For all species tails. Includes haircolored tails.
 /datum/sprite_accessory/tail/special
 	name = "Blank tail. Do not select."
-	//icon = 'icons/effects/species_tails_vr.dmi'
+	icon = 'z_modular_bear/icons/effects/species_tails_vr.dmi'
 
 /datum/sprite_accessory/tail/special/unathi
 	name = "unathi tail"
