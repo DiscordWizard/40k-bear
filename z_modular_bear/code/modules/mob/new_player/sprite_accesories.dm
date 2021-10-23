@@ -452,7 +452,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/soghun_longspines 		// Begin Eclipse edit.
 	name = "Unathi Long Spines"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "soghun_longspines"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -460,7 +460,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/soghun_shortspines
 	name = "Unathi Short Spines"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "soghun_shortspines"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -468,7 +468,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/soghun_horns
 	name = "Unathi Horns"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "soghun_horns"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -484,7 +484,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/unathi_bighorn
 	name = "Unathi Horns Big"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "unathi_bighorn"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -492,7 +492,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/unathi_smallhorn
 	name = "Unathi Horns Small"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "unathi_smallhorn"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -500,7 +500,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/unathi_ramhorn
 	name = "Unathi Ram Horns"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "unathi_ramhorn"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -508,7 +508,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/unathi_curved_ramhorn
 	name = "Unathi Curved Ram Horns"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "unathi_curved_ramhorn"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -516,7 +516,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/facial_hornadorns
 	name = "Unathi Horn Adorns"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "facial_hornadorns"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -524,7 +524,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/facial_spikes
 	name = "Unathi Spikes"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "facial_spikes"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -532,7 +532,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/facial_chinhorns
 	name = "Unathi Chin Horns"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "facial_chinhorns"
 	do_colouration = 1
 	blend = ICON_ADD
@@ -540,7 +540,7 @@ var/global/list/wing_icon_cache = list()
 /datum/sprite_accessory/ears/facial_dorsalfrill
 	name = "Unathi Dorsal Frill"
 	desc = ""
-	icon = "icons/mob/unathi_extras.dmi"
+	icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
 	icon_state = "facial_dorsalfrill"
 	do_colouration = 1
 	blend = ICON_ADD 		// End Eclipse edit.
@@ -2123,3 +2123,131 @@ var/global/list/wing_icon_cache = list()
 
 	msg_owner_grab_fail = "You step down onto %prey with one of your vines, forcing them onto the ground!"
 	msg_prey_grab_fail = "%owner steps down onto you with one of their vines, squishing you and forcing you onto the ground!"
+
+
+//////////////////////////////////////////
+//MORE RANDOM UNSORTED CRAP
+//////////////////////////////////////////
+/datum/sprite_accessory/hair
+
+	skr_tentacle_veryshort
+		name = "Skrell Very Short Tentacles"
+		icon = 'z_modular_bear/icons/mob/human_face.dmi'
+		icon_state = "skrell_hair_veryshort"
+
+	skr_tentacle_short
+		name = "Skrell Short Tentacles"
+		icon = 'z_modular_bear/icons/mob/human_face.dmi'
+		icon_state = "skrell_hair_short"
+
+	skr_tentacle_average
+		name = "Skrell Average Tentacles"
+		icon = 'z_modular_bear/icons/mob/human_face.dmi'
+		icon_state = "skrell_hair_average"
+
+	skr_tentacle_verylong
+		name = "Skrell Long Tentacles"
+		icon = 'z_modular_bear/icons/mob/human_face.dmi'
+		icon_state = "skrell_hair_verylong"
+/* Disabled because we don't have the icon_add system here on bearhammer yet
+	una_hood
+		name = "Cobra Hood"
+		icon = 'z_modular_bear/icons/mob/human_face_vr_add.dmi'
+		icon_add = 'z_modular_bear/icons/mob/human_face_vr.dmi'
+		icon_state = "soghun_hood"
+*/
+	una_spines_long
+		name = "Long Unathi Spines"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "soghun_longspines"
+
+	una_spines_short
+		name = "Short Unathi Spines"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "soghun_shortspines"
+
+
+	una_frills_long
+		name = "Long Unathi Frills"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "soghun_longfrills"
+
+	una_frills_short
+		name = "Short Unathi Frills"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "soghun_shortfrills"
+		blend = ICON_MULTIPLY
+
+	una_horns
+		name = "Unathi Horns"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "soghun_horns"
+/* Disabled because we don't have the icon_add system here on bearhammer yet
+	una_doublehorns
+		name = "Double Unathi Horns"
+		icon = 'z_modular_bear/icons/mob/human_face_vr.dmi'
+		icon_add = 'z_modular_bear/icons/mob/human_face_vr_add.dmi'
+		icon_state = "soghun_dubhorns"
+*/
+	una_bighorns
+		name = "Unathi Big Horns"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "unathi_bighorn"
+
+	una_smallhorns
+		name = "Unathi Small Horns"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "unathi_smallhorn"
+
+	una_ramhorns
+		name = "Unathi Ram Horns"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "unathi_ramhorn"
+
+	una_curved_ramhorn
+		name = "Unathi Curved Ram Horns"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "unathi_curved_ramhorn"
+
+	una_facial_hornadorns
+		name = "Unathi Horn Adorns"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "facial_hornadorns"
+
+	una_facial_spikes
+		name = "Unathi Spikes"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "facial_spikes"
+
+	una_facial_chinhorns
+		name = "Unathi Chin Horns"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "facial_chinhorns"
+
+	una_facial_dorsalfrill
+		name = "Unathi Dorsal Frill"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "facial_dorsalfrill"
+
+	una_sidefrills
+		name = "Unathi Side Frills"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "unathi_sidefrills"
+
+	una_m_frills_simple
+		name = "Unathi Simple Frills"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "m_frills_simple"
+		blend = ICON_MULTIPLY
+
+	una_m_frills_short
+		name = "Unathi Short Frills"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "m_frills_short"
+		blend = ICON_MULTIPLY
+
+	una_m_frills_aqua
+		name = "Unathi Aquatic Frills"
+		icon = 'z_modular_bear/icons/mob/unathi_extras.dmi'
+		icon_state = "m_frills_aqua"
+		blend = ICON_MULTIPLY
