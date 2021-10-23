@@ -129,19 +129,21 @@ Please contact me on #coderbus IRC. ~Carn x
 #define SUIT_STORE_LAYER		15
 #define BACK_LAYER				16
 #define HAIR_LAYER				17		//TODO: make part of head layer?
-#define GOGGLES_LAYER			18
-#define EARS_LAYER				19
-#define FACEMASK_LAYER			20
-#define HEAD_LAYER				21
-#define COLLAR_LAYER			22
-#define HANDCUFF_LAYER			23
-#define L_HAND_LAYER			24
-#define R_HAND_LAYER			25
-#define FIRE_OVERLAY_LAYER				26		//If you're on fire
-#define FLIES_LAYER				27
-#define COLDBREATH_LAYER		28
-#define TARGETED_LAYER			29		//BS12: Layer for the target overlay from weapon targeting system
-#define TOTAL_LAYERS			29
+// BEARHAMMER EDIT - EVERY LAYER AFTER THIS IS MESSED UP BY THE WING LAYER
+#define WING_LAYER				18
+#define GOGGLES_LAYER			19
+#define EARS_LAYER				20
+#define FACEMASK_LAYER			21
+#define HEAD_LAYER				22
+#define COLLAR_LAYER			23
+#define HANDCUFF_LAYER			24
+#define L_HAND_LAYER			25
+#define R_HAND_LAYER			26
+#define FIRE_OVERLAY_LAYER		27		//If you're on fire
+#define FLIES_LAYER				28
+#define COLDBREATH_LAYER		29
+#define TARGETED_LAYER			30		//BS12: Layer for the target overlay from weapon targeting system
+#define TOTAL_LAYERS			30
 //////////////////////////////////
 
 /mob/living/carbon/human
@@ -384,6 +386,8 @@ var/global/list/damage_icon_parts = list()
 	//END CACHED ICON GENERATION.
 	stand_icon.Blend(base_icon,ICON_OVERLAY)
 
+	update_tail_showing(0) // BEARHAMMER EDIT - FURRY CODE HERE
+	update_wing_showing() // BEARHAMMER EDIT - FURRY CODE HERE
 
 	if(update_icons)
 		update_icons()
@@ -604,6 +608,8 @@ var/global/list/damage_icon_parts = list()
 		update_inv_gloves(0)
 
 	update_collar(0)
+	update_wing_showing() // BEARHAMMER EDIT - FURRY CODE HERE
+	update_tail_showing() // BEARHAMMER EDIT - FURRY CODE HERE
 
 	if(update_icons)   update_icons()
 
@@ -738,6 +744,91 @@ var/global/list/damage_icon_parts = list()
 	overlays_standing[SURGERY_LEVEL] = total
 	if(update_icons)   update_icons()
 
+
+///////////////////////////////////////////////////////////////////
+// BEARHAMMER EDIT START - FURRY CODE HERE: Wing and tail stuff //
+///////////////////////////////////////////////////////////////////
+
+/mob/living/carbon/human/proc/update_tail_showing(var/update_icons=1)
+	overlays_standing[TAIL_LAYER] = null
+	var/standing = null
+
+	var/image/vr_tail_image = get_tail_image()
+	if(vr_tail_image)
+		standing = vr_tail_image
+		/*
+	else
+		var/species_tail = species.get_tail(src)
+		if(species_tail && !(wear_suit && wear_suit.flags_inv & HIDETAIL))
+			var/icon/tail_s = get_tail_icon()
+			standing = image(tail_s, icon_state = "[species_tail]_s")
+			animate_tail_reset(0)
+		*/
+
+	overlays_standing[TAIL_LAYER] = standing
+	if(update_icons)   update_icons()
+/*
+/mob/living/carbon/human/proc/get_tail_icon()
+	var/icon_key = "[species.race_key][r_skin][g_skin][b_skin]"
+	var/icon/tail_icon = tail_icon_cache[icon_key]
+	if(!tail_icon)
+		//generate a new one
+		var/species_tail_anim = species.get_tail_animation(src)
+		if(!species_tail_anim && species.icobase_tail) species_tail_anim = species.icobase //Eclipse Code Port - Allow override of file for non-animated tails
+		if(!species_tail_anim) species_tail_anim = 'icons/effects/species.dmi'
+		tail_icon = new/icon(species_tail_anim)
+		tail_icon.Blend(rgb(r_skin, g_skin, b_skin), species.color_mult ? ICON_MULTIPLY : ICON_ADD) // Eclipse Code Port edit
+		// The following will not work with animated tails.
+/*		var/use_species_tail = species.get_tail_hair(src)
+		if(use_species_tail)
+			var/icon/hair_icon = icon('icons/effects/species.dmi', "[species.get_tail(src)]_[use_species_tail]")
+			hair_icon.Blend(hair_colour, ICON_ADD)
+			tail_icon.Blend(hair_icon, ICON_OVERLAY)*/
+		tail_icon_cache[icon_key] = tail_icon
+
+	return tail_icon
+*/
+
+/mob/living/carbon/human/proc/update_wing_showing(var/update_icons=1)
+	if(QDESTROYING(src))
+		return
+
+	overlays_standing[WING_LAYER] = null
+
+	var/image/vr_wing_image = get_wing_image()
+	if(vr_wing_image)
+		vr_wing_image.layer = WING_LAYER
+	overlays_standing[WING_LAYER] = vr_wing_image
+	if(update_icons)   update_icons()
+
+/mob/living/carbon/human/update_transform()
+	var/desired_scale_x = size_multiplier
+	var/desired_scale_y = size_multiplier
+
+	// Regular stuff again.
+	var/matrix/M = matrix()
+	var/anim_time = 3
+
+	//Due to some involuntary means, you're laying now
+	if(lying && !resting && !sleeping)
+		anim_time = 1 //Thud
+
+	if(lying && !species.prone_icon) //Only rotate them if we're not drawing a specific icon for being prone.
+		M.Turn(90)
+		M.Scale(desired_scale_x, desired_scale_y)
+		M.Translate(1,-6)
+		layer = MOB_LAYER -0.01 // Fix for a byond bug where turf entry order no longer matters
+	else
+		M.Scale(desired_scale_x, desired_scale_y)
+		M.Translate(0, 16*(desired_scale_y-1))
+		layer = MOB_LAYER // Fix for a byond bug where turf entry order no longer matters
+
+	animate(src, transform = M, time = anim_time)
+
+///////////////////////////////////////////////////////////////////
+// BEARHAMMER EDIT END
+///////////////////////////////////////////////////////////////////
+
 //Human Overlays Indexes/////////
 #undef MUTATIONS_LAYER
 #undef DAMAGE_LAYER
@@ -755,6 +846,7 @@ var/global/list/damage_icon_parts = list()
 #undef SUIT_STORE_LAYER
 #undef BACK_LAYER
 #undef HAIR_LAYER
+#undef WING_LAYER // BEARHAMMER EDIT - FURRY CODE HERE
 #undef HEAD_LAYER
 #undef COLLAR_LAYER
 #undef HANDCUFF_LAYER

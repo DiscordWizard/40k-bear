@@ -440,11 +440,11 @@ client/proc/MayRespawn()
 	if(!status_bar && !fullscreen)
 		winset(src, "mainwindow", "is-maximized=false;can-resize=true;titlebar=true;menu=menu;statusbar=false")
 */
-
+/* BEARHAMMER EDIT - no more autofullscreen
 /client/New()
 	..()
 	fullscreen()
-
+*/
 /client/verb/fullscreen_toggle()
 	set name = ".fullscreen_toggle"
 	fullscreen()

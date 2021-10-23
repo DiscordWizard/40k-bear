@@ -52,10 +52,11 @@ datum/preferences
 		save_character()
 
 /datum/preferences/proc/ShowChoices(mob/user)
-	var/dat = "<html><head><title>Warhammer Explorer!</title>"
+	var/dat = "<html><head><title>Fursona Generator 9000</title>"
 	dat += "<style type='text/css'>html {overflow: auto;};"
 	dat += "body {"
-	dat += "overflow:hidden;"
+//	dat += "Overflow-x:scroll;"
+	dat += "Overflow-y:scroll;"
 	dat += "font-family: Times;"
 	dat += "background-repeat:repeat-x;"
 	dat += "}"
@@ -90,13 +91,13 @@ datum/preferences
 	if(path)
 		dat += "<a onfocus ='this.blur()' href='?src=\ref[src];save=1'>Save Slot</a> -"
 		dat += "<a onfocus ='this.blur()' href='?src=\ref[src];resetslot=1'>Reset Slot</a> -"
-		dat += "<a onfocus ='this.blur()' href='?src=\ref[src];load=1'>Personalities in your head</a>"
+		dat += "<a onfocus ='this.blur()' href='?src=\ref[src];load=1'>Load Slot</a>" // BEARHAMMER EDIT - makes this less asinine and clear, no more personalities in your head.
 	dat += "<br>"
 	dat += player_setup.header()
 	dat += "<br>"
 	dat += player_setup.content(user)
 	dat += "</html></body>"
-	user <<browse(dat,"window=player_panel;size=600x600;can_close=0;can_resize=0;border=[is_bordered];titlebar=[is_bordered]")
+	user <<browse(dat,"window=player_panel;size=800x600;can_close=0;can_resize=1;border=[is_bordered];titlebar=[is_bordered]")
 
 /datum/preferences/proc/process_link(mob/user, list/href_list)
 
@@ -193,6 +194,37 @@ datum/preferences
 
 	character.h_style = h_style
 	character.f_style = f_style
+
+//////////////////////////////////////////////////////////////////////////////////////////
+// BEARHAMMER EDIT START - Adding species stuff and formatting the character creator up //
+//////////////////////////////////////////////////////////////////////////////////////////
+
+	character.ear_style			= ear_styles_list[ear_style]
+	character.r_ears			= r_ears
+	character.b_ears			= b_ears
+	character.g_ears			= g_ears
+	character.r_ears2			= r_ears2
+	character.b_ears2			= b_ears2
+	character.g_ears2			= g_ears2
+	character.tail_style		= tail_styles_list[tail_style]
+	character.r_tail			= r_tail
+	character.b_tail			= b_tail
+	character.g_tail			= g_tail
+	character.r_tail2			= r_tail2
+	character.b_tail2			= b_tail2
+	character.g_tail2			= g_tail2
+	character.wing_style		= wing_styles_list[wing_style]
+	character.r_wing			= r_wing
+	character.b_wing			= b_wing
+	character.g_wing			= g_wing
+	character.resize(size_multiplier, animate = FALSE)
+	character.custom_species	= custom_species
+	character.fuzzy				= fuzzy
+	character.appearance_flags	-= fuzzy*PIXEL_SCALE
+
+/////////////////////////
+// BEARHAMMER EDIT END //
+/////////////////////////
 
 	// Replace any missing limbs.
 	for(var/name in BP_ALL_LIMBS)
