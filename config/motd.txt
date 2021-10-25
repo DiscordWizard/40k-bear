@@ -1,15 +1,18 @@
-<h1>Welcome to Grimdark 13!</h1>
+<h1>Welcome to Untitled 40k Bear Project!</h1>
 
 -<i>This server is running IS12, a modification of the <a>Baystation 12</a> SS13 code.</i>
 
-<strong>Check the Rules first.
+<strong>Check the #rules channel in discord first.
 
 Do not break the atmosphere.
 
 Do not metagame.</strong>
 
-This is an atmospheric and immersive roleplay server in the dark setting of 40k. Set from the perspective of a Rogue Trader on a newly founded colony on the fringe of space. Outside of imperial borders and direct control, surrounded by aliens and heretics, and amongst the remains of a civilization born in the dark ages of humanity's distant past. You are to aid (or hinder) this expedition and it's attempts to bring order and exploitation, while dealing with factionalism and politics amongst the ever suspicious Inquisition, the zealots of the Ecclesiarchy, and the dogmatic Priests of the Machine Cult.
+You are on Biblio-32c, a snowy, barren planet that became a penial colony for the Imperium. Heretics and criminals were sent here, miscreants for whom death was too harsh but walking free was too lenient. With the way these things go, however, the grinding bureaucracy of the Administratum took its toll. Over the years, less and less supplies and orders came, and less the divide became between officer and prisoner. What began as a harsh prison colony became a backwater, ignorant world. 
 
-You currently reside on the ice world of Beroghast, bastioned within the noble frontier systems of the Eminent Domain. The fortress in recent months suffered catastrophe and the complete loss of life within the old castle. Those who have recently occupied it's walls now serve alongside their Lord Trader - sent by Holy Terra herself.
+Two months ago, a Rogue Trader came to Biblio. Although the people of Biblio barely remembered a time where they were under the rule of the Imperium of Man, the Trader had negotiated and bargained with those in the Adeptus Administratum that still cared. They wanted a world, a mining colony, for their own. When they came to Biblio-32c, they were surprised. Not only were there a large amount of mutants and abhumans, most of them weren't even aware they were Imperium citizens...and none of them seemed to be aware of the large amount of Warp on their world. An undiscovered gate, perhaps?
+
+The Trader was intruiged. There were riches to be had here...and the danger was worth it. Even if the established nobility was mad about it, they were Imperium citizens, after all...
+
 <br><br>
-<strong>Discord:</strong> <a href="https://discord.gg/eJb7RDV6">for posting of bugs, discussion and issues.</a> <� <strong>CLICK HERE!</strong>
+<strong>Discord:</strong> <a href="https://discord.gg/D779aMU8kY">for posting of bugs, discussion and issues.</a> <� <strong>CLICK HERE!</strong>
