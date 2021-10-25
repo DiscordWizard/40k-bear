@@ -36,11 +36,11 @@
 	config.useckeywhitelist = !config.useckeywhitelist
 	if(config.useckeywhitelist)
 		load_ckey_whitelist()
-		to_world("<B>The pool is now closed.</B>")
+		to_world("<B>Whitelist is now up..</B>") //bearhammer edit
 		log_and_message_admins("[key_name(usr)] enabled the ckey whitelist.")
 	else
 		ckey_whitelist = null
-		to_world("<B>The pool is now open.</B>")
+		to_world("<B>Whitelist is now off..</B>") //bearhammer edit
 		log_and_message_admins("[key_name(usr)] disabled the ckey whitelist.")
 
 /datum/admins/proc/toggle_panic_bunker()
@@ -51,10 +51,10 @@
 	config.private_party = !config.private_party
 
 	if(config.private_party)
-		to_world("<B>The pool is now closed.</B>")
+		to_world("<B>Panic bunker has been enabled..</B>") //bearhammer edit
 		log_and_message_admins("[key_name(usr)] enabled the panic bunker.")
 	else
-		to_world("<B>The pool is now open.</B>")
+		to_world("<B>Panic bunker has been disabled..</B>") //bearhammer edit
 		log_and_message_admins("[key_name(usr)] disabled the panic bunker.")
 
 /datum/admins/proc/ReloadCkeyWhitelist()

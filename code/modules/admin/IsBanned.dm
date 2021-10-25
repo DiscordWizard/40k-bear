@@ -5,14 +5,14 @@ world/IsBanned(key,address,computer_id)
 
 	//Check if user is whitelisted
 	if(config.useckeywhitelist && !check_ckey_whitelisted(ckey(key)))
-		log_access("Failed Login: [key] [computer_id] [address] - Pool's Closed")
-		message_admins("<span class='notice'>Failed Login: [key] id:[computer_id] ip:[address] - Pool's Closed.</span>")
-		return list("reason"="private", "desc"="\nPrivate party. Pool's closed.")
+		log_access("Failed Login: [key] [computer_id] [address] - Failed Login") //bearhammer edit
+		message_admins("<span class='notice'>Failed Login: [key] id:[computer_id] ip:[address] - Failed Login.</span>") //bearhammer edit
+		return list("reason"="private", "desc"="\nPrivate party. Failed Login.") //bearhammer edit
 
 	if(config.private_party && !has_connected(ckey(key)) && !check_ckey_whitelisted(ckey(key)))
 		log_access("Failed Login: [key] [computer_id] [address] - Panic Bunker")
 		message_admins("<span class='notice'>Failed Login: [key] id:[computer_id] ip:[address] - Panic Bunker.</span>")
-		return list("reason"="private", "desc"="\nPrivate party. Pool's closed.")
+		return list("reason"="private", "desc"="\nPrivate party. Panic bunker failed login..")
 
 	//Guest Checking
 	if(!config.guests_allowed && IsGuestKey(key))
