@@ -52,7 +52,7 @@ datum/preferences
 		save_character()
 
 /datum/preferences/proc/ShowChoices(mob/user)
-	var/dat = "<html><head><title>Fursona Generator 9000</title>"
+	var/dat = "<html><head><title>Adaptus Administratum</title>" // bearhammer/bearstation edit
 	dat += "<style type='text/css'>html {overflow: auto;};"
 	dat += "body {"
 //	dat += "Overflow-x:scroll;"
