@@ -1,16 +1,14 @@
-## Cadia Station: 40k 
+## Bearhammer: 40k 
 
 [![forinfinityandbyond](https://user-images.githubusercontent.com/5211576/29499758-4efff304-85e6-11e7-8267-62919c3688a9.gif)](https://www.reddit.com/r/SS13/comments/5oplxp/what_is_the_main_problem_with_byond_as_an_engine/dclbu1a)
 
-**Discord:** https://discord.gg/E5njx9xJzh
+**Discord:** https://discord.gg/D779aMU8kY
 
 ## Based off of Interstation12: Warfare
 
-**Website:** http://is12wiki.xyz/index.php/Main_Page
-
+**IS12's Website:** http://is12wiki.xyz/index.php/Main_Page
 **Main source code:** https://github.com/mattroks101/IS12-Warfare
-
-**Discord:**  https://discord.gg/FVRctMD
+**IS12's Discord:**  https://discord.gg/FVRctMD
 
 ## Terms of service
 
