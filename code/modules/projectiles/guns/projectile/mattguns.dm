@@ -476,10 +476,9 @@
 
 /obj/item/gun/projectile/automatic/autogrim
 	name = "Autogun pattern GRIM"
-	desc = "A rugged autogun that seems to be somewhat decent."
-	icon_state = "auto_grim"
-	item_state = "auto_grim"
-	wielded_item_state = "auto_grim-wielded"
+	desc = "A rugged autogun of Valhallan design, it has a moderate rate of fire and excellent stopping power."
+	icon_state = "autorifle"
+	item_state = "autorifle"
 	caliber = "a556"
 	max_shells = 35
 	ammo_type = /obj/item/ammo_casing/a556
@@ -594,9 +593,10 @@
 	caliber = ".45"
 	load_method = MAGAZINE
 	move_delay= 1
-	one_hand_penalty = 1.5
-	accuracy = 1.5
-	fire_delay = 3
+	one_hand_penalty = 1
+	accuracy = 0
+	fire_delay = 2.8
+	force = 8
 
 /obj/item/gun/projectile/warfare/update_icon()//We gotta snowflake this a bit.
 	..()
@@ -611,10 +611,10 @@
 /obj/item/gun/projectile/warfare/kieji
 	name = "Kieji Pistol"
 	desc = "A rare slug pistol of excellent quality and design."
-	move_delay= 1.3
-	one_hand_penalty = 2
-	accuracy = 1.8
-	fire_delay= 2
+	move_delay = 1
+	one_hand_penalty = 0.7
+	accuracy = -0.1
+	fire_delay = 2.5
 	armor_penetration = 10
 
 /obj/item/ammo_magazine/c45m/warfare

@@ -111,8 +111,8 @@
 	item_state = "trenchaxe"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 30
-	block_chance = 20
+	force = 35
+	block_chance = 30
 	sharp = TRUE
 	edge = TRUE
 	hitsound = "slash_sound"
@@ -120,6 +120,22 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+
+// NEW MELEE
+
+/obj/item/melee/classic_baton/daemonhammer
+	name = "Daemonhammer"
+	desc = "A power weapon of incredible legend and stature amongst the Ordos Malleus, this Daemonhammer has been used by countless Inquisitor's in their conflict against the unholy creatures of chaos."
+	icon_state = "thunder_hammer"
+	item_state = "thunder_hammer"
+	wielded_icon = "thunder_hammer-w"
+	slot_flags = SLOT_BACK|SLOT_S_STORE
+	w_class = ITEM_SIZE_HUGE
+	str_requirement = 12
+	force = 50
+	block_chance = 38
+	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 12
 
 // CHAINSWORD 
 
@@ -131,8 +147,9 @@
 	item_state = "mercychainsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 38
-	block_chance = 15
+	str_requirement = 12
+	force = 44
+	block_chance = 10
 	sharp = TRUE
 	edge = TRUE
 	hitsound = 'sound/weapons/chainsword.ogg'
@@ -140,6 +157,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 14
 
 /obj/item/melee/inqcs
 	name = "Drusian Pattern Chainsword"
@@ -149,7 +167,8 @@
 	item_state = "inqchainsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 30
+	str_requirement = 10
+	force = 40
 	block_chance = 25
 	sharp = TRUE
 	edge = TRUE
@@ -158,6 +177,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 13
 
 /obj/item/melee/pcsword
 	name = "Mark I Pattern Chainsword"
@@ -167,7 +187,8 @@
 	item_state = "pcsword"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 35
+	str_requirement = 14
+	force = 45
 	block_chance = 35
 	sharp = TRUE
 	edge = TRUE
@@ -176,6 +197,7 @@
 	equipsound = 'sound/items/equip/axe_equip.ogg'
 	grab_sound = 'sound/items/handle/axe_grab.ogg'
 	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 11
 
 /obj/item/melee/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
@@ -184,8 +206,9 @@
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
 	wielded_icon ="eviscerator"
-	force = 15// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 45
+	str_requirement = 12
+	force = 25// it's unwieldy when you don't use two hands, baby sword.
+	force_wielded = 49
 	block_chance = 25
 	sharp = 1
 	edge = 1
@@ -197,3 +220,4 @@
 	grab_sound_is_loud = TRUE
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	attack_verb = list("attacked", "sawed", "cleaved", "torn", "cut")
+	weapon_speed_delay = 16

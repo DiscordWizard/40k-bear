@@ -1,4 +1,22 @@
+// turfs
 
+/turf/simulated/wall/wood
+	icon_state = "wood0"
+	walltype = "wood"
+	integrity = 300
+
+
+
+
+
+
+
+
+
+
+
+
+// areas
 
 /area/cadiaoutpost/oa/village/mansion
 	name = "Mansion"
