@@ -198,22 +198,6 @@ Template:
 /// BEGINNING OF LOOT SPAWNERS
 /// Be careful. Make sure to search up all items related to what you are spawning and make it possible for it's ammo to spawn as well. 
 
-
-/obj/random/loot/example
-	name = "Example ??? Loot"
-	desc = "This is a ??? loot spawner with a ??? chance of spawning ???? items."
-	icon = 'icons/obj/items.dmi'
-	icon_state = "gift3"
-
-/obj/random/loot/example/spawn_choices()
-	return list(/obj/random/voidhelmet = 69, /// Numbers represent chance the item will be chosen to spawn.
-				/obj/random/voidsuit = 42,
-				/obj/item/clothing/mask/muzzle = 0,
-				/obj/item/clothing/mask/gas/vox = 8,
-				/obj/item/clothing/mask/gas/syndicate = 10,
-				/obj/item/clothing/glasses/night = 3,
-				/obj/item/clothing/glasses/thermal = 1)
-
 /obj/random/loot/guardgear
 	name = "Guard Gear"
 	desc = "This is a loot spawner that spawns essential imperial guardsmen gear."
@@ -221,7 +205,7 @@ Template:
 	icon_state = "horribletie"
 
 /obj/random/loot/guardgear/spawn_choices()
-	return list(/obj/item/storage/belt/medical/full = 4,
+	return list(/obj/item/storage/belt/medical/full = 1,
 	            /obj/item/clothing/accessory/holster/waist = 1,
 				/obj/item/storage/box/ifak = 5,
 				/obj/item/clothing/accessory/holster/hip = 1,
@@ -232,19 +216,15 @@ Template:
 				/obj/item/clothing/accessory/legguards/riot = 3)
 
 /obj/random/loot/guardarmor
-	name = "Guard Armor"
-	desc = "This is a loot spawner that spawns imperial guardsmen armor."
+	name = "Special Guard Armor"
+	desc = "This is a loot spawner that spawns special imperial guardsmen armor and no more then 2-3 should be on the map."
 	icon = 'icons/obj/clothing/ties.dmi'
 	icon_state = "horribletie"
 
 /obj/random/loot/guardarmor/spawn_choices()
-	return list(/obj/item/clothing/suit/armor/guardsman = 8,
-	            /obj/item/clothing/suit/armor/flak/heavy = 3,
-				/obj/item/clothing/suit/armor/guardsman/caraspace =1,
-				/obj/item/clothing/suit/armor/medicae = 1,
-				/obj/item/clothing/suit/armor/valhallanarmor = 1,
-				/obj/item/clothing/suit/armor/krieger = 1,
-				/obj/item/clothing/suit/armor/krieger/grenadier = 1,)
+	return list(/obj/item/clothing/suit/armor/flak/heavy = 7,
+				/obj/item/clothing/suit/armor/guardsman/carapace =1,
+				/obj/item/clothing/suit/armor/krieger/grenadier = 1)
 
 /obj/random/loot/guardhelmet
 	name = "Guard Helmet"
@@ -258,7 +238,7 @@ Template:
 				/obj/item/clothing/head/valushanka = 2,
 				/obj/item/clothing/head/helmet/krieghelmet = 1,
 				/obj/item/clothing/mask/gas/krieg = 1,
-				/obj/item/clothing/head/helmet/riot = 1,)
+				/obj/item/clothing/head/helmet/riot = 1)
 
 /obj/random/loot/lightmelee
 	name = "Light Melee"
@@ -267,8 +247,11 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/lightmelee/spawn_choices()
-	return list(/obj/item/material/sword/combat_knife = 6,
+	return list(/obj/item/material/sword/combat_knife = 1,
 				/obj/item/material/sword/combat_knife/rare = 3,
+				/obj/item/melee/classic_baton/trench_club = 1,
+				/obj/item/material/sword/sabre = 1,
+				/obj/item/melee/telebaton = 1,
 				/obj/item/material/sword/machete = 1)
 
 /obj/random/loot/heavymelee
@@ -325,9 +308,25 @@ Template:
 				/obj/item/ammo_magazine/mc9mmt/machinepistol = 8,
 				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
 
-/obj/random/loot/lightstubber
-	name = "Light Stubber"
-	desc = "This is a weapon loot spawner with a high chance of spawning common light stubbers."
+/obj/random/loot/sidearmammo
+	name = "Sidearm Ammo"
+	desc = "This is an ammo spawner that spawns ammo for light stubbers."
+	icon = 'icons/obj/ammo.dmi'
+	icon_state = "45-10"
+
+/obj/random/loot/sidearmammo/spawn_choices()
+	return list(/obj/item/ammo_magazine/a357 = 4,
+				/obj/item/ammo_magazine/a357 = 4,
+				/obj/item/ammo_magazine/c45m/warfare = 8,
+				/obj/item/ammo_magazine/c45m/warfare = 6,
+				/obj/item/cell/lasgun = 8,
+				/obj/item/ammo_magazine/c44 = 5,
+				/obj/item/ammo_box/shotgun = 3,
+				/obj/item/ammo_magazine/bolt_pistol_magazine = 1)
+
+/obj/random/loot/sidearms
+	name = "Sidearms"
+	desc = "This is a weapon loot spawner with a high chance of spawning common sidearms and accessories."
 	icon = 'icons/obj/weapons/gun/projectile.dmi'
 	icon_state = "revolver"
 
@@ -355,8 +354,7 @@ Template:
 				/obj/item/gun/energy/las/lasgun/luscius = 8,
 				/obj/item/gun/energy/las/lasgun/luscius/rare = 3,
 				/obj/item/gun/energy/las/boarding = 3,
-				/obj/item/gun/energy/las/laspistol = 6,
-				/obj/item/gun/energy/las/laspistol/heavy = 3,
+				/obj/item/gun/energy/las/laspistol/heavy = 1,
 				/obj/item/gun/energy/las/lasgun/tinkered = 1,
 				/obj/item/gun/energy/las/lasgun/tinkered/lascarbine = 1)
 
@@ -379,13 +377,12 @@ Template:
 /obj/random/loot/heavystubberammo/spawn_choices()
 	return list(/obj/item/ammo_magazine/mc9mmt/machinepistol = 10,
 	            /obj/item/ammo_magazine/bolt_rifle_magazine = 1,
-				/obj/item/ammo_box/shotgun = 3,
-				/obj/item/ammo_box/rifle = 8,
-				/obj/item/ammo_box/rifle = 9,
-				/obj/item/ammo_box/shotgun = 9,
-				/obj/item/ammo_box/shotgun = 8,
+				/obj/item/ammo_box/rifle = 5,
+				/obj/item/ammo_magazine/autogrim = 5,
+				/obj/item/ammo_box/shotgun = 4,
+				/obj/item/ammo_magazine/box/shotgun/slug = 2,
 				/obj/item/ammo_magazine/box/a556/mg08 = 10,
-				/obj/item/ammo_magazine/box/a556/mg08 = 7)
+				/obj/item/ammo_magazine/box/a556/mg08 = 5)
 
 /obj/random/loot/heavystubber
 	name = "Heavy Stubber"
@@ -394,9 +391,8 @@ Template:
 	icon_state = "revolver"
 
 /obj/random/loot/heavystubber/spawn_choices()
-	return list(/obj/item/gun/projectile/automatic/machinepistol/a80 = 10,
-	            /obj/item/gun/projectile/lockebolter = 1,
-				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty = 12,
+	return list(/obj/item/gun/projectile/lockebolter = 1,
+				/obj/item/gun/projectile/automatic/autogrim = 5,
 				/obj/item/gun/projectile/shotgun/pump = 6,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/tinkered = 8,
 				/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/leverchester = 9,
@@ -488,10 +484,29 @@ Template:
 				/obj/item/gun/energy/las/lasgun/tinkered = 3,
 				/obj/item/gun/energy/las/lasgun/tinkered/lascarbine = 3)
 
-/// To Do List. Create spawners that are completely random for categories; medicine, ammo, armor, weapon, clothing, item, explosive, food, explosive, decor, tool and material.
+/obj/random/loot/meleespawner
+	name = "Random Melee Spawner"
+	desc = "This is a weapon loot spawner with a high chance of spawning common light melee weapons."
+	icon = 'icons/obj/weapons/gun/projectile.dmi'
+	icon_state = "revolver"
 
-/// THIS IS THE END OF LOOT SPAWNERS
+/obj/random/loot/meleespawner/spawn_choices()
+	return list(/obj/item/material/sword/combat_knife = 8,
+				/obj/item/material/sword/combat_knife/rare = 7,
+				/obj/item/melee/trench_axe = 12,
+				/obj/item/melee/inqcs = 1,
+				/obj/item/melee/pcsword/eviscerator = 1,
+				/obj/item/melee/classic_baton/trench_club = 8,
+				/obj/item/melee/telebaton = 6,
+				/obj/item/material/sword/machete = 8,
+				/obj/item/material/sword/sabre = 4,
+				/obj/item/melee/mercycs = 1)
 
+/obj/random/loot/randomarmor
+	name = "Random Armor"
+	desc = "This is a loot spawner that spawns clothing, armor and gear."
+	icon = 'icons/obj/clothing/ties.dmi'
+	icon_state = "horribletie"
 
 /obj/random/loot/randomarmor/spawn_choices()
 	return list(/obj/item/clothing/suit/armor/militia = 4,
@@ -835,38 +850,6 @@ Template:
 	new /obj/item/clothing/mask/spirit(src.loc)
 	new /obj/item/clothing/under/savage_hunter/female(src.loc)
 	delete_me = 1
-
-/obj/effect/landmark/animal/rnghostilespawner/New()
-	if (prob(30))
-		new /mob/living/simple_animal/hostile/bear(src.loc)
-	if (prob(30))
-		new /mob/living/simple_animal/hostile/shafra(src.loc)
-	delete_me = 1
-
-/obj/effect/landmark/animal/rngdemonspawner/New()
-	if (prob(40))
-		new /mob/living/simple_animal/hostile/smalldemon(src.loc)
-	delete_me = 1
-
-
-/obj/effect/landmark/animal/rngretaliatespawner/New()
-	if (prob(50))
-		new /mob/living/simple_animal/hostile/retaliate/rat(src.loc)
-	delete_me = 1
-
-/obj/effect/landmark/animal/krootspawn/New()
-	new /mob/living/carbon/human/kroot(src.loc)
-	delete_me = 1
-
-/obj/effect/landmark/animal/rngfriendlyfellowspawner/New()
-	if(prob(25))
-		new /mob/living/simple_animal/hostile/retaliate/goat(src.loc)
-	if(prob(25))
-		new /mob/living/simple_animal/cow(src.loc)
-	if(prob(25))
-		new /mob/living/simple_animal/chicken(src.loc)
-	if(prob(10))
-		new /mob/living/simple_animal/hostile/retaliate/goat/king(src.loc)
 
 /obj/effect/landmark/tapes/New()
 	if(prob(33))
