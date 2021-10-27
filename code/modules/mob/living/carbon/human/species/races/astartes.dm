@@ -20,7 +20,7 @@ Astartes
 	eye_icon_location = 'icons/mob/astartes_face.dmi'
 	eye_icon = "eyes_s"
 	gluttonous = GLUT_ITEM_NORMAL
-	total_health = 300
+	total_health = 200
 	appearance_flags = HAS_HAIR_COLOR | HAS_LIPS | HAS_UNDERWEAR | HAS_EYE_COLOR | HAS_A_SKIN_TONE
 	mob_size = MOB_LARGE
 	strength = STR_VHIGH
@@ -31,8 +31,6 @@ Astartes
 	inherent_verbs = list()
 	spawn_flags = SPECIES_IS_RESTRICTED //BEARHAMMER EDIT
 
-	burn_mod = 1.0
-	brute_mod = 1.0
 	radiation_mod = 0.7
 
 /datum/species/human/astartes/handle_post_spawn(var/mob/living/carbon/human/astartes/H)
