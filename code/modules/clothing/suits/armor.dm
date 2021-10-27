@@ -361,26 +361,73 @@ obj/item/clothing/suit/armor
 	icon_state = "advisor"
 	item_state = "advisor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun,/obj/item/melee/whip/lashoftorment,)
-	armor = list(melee = 40, bullet = 40, laser = 35, energy = 35, bomb = 20, bio = 20, rad = 5)
+	armor = list(melee = 35, bullet = 30, laser = 25, energy = 20, bomb = 25, bio = 20, rad = 20)
 	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
-// Sister Of Battle Relic
-
-/obj/item/sobrelic
-	name = "primeval order of our martyred lady chestpiece"
-	desc = "A primeval chestpiece of Adeptus Sororitas power armor, draped in the marks of the Order of Our Martyred Lady. It looks worn down, battle-hardened, and retired for good reason, yet it still radiates with holy energy."
-	icon = 'icons/obj/clothing/suits.dmi'
-	icon_state = "ooml"
-	item_state = "ooml"
-	/*/armor = list(melee = 30, bullet = 30, laser = 30, energy = 30, bomb = 30, bio = 30, rad = 20)
-	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
-	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
+/obj/item/clothing/suit/cloak
+	name = "Mysterious Cloak"
+	desc = "A tough black cloak made from animal leather."
+	icon_state = "bluecoat_sniper"
+	item_state = "bluecoat_sniper"
+	armor = list(melee = 25, bullet = 35, laser = 25, energy = 10, bomb = 10, bio = 10, rad = 20)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 	flags_inv = HIDEJUMPSUIT|HIDEGLOVES*/ // bricked temporarily. people were abusing the shit out of it, can be used as an object in an imperial cult/heretic path thing. we can raise the armor values then later
 
-////Astra Militarum
+/obj/item/clothing/suit/armor/salvage
+	name = "Reinforced Mining Suit"
+	desc = "An old mining suit reinforced with metal plating and dense fibers."
+	icon_state = "rig-excavation"
+	item_state = "rig-excavation"
+	armor = list(melee = 48, bullet = 35, laser = 35, energy = 40, bomb = 35, bio = 10, rad = 50)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+/obj/item/clothing/suit/armor/salvage/heavy/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1.0
+
+/obj/item/clothing/suit/armor/cuirass
+	name = "Plate Cuirass"
+	desc = "An old cuirass reinforced with scrap metal plating and dense fabric."
+	icon_state = "combat"
+	item_state = "combat"
+	armor = list(melee = 55, bullet = 30, laser = 40, energy = 40, bomb = 35, bio = 10, rad = 50)
+	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	cold_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
+/obj/item/clothing/suit/armor/salvage/heavy/New()
+	..()
+	slowdown_per_slot[slot_wear_suit] = 1.5
+
+/obj/item/clothing/suit/armor/guardsman/mercenary
+	name = "Mercenary Flak Armour - Medium"
+	desc = "An altered fabrication of Imperial Pattern Flak Armor - this particular version is commonly used by mercenaries guilds in service to the renegade houses of the frontier."
+	icon_state = "merc" // mob/suit.dmi
+	item_state = "merc"
+	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
+	armor = list(melee = 30, bullet = 40, laser = 40, energy = 20, bomb = 20, bio = 10, rad = 30)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+//// ADMINISTRATUM
+/obj/item/clothing/suit/armor/bountyhunter
+	name = "bounty hunter's armor"
+	icon_state = "cadianarmor"
+	item_state = "cadianarmor"
+	armor = list(melee = 45, bullet = 35, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
+
+/obj/item/clothing/suit/armor/bountyhunter2
+	name = "bounty hunter's armor"
+	icon_state = "valhalla"
+	item_state = "valhalla"
+	armor = list(melee = 45, bullet = 35, laser = 30, energy = 25, bomb = 20, bio = 10, rad = 10)
+	cold_protection = UPPER_TORSO | LOWER_TORSO | LEGS | FEET | ARMS | HANDS
+	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/enforcer
 	name = "Cadian Pattern Flak Armour - Enforcer"
@@ -405,10 +452,12 @@ obj/item/clothing/suit/armor
 	..()
 	slowdown_per_slot[slot_wear_suit] = -0.5
 
-/obj/item/clothing/suit/armor/guardsman/caraspace
-	name = "Cadian Pattern Flak Armour - Caraspace"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Caraspace plates, giving it better protection than average Guardsmen."
-	armor = list(melee = 45, bullet = 55, laser = 45, energy = 30, bomb = 35, bio = 10, rad = 20)	
+/obj/item/clothing/suit/armor/guardsman/carapace
+	name = "Cadian Pattern Flak Armour - Carapace"
+	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Carapace plates, giving it better protection than average Guardsmen."
+	icon_state = "carapace"
+	item_state = "carapace"
+	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 10, rad = 20)	
 
 /obj/item/clothing/suit/armor/flak/heavy
 	name = "Cadian Pattern Flak Armour - Heavy"
