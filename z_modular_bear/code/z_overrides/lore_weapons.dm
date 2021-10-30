@@ -51,3 +51,23 @@
 	name = "Scrap Slug-Rifle"
 	desc = "A rifle made from scrap. Quite exotic looking, if not surprisingly uniform. Not surprising, considering its origin. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 
+
+
+
+// generic fleet-weapons, lasers
+
+/obj/item/gun/energy/las/lasgun
+	name = "Fleet 'Junker' F-55 Lasgun"
+	desc = "The Junker is an extraordinary piece of technology. It is made almost entirely out of parts that can be found reliably on worlds that are pre-space-age, with a few parts the Fleet can make on-the-go. It contributes to the Fleet's ability to keep moving forwards."
+
+/obj/item/gun/energy/las/lasgun/rare
+	name = "Fleet 'Shine' F-56 Lasgun"
+	desc = "The Shine, unlike its younger sibling, the Junker, is a proper military weapon. It was created from the start with quality in mind, rather than raw availability. It features a heavier frame and laser-crystal assembly."
+
+/obj/item/gun/energy/las/lasgun/luscius
+	name = "DSS 'Leviathan' Lasgun"
+	desc = "A custom-made lasgun, the Darksight Secuity 'Leviathan' is an aftermarket modification of the Fleet's F-50 weapons platform with the intent of making a weapon fit for a proper kill-squad. The battery-pack is fed into a large capacitor, resulting in a more powerful shot but causing it to be more likely to overheat."
+
+/obj/item/gun/energy/las/lasgun/luscius/rare
+	name = "DSS 'Apex Leviathan' Lasgun"
+	desc = "A custom-made lasgun, the Darksight Secuity 'Leviathan' is an aftermarket modification of the Fleet's F-50 weapons platform with the intent of making a weapon fit for a proper kill-squadThis variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
