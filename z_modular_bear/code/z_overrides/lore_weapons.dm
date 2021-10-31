@@ -57,17 +57,42 @@
 // generic fleet-weapons, lasers
 
 /obj/item/gun/energy/las/lasgun
-	name = "Fleet 'Junker' F-55 Lasgun"
-	desc = "The Junker is an extraordinary piece of technology. It is made almost entirely out of parts that can be found reliably on worlds that are pre-space-age, with a few parts the Fleet can make on-the-go. It contributes to the Fleet's ability to keep moving forwards."
+	name = "1stFleet 'Junker' F-50 Lasgun"
+	desc = "The Junker is an extraordinary piece of technology. It is made out of material that can be found reliably on less-advanced worlds, with a few parts the Fleet can make on-the-go. It contributes to the Fleet's ability to keep moving forwards despite a lack of stable supply lines. Based off of the lost 'Eagle' design from the 2nd Fleet."
 
 /obj/item/gun/energy/las/lasgun/rare
-	name = "Fleet 'Shine' F-56 Lasgun"
-	desc = "The Shine, unlike its younger sibling, the Junker, is a proper military weapon. It was created from the start with quality in mind, rather than raw availability. It features a heavier frame and laser-crystal assembly."
+	name = "1stFleet 'Shine' F-51 Lasgun"
+	desc = "The Shine, unlike its younger sibling, the Junker, is a proper military weapon. It was created from the start with quality in mind, rather than raw availability. It features a heavier frame and laser-crystal assembly that helps keep the beam focused and more accurate."
 
 /obj/item/gun/energy/las/lasgun/luscius
-	name = "DSS 'Leviathan' Lasgun"
-	desc = "A custom-made lasgun, the Darksight Secuity 'Leviathan' is an aftermarket modification of the Fleet's F-50 weapons platform with the intent of making a weapon fit for a proper kill-squad. The battery-pack is fed into a large capacitor, resulting in a more powerful shot but causing it to be more likely to overheat."
+	name = "FF 'Hunter' Lasgun"
+	desc = "A semi-auto civillian version of the F-50 weapons platform, Frontier Firearm's 'Hunter' is surprisingly deadly. Although it features the same receiver as the F-50 models, nearly everything else has been swapped out. The battery-pack is fed into a large capacitor, resulting in a more powerful shot but causing it to be more likely to overheat."
 
 /obj/item/gun/energy/las/lasgun/luscius/rare
-	name = "DSS 'Apex Leviathan' Lasgun"
-	desc = "A custom-made lasgun, the Darksight Secuity 'Leviathan' is an aftermarket modification of the Fleet's F-50 weapons platform with the intent of making a weapon fit for a proper kill-squadThis variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
+	name = "FF 'Leviathan' Lasgun"
+	desc = "A semi-auto civillian version of the F-50 weapons platform, Frontier Firearm's 'Leviathan' is surprisingly deadly. Although it features the same receiver as the F-50 models, nearly everything else has been swapped out. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
+
+/obj/item/gun/energy/captain
+	name = "antique las-pistol"
+	desc = "An ancient weapon from the Second Fleet, before their final voyage into the KBC Supervoid. The last remaining artifact of Humanity's hubris. What did they find out there, and who sent back this pristine artifact from a missing armada?"
+
+/obj/item/gun/energy/las/boarding
+	name = "1stFleet 'Killbox' F-50A2"
+	desc = "The Killbox is a full-body modification of a Shine, specially adapted for CQC situations. It features a non-zooming holographic sight that helps with close target acquisition, but makes it a bit worse at long ranges."
+
+/obj/item/gun/energy/las/lasgun/tinkered
+	name = "2ndFleet 'Eagle' M1-5A4"
+	desc = "The weapon the Junker is based on. Externally, they look the same, but the internals differ. Liquid cooling keeps the laser-crystal assembly cooled and focused, the capacitor is more efficient, the sights micro-adjust to account for bumps and movement. The secrets to making this are lost."
+
+/obj/item/gun/energy/las/lasgun/tinkered/lascarbine
+	name = "2ndFleet Aftermarket 'Eagle' MA-5A4"
+	desc = "An Eagle someone has filed down, replaced the stock of, pimped up in paint...it makes you sick. History has been ruined by tacticool nerds who don't know when to stop pimping out their guns. The worst part is...it's probably better than the standard Eagle in CQC."
+
+/obj/item/gun/energy/las/laspistol
+	name = "1stFleet 'Holdout' F-50P Lasgun"
+	desc = "A rinky-dink laser pistol made for self defense, NCOs, and Mekhanists. A power-hog."
+
+/obj/item/gun/energy/las/laspistol
+	name = "1stFleet 'Breakout' F-50P1 Lasgun"
+	desc = "A rinky-dink laser pistol made for self defense, NCOs, and Mekhanists. This is the P1 variant, which fires from a more focused, heavier crystal. Less accurate, but has more punch. Might even be useful in a real fight."
+
