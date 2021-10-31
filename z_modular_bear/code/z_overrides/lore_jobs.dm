@@ -209,3 +209,52 @@ Pilgrim Fate System
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+
+
+// Rogue Trader
+
+var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
+
+/datum/job/captain
+	title = "Fleet Governor"
+	department = "Rogue Trader"
+	head_position = 1
+	department_flag = COM|CIV
+	social_class = SOCIAL_CLASS_MAX
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 0
+	supervisors = "Fleet Command or the Admiral, wherever they are"
+	selection_color = "#011c77"
+	req_admin_notify = 1
+	access = list() 			//See get_access()
+	minimal_access = list() 	//See get_access()
+	minimal_player_age = 25
+	economic_modifier = 20
+	announced = FALSE
+	latejoin_at_spawnpoints = TRUE
+
+	ideal_character_age = 60
+	outfit_type = /decl/hierarchy/outfit/job/captain
+	auto_rifle_skill = 5
+	semi_rifle_skill = 5
+	sniper_skill = 5
+	shotgun_skill = 5
+	lmg_skill = 5
+	smg_skill = 5
+	melee_skill = 5
+	ranged_skill = 6
+	medical_skill = 4
+	engineering_skill = 3
+	surgery_skill = 2
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Governor [current_name]")
+		H.add_stats(rand(12,18), rand(12,18), rand(12,18), rand(12,18))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		H.verbs += list(/mob/living/carbon/human/proc/hire,)
+		to_chat(H, "<span class='notice'><b><font size=3>You are an administrator-governor, and have been assigned to preside over this world while the First Fleet continues its two-century-long offensive across the galaxy. Messages from the Fleet come rarely, and even rarer still are resupplies. You aren't entirely alone- you have a small group of local recruits with dubious loyalties and, maybe, one or two good men. Keep your outpost functioning until the Fleet returns- if it ever does. </font></b></span>")
+
