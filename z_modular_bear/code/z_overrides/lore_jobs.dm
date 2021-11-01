@@ -1,5 +1,11 @@
 //oh god this may cock things up terribly in the future...maybe comment out originals in pilgrims.dm before turning this on? concenr is double-spawns because of equip var
 //  either way, make sure all of ihe lore descriptions are done before you make huge comments/uncomments, because this is for lore overwrites, and you better be sure about that fucking lore
+// first off, though, no kids. absolutely NO children on this code.
+
+/datum/job/undertaker
+	title = "Undertaker"
+	total_positions = 0
+	spawn_positions = 0
 
 /datum/job/innkeeper
 	title = "Innkeeper"
@@ -28,7 +34,6 @@
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
 		to_chat(H, "<span class='notice'><b><font size=3>You are, or were, a civillain contractor of the First Fleet. .</font></b></span>")
-
 
 // PILGRIM. TODO: oh
 
@@ -233,7 +238,6 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	economic_modifier = 20
 	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
-
 	ideal_character_age = 60
 	outfit_type = /decl/hierarchy/outfit/job/captain
 	auto_rifle_skill = 5
@@ -258,3 +262,55 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.verbs += list(/mob/living/carbon/human/proc/hire,)
 		to_chat(H, "<span class='notice'><b><font size=3>You are an administrator-governor, and have been assigned to preside over this world while the First Fleet continues its two-century-long offensive across the galaxy. Messages from the Fleet come rarely, and even rarer still are resupplies. You aren't entirely alone- you have a small group of local recruits with dubious loyalties and, maybe, one or two good men. Keep your outpost functioning until the Fleet returns- if it ever does. </font></b></span>")
 
+// Seneschal
+
+/datum/job/hop
+	title = "Attendant"
+	head_position = 1
+	department_flag = COM|CIV
+	social_class = SOCIAL_CLASS_HIGH
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 0
+	supervisors = "the Governor"
+	selection_color = "#00494e"
+	req_admin_notify = 1
+	minimal_player_age = 25
+	economic_modifier = 10
+	ideal_character_age = 50
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+	auto_rifle_skill = 3
+	semi_rifle_skill = 3
+	sniper_skill = 3
+	shotgun_skill = 3
+	lmg_skill = 3
+	smg_skill = 3
+	melee_skill = 3
+	ranged_skill = 4
+	medical_skill = 5
+	engineering_skill = 0
+	surgery_skill = 2
+
+	equip(var/mob/living/carbon/human/H)
+		..()
+		H.add_stats(rand(10,12), rand(10,14), rand(10,13), rand(13,18))
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.warfare_faction = IMPERIUM
+		to_chat(H, "<span class='notice'><b><font size=3>You are the attendant	 to the Fleet Governor. You are to handle their issues when they are not present. If the Governer becomes incapacitated then you assume command. While they are alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it.</font></b></span>")
+
+
+	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
+			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury,)
+	minimal_access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
+			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_heads,
+			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
+			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
+			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
+			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
+
+	outfit_type = /decl/hierarchy/outfit/job/hop
