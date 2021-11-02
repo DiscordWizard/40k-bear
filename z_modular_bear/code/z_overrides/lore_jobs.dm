@@ -1,11 +1,5 @@
 //oh god this may cock things up terribly in the future...maybe comment out originals in pilgrims.dm before turning this on? concenr is double-spawns because of equip var
 //  either way, make sure all of ihe lore descriptions are done before you make huge comments/uncomments, because this is for lore overwrites, and you better be sure about that fucking lore
-// first off, though, no kids. absolutely NO children on this code.
-
-/datum/job/undertaker
-	title = "Undertaker"
-	total_positions = 0
-	spawn_positions = 0
 
 /datum/job/innkeeper
 	title = "Innkeeper"

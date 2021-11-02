@@ -1,19 +1,21 @@
 //ALL SHIT FOR KIDS IN ONE FILE BECUASE I'M TIRED OF SEARCHING ALL OVER THE PLACE FOR CHILDREN SHIT
-/datum/species/human/child //Oh lord here we go.
-	name = "Child"
-	name_plural = "Children"
-	blurb = "But a child."
-	total_health = 150 //Kids are weaker than adults.
-	min_age = 10
-	max_age = 14
-	icobase = 'icons/mob/human_races/child/r_child.dmi'
-	deform = 'icons/mob/human_races/child/r_child.dmi'
-	damage_mask = 'icons/mob/human_races/masks/dam_mask_child.dmi'
-	blood_mask = 'icons/mob/human_races/masks/blood_child.dmi'
+
+// This entire section is a MODULAR BEARHAMMER / BEARSTATION EDIT
+/datum/species/human/children //Oh lord here we go.
+	name = "Amogus"
+	name_plural = "Amogus Sus"
+	blurb = "Sus"
+	total_health = 150
+	min_age = 80
+	max_age = 90
+	icobase = 'icons/mob/human_races/subhuman.dmi'
+	deform = 'icons/mob/human_races/subhuman.dmi'
+	damage_mask = 'icons/mob/human_races/subhuman.dmi'
+	blood_mask = 'icons/mob/human_races/subhuman.dmi'
 	pixel_offset_y = -4
-	spawn_flags = SPECIES_IS_RESTRICTED//No more kids becoming nuke ops.
+	spawn_flags = SPECIES_IS_RESTRICTED
 
-
+/*
 /datum/species/human/child/handle_post_spawn(var/mob/living/carbon/human/H)
 	//H.mutations.Add(CLUMSY)//So kids don't go around being commandos.
 	H.age = rand(min_age,max_age)//Random age for kiddos.
@@ -23,7 +25,7 @@
 	to_chat(H, "<big><span class='warning'>CHILDREN ARE CLUMSY AND CANNOT USE GUNS OR MELEE WEAPONS! DOING SO WILL KILL YOU!</span></big>")
 	H.update_eyes()	//hacky fix, i don't care and i'll never ever care
 	return ..()
-
+*/
 
 /obj/item/clothing/under/child_jumpsuit
 	name = "grey children's jumpsuit"
@@ -59,4 +61,3 @@
 
 /mob/living/carbon/human/child/New(var/new_loc)
 	..(new_loc, "Child")
-
