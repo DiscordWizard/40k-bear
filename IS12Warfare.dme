@@ -1691,7 +1691,6 @@
 #include "code\modules\mob\living\carbon\human\species\races\orks\abilities.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\ork_species.dm"
 #include "code\modules\mob\living\carbon\human\species\races\orks\orks.dm"
-#include "code\modules\mob\living\carbon\human\species\station\children.dm"
 #include "code\modules\mob\living\carbon\human\species\station\monkey.dm"
 #include "code\modules\mob\living\carbon\human\species\station\skitarii.dm"
 #include "code\modules\mob\living\carbon\human\species\station\station.dm"
@@ -2524,6 +2523,8 @@
 #include "z_modular_bear\code\modules\mob\living\carbon\human\species\station\furry.dm"
 #include "z_modular_bear\code\modules\mob\new_player\body_markings.dm"
 #include "z_modular_bear\code\modules\mob\new_player\sprite_accesories.dm"
+#include "z_modular_bear\code\z_overrides\amogi.dm"
+#include "z_modular_bear\code\z_overrides\lore_misc.dm"
 #include "z_modular_bear\code\z_overrides\lore_obj.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
