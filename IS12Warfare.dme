@@ -2524,8 +2524,10 @@
 #include "z_modular_bear\code\modules\mob\new_player\body_markings.dm"
 #include "z_modular_bear\code\modules\mob\new_player\sprite_accesories.dm"
 #include "z_modular_bear\code\z_overrides\amogi.dm"
+#include "z_modular_bear\code\z_overrides\lore_armor.dm"
 #include "z_modular_bear\code\z_overrides\lore_misc.dm"
 #include "z_modular_bear\code\z_overrides\lore_obj.dm"
+#include "z_modular_bear\code\z_overrides\lore_weapons.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
 // This is a buffer
