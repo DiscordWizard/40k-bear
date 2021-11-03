@@ -1,7 +1,7 @@
-//ALL SHIT FOR KIDS IN ONE FILE BECUASE I'M TIRED OF SEARCHING ALL OVER THE PLACE FOR CHILDREN SHIT
+// This entire section is a MODULAR BEARHAMMER / BEARSTATION EDIT of a removed file, children.dm.
+// file was removed due to gameplay/lore decisions. putting kids up against murderous aliens is pretty uncomfortable
 
-// This entire section is a MODULAR BEARHAMMER / BEARSTATION EDIT
-/datum/species/human/amogus //Oh lord here we go.
+/datum/species/human/amogus
 	name = "Amogus"
 	name_plural = "Amogus Sus"
 	blurb = "Sus"

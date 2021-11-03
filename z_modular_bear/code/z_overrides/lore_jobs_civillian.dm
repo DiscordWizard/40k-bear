@@ -1,4 +1,4 @@
-//oh god this may cock things up terribly in the future...maybe comment out originals in pilgrims.dm before turning this on? concenr is double-spawns because of equip var
+	//oh god this may cock things up terribly in the future...maybe comment out originals in pilgrims.dm before turning this on? concenr is double-spawns because of equip var
 //  either way, make sure all of ihe lore descriptions are done before you make huge comments/uncomments, because this is for lore overwrites, and you better be sure about that fucking lore
 
 /datum/job/innkeeper
@@ -111,7 +111,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/clothing/head/plebhood, slot_head)
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/ten, slot_r_store)
-			to_chat(U, "<span class='notice'><b><font size=3>You are a penitent, forced to tour the galaxy and toil until death in hopes of one day redeeming yourself. In your youth, you were an unknowing daemon-worshipper. Years of torment and re-education by the Inquisition allowed you this one chance at redemption. Labour endlessly in His name.</font></b></span>")
+			to_chat(U, "<span class='notice'><b><font size=3>You are a penitent, under watch of the Fleet. Before the Conflict, you were a worshipper of the old Gods, and fought against the Fleet's cultural control. Now, after the death of the nature goddess Eurydale, the world is covered in ash and snow, the very land weeping at her demise.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,
 			)
 		if("Bounty Hunter")
@@ -291,7 +291,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.add_stats(rand(10,12), rand(10,14), rand(10,13), rand(13,18))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are the attendant	 to the Fleet Governor. You are to handle their issues when they are not present. If the Governer becomes incapacitated then you assume command. While they are alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the attendant to the Fleet Governor. You are to handle their issues when they are not present. If the Governer becomes incapacitated then you assume command. While they are alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it.</font></b></span>")
 
 
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
@@ -308,3 +308,37 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
 
 	outfit_type = /decl/hierarchy/outfit/job/hop
+
+
+/datum/job/chef
+	title = "Cook"
+	department = "Service"
+	department_flag = CIV
+	total_positions = 1
+	spawn_positions = 1
+	open_when_dead = 1
+	latejoin_at_spawnpoints = TRUE
+	supervisors = "the Attendant, the Sergeant, anyone above you in rank"
+	selection_color = "#337C81"
+	access = list(access_hydroponics, access_bar, access_kitchen, access_maint_tunnels)
+	minimal_access = list(access_kitchen)
+	announced = FALSE
+//	alt_titles = list("Cook")
+	outfit_type = /decl/hierarchy/outfit/job/service/chef
+
+	equip(var/mob/living/carbon/human/H)
+		var/current_name = H.real_name
+		..()
+		H.fully_replace_character_name("Recruit. [current_name]")
+		H.add_stats(rand(8,12), rand(10,12), rand(10,12), rand(8,11)) //highly trained and skilled
+		H.add_skills(rand(1,3),rand(1,3),0,0,0)
+		H.assign_random_quirk()
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.warfare_faction = IMPERIUM
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
+		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Fleet volunteer, your training recently complete you were assigned kitchen duties. Since you're a native, it should be easier to get food from the village if needed, but you also have your own food supplies and growing areas. It is up to you to feed a hungry outpost.</font></b></span>")
+
