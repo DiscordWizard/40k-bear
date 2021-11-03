@@ -112,9 +112,9 @@
 	desc = "The standard weapon of Fleet forces not fortunate enough to get a gyrobolt, which is to say...most of them. Has many variants. The basic R9-01 is a near-mythical firearm that can work in any atmosphere, in any terrain, in any situation. The Fleet strip-mines worlds so they can make more of these, to arm more soldiers, to sail to more worlds, to strip-mine worlds...."
 
 /obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle/rsc
-	name = "1stFleet 'Firestarter' R9-02'
+	name = "1stFleet 'Firestarter' R9-02"
 	desc = "The standard weapon of Fleet forces. This one is the sharpshooter version. meant to accept stripper-clips and individual rounds, and accurate at longer ranges. Both this an the R9-01 were designed off of now-lost blueprints from Sol. They're the last pieces of home Humanity has left."
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
-	name = "\improper Stub Rifle"
-	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds. This one has a bayonet attached."
+	name = "\improper FTF 'Reliable' Rifle"
+	desc = "A civillian version of the R9-platform. Bolt action, but firing the same ammunition, and with a lighter frame that's generally more innacurate. This one has a bayonet."
