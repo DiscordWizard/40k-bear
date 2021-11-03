@@ -42,7 +42,6 @@
 
 
 //helmet
-
 /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	name = "Fleet Enforcer Helmet"
 	desc = "The Enforcer Helmet is issued to local planetary policing agencies the Fleet controls, Surprisingly protective for how cheap it is. May even keep your brain intact after a direct cranium-shot."

@@ -37,19 +37,19 @@
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
 	name = "Scrap Slug-Rifle"
-	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform. Not surprising, considering its origin. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
 	name = "Scrap Slug-Rifle"
-	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform. Not surprising, considering its origin. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle
 	name = "Scrap Slug-Rifle"
-	desc = "A rifle made from scrap. Quite exotic looking, if not surprisingly uniform. Not surprising, considering its origin. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform.  Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
 	name = "Scrap Slug-Rifle"
-	desc = "A rifle made from scrap. Quite exotic looking, if not surprisingly uniform. Not surprising, considering its origin. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
 
 
 
@@ -65,11 +65,11 @@
 	desc = "The Shine, unlike its younger sibling, the Junker, is a proper military weapon. It was created from the start with quality in mind, rather than raw availability. It features a heavier frame and laser-crystal assembly that helps keep the beam focused and more accurate."
 
 /obj/item/gun/energy/las/lasgun/luscius
-	name = "FF 'Hunter' Lasgun"
+	name = "FTF 'Hunter' Lasgun"
 	desc = "A semi-auto civillian version of the F-50 weapons platform, Frontier Firearm's 'Hunter' is surprisingly deadly. Although it features the same receiver as the F-50 models, nearly everything else has been swapped out. The battery-pack is fed into a large capacitor, resulting in a more powerful shot but causing it to be more likely to overheat."
 
 /obj/item/gun/energy/las/lasgun/luscius/rare
-	name = "FF 'Leviathan' Lasgun"
+	name = "FTF 'Leviathan' Lasgun"
 	desc = "A semi-auto civillian version of the F-50 weapons platform, Frontier Firearm's 'Leviathan' is surprisingly deadly. Although it features the same receiver as the F-50 models, nearly everything else has been swapped out. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
 
 /obj/item/gun/energy/captain
@@ -90,9 +90,31 @@
 
 /obj/item/gun/energy/las/laspistol
 	name = "1stFleet 'Holdout' F-50P Lasgun"
-	desc = "A rinky-dink laser pistol made for self defense, NCOs, and Mekhanists. A power-hog."
+	desc = "A rinky-dink laser pistol made for self defense, NCOs, and Mekhanists. A power-hog. Most commonly used for self-defense against wildlife on inhospitable worlds."
 
 /obj/item/gun/energy/las/laspistol
 	name = "1stFleet 'Breakout' F-50P1 Lasgun"
-	desc = "A rinky-dink laser pistol made for self defense, NCOs, and Mekhanists. This is the P1 variant, which fires from a more focused, heavier crystal. Less accurate, but has more punch. Might even be useful in a real fight."
+	desc = "A rinky-dink laser pistol made for self defense, NCOs, and Mekhanists. This is the P1 variant, which fires from a more focused, heavier crystal. More accurate, and has more punch. Might even be useful in a real fight."
 
+
+// firearms
+
+/obj/item/gun/projectile/shotgun/pump/shitty
+	name = "\improper FTF 'Home-Defense' Special"
+	desc = "The civillian variation of the 'Bulldozer' shotgun, the only difference being that this lacks a choke. Cheap and reliable, it uses no advanced technology. Anyone with blueprints, a forge, and some time could make this. Jams occasionally."
+
+/obj/item/gun/projectile/shotgun/pump/shitty/magrave
+	name = "\improper 1stFleet 'Bulldozer' S7A1"
+	desc = "A shotgun administered in small quantities to planetary officers by the First Fleet. This is just the military version of the 'Home-Defense' Special, the only difference being that this has a choke on it and has a few internal changes to increase reliability even further. Usually administered to officers."
+
+/obj/item/gun/projectile/automatic/m22/warmonger
+	name = "1stFleet 'Warmonger' R9-01"
+	desc = "The standard weapon of Fleet forces not fortunate enough to get a gyrobolt, which is to say...most of them. Has many variants. The basic R9-01 is a near-mythical firearm that can work in any atmosphere, in any terrain, in any situation. The Fleet strip-mines worlds so they can make more of these, to arm more soldiers, to sail to more worlds, to strip-mine worlds...."
+
+/obj/item/gun/projectile/automatic/m22/warmonger/m14/battlerifle/rsc
+	name = "1stFleet 'Firestarter' R9-02'
+	desc = "The standard weapon of Fleet forces. This one is the sharpshooter version. meant to accept stripper-clips and individual rounds, and accurate at longer ranges. Both this an the R9-01 were designed off of now-lost blueprints from Sol. They're the last pieces of home Humanity has left."
+
+/obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
+	name = "\improper Stub Rifle"
+	desc = "The stub rifle is a common sight across the galaxy, a hunting rifle firing large-bore rounds. This one has a bayonet attached."
