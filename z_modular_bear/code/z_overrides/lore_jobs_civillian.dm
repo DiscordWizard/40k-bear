@@ -318,7 +318,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	spawn_positions = 1
 	open_when_dead = 1
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "the Attendant, the Sergeant"
+	supervisors = "the Attendant, the Sergeant, anyone above you in rank"
 	selection_color = "#337C81"
 	access = list(access_hydroponics, access_bar, access_kitchen, access_maint_tunnels)
 	minimal_access = list(access_kitchen)
