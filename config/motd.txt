@@ -1,4 +1,4 @@
-<h1>Welcome to Untitled 40k Bear Project!</h1>
+<h1>Welcome to Untitled 40k-inspired Bear Project!</h1>
 
 -<i>This server is running IS12, a modification of the <a>Baystation 12</a> SS13 code.</i>
 
@@ -8,11 +8,16 @@ Do not break the atmosphere.
 
 Do not metagame.</strong>
 
-You are on Biblio-32c, a snowy, barren planet that became a penial colony for the Imperium. Heretics and criminals were sent here, miscreants for whom death was too harsh but walking free was too lenient. With the way these things go, however, the grinding bureaucracy of the Administratum took its toll. Over the years, less and less supplies and orders came, and less the divide became between officer and prisoner. What began as a harsh prison colony became a backwater, ignorant world. 
+You are on Biblio-32c, a planet that once bore rich fruit and beautiful cultures, until, seven years ago, the First Fleet invaded. Explosively. Within twelve hours, seventy percent of the planet's native flora and fauna had been killed. What chance did the natives have? They were fighting against particle cannons with swords and crossbows. 
 
-Two months ago, a Rogue Trader came to Biblio. Although the people of Biblio barely remembered a time where they were under the rule of the Imperium of Man, the Trader had negotiated and bargained with those in the Adeptus Administratum that still cared. They wanted a world, a mining colony, for their own. When they came to Biblio-32c, they were surprised. Not only were there a large amount of mutants and abhumans, most of them weren't even aware they were Imperium citizens...and none of them seemed to be aware of the large amount of Warp on their world. An undiscovered gate, perhaps?
+Just as soon as the Conflict ended, the Fleet's ships descended from orbit and began setting up machines that swallowed up mountains whole and spit them out. This wasn't just strip-mining- it was raw, calculated efficiency. Millions more flora and fauna died from the rapidly dropping temperatures and the destruction of their habitat. The natives who survived were met with the threat of starvation or being forcibly conscripted by the Fleet. The planet was being sucked dry, despite what little resistance was still put up.
 
-The Trader was intruiged. There were riches to be had here...and the danger was worth it. Even if the established nobility was mad about it, they were Imperium citizens, after all...
+Three years passed, and the world continued. The natives of the planet were no longer just unfortunate realities- they had been conscripted into service in mines and military. However, just as quick as the Fleet arrived, it left, taking their huge mineral-extractors back into space with them as they sailed far away. Only a skeleton installation remained to control the entire planet- but the damage was done. Nobody had seen sunlight in years because of the layer of snow and ash in the sky. Almost all native species were dead, aside from the sentient races that were tenacious enough to survive.
+
+The Fleet members unlucky enough to get put on planet-squatting duty had one advantage, at least- the native populace, generally, had not recovered. Though one organization remained, the House Nobility, it was full of weak, squabbling nobles that, surely, couldn't organize a revolution, right?
+
+But something continues to stir. Underneath the surface...the old Gods of Biblio might still exist.
+
 
 <br><br>
 <strong>Discord:</strong> <a href="https://discord.gg/D779aMU8kY">for posting of bugs, discussion and issues.</a> <� <strong>CLICK HERE!</strong>
