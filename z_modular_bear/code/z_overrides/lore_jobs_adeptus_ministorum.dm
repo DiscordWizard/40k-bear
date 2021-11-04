@@ -3,7 +3,7 @@
 //Confessor
 
 /datum/job/chaplain
-	title = "Ministorum Confessor"
+	title = "Nobility Shaman"
 	department = "Ministorum"
 	department_flag = CIV|COM
 	total_positions = 1
@@ -11,7 +11,7 @@
 	open_when_dead = 0
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "the Missionarus Galaxia and the Ecclesiarchy"
+	supervisors = "the House Nobility, and the Gods of Biblio"
 	selection_color = "#FCFBFA"
 	access = list(access_heads, access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels, access_sob)
 	minimal_access = list(access_heads, access_morgue, access_chapel_office, access_crematorium, access_sob)
@@ -53,8 +53,8 @@
 			return
 
 		spawn(0)
-			var/religion_name = "the Imperial Cult"
-			var/new_religion = sanitize(input(H, "You are a holy priest of the Ministorum. To change your religion would be heresy and would surely lead to a swift death.", "Name change", religion_name), MAX_NAME_LEN)
+			var/religion_name = "the olden Gods"
+			var/new_religion = sanitize(input(H, "You are a holy priest of the Olden Gods. Your resolve is clear..", "Name change", religion_name), MAX_NAME_LEN)
 
 			if (!new_religion)
 				new_religion = religion_name
@@ -66,10 +66,10 @@
 			feedback_set_details("religion_name","[new_religion]")
 
 		spawn(1)
-			var/deity_name = "The God Emperor of Mankind"
+			var/deity_name = "Eurydale"
 			var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is the Emperor", "Name change", deity_name), MAX_NAME_LEN)
 
-			if ((length(new_deity) == 0) || (new_deity == "The God Emperor of Mankind") )
+			if ((length(new_deity) == 0) || (new_deity == "Eurydale") )
 				new_deity = deity_name
 			B.deity_name = new_deity
 
