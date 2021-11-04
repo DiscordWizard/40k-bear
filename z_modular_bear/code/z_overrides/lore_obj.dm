@@ -1,3 +1,5 @@
+//statues and signs
+
 /obj/structure/statue/aquilla
 	name = "fleet insignia altar"
 	desc = "...the Fleet will march on in the face of danger and against all enemies, for we bear the Insignia of Sol, which fills us with strength, and means that..."
@@ -9,6 +11,10 @@
 /obj/structure/statue/verina/broken
 	name = "elegy for Eurydale"
 	desc = "Into a thousand ashes the Goddess of Nature disintegrated, gone from this realm. With her died thousands of stories, millions of untold little Lights that would never live to see the now-darkened, ashy-snowy sky where her remains blanket the world. Is the winter her fault? Is this revenge...?"
+
+/obj/structure/sign/imperial
+	name = "fleet insignia"
+	desc = "Into the void the Fleet marches, stopping only to bury our fallen before moving on. To a billion worlds have we sailed, and may a billion more pass us!"
 
 // doors
 

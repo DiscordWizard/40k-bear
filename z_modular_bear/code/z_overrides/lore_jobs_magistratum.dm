@@ -2,7 +2,7 @@
 // I HATE THIS I HATE THIS I HATE THIS I HATE THIS. FUCK THIS!! edits are going in the original files! this is terrible!!! this is all here for record-keeping purposes
 
 /datum/job/enforcer
-	title = "Fleet Enforcer"
+	title = "Fleet Conscript"
 	supervisors = "anyone in the Fleet, the Governor, and the village Administrator"
 	total_positions = 4
 	spawn_positions = 4

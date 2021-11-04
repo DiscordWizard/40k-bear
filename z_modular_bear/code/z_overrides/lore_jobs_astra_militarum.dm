@@ -48,7 +48,7 @@
 // Guardsmen
 
 /datum/job/ig/guardsman
-	title = "Imperial Guardsman"
+	title = "Fleet Patrolman"
 	total_positions = 20
 	spawn_positions = 20
 
