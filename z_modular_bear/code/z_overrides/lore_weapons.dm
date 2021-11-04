@@ -27,7 +27,7 @@
 
 /obj/item/gun/projectile/lockebolter
 	name = "DSS 'Takeshi' Gyro-Bolt Heavy"
-	desc = "A monstrous beast of a weapon. Only those lucky enough to wear old First-Fleet exosuits could hope to carry this. It's old, but it doesn't have a scratch on it, and it cycles like a charm."
+	desc = "A monstrous beast of a weapon. Found principally in the hands of Fleet Agents and Fleet Exo-Squads. It's old, but it doesn't have a scratch on it, and it cycles like a charm. Kills anything that moves."
 
 /obj/item/gun/projectile/bolter_pistol/astarte
 	name = "DSS 'Takeshi' Gyro-Bolt Medium"

@@ -13,12 +13,12 @@
 // doors
 
 /obj/machinery/door/airlock/imperiumdoor
-	name = "Minor Imperialis Doorway"
+	name = "fleet airlock"
 	desc = "A solemn door with iconography of the Flagship carved into it. It is made of scrap and copper mechanations."
 	icon = 'z_modular_bear/icons/obj/doors/imperiumdoor.dmi'
 
 /obj/machinery/door/airlock/imperiumdoor
-	name = "Minor Imperialis Doorway"
+	name = "fleet airlock"
 	desc = "A solemn door with iconography of the Flagship carved into it. It is made of scrap and copper mechanations."
 	icon = 'z_modular_bear/icons/obj/doors/imperiumdoor.dmi'
 
@@ -26,3 +26,10 @@
 	name = "reinforced airlock"
 	desc = "A reinforced, monstrously heavy door with an ornate archway. It is made of heavy metal. It has iconography scrawled into it resembling the Flagship, with its thrusters serving as status indicators and a large,emphasized canopy."
 	icon = 'z_modular_bear/icons/obj/doors/imperiumdoor.dmi'
+
+
+
+// signs
+
+/obj/structure/sign/bear
+	icon = 'z_modular_bear/icons/obj/decals.dmi'
