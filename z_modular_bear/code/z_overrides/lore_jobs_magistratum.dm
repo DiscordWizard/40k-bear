@@ -45,7 +45,7 @@
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are less than a recruit of the Fleet- you are a volunteer that has just signed up, either press-ganged into service or out of desperation. You are not seen as a 'real' Fleet soldier, and many natives probably see you as a traitor. Your job is to keep peace in the town, and stop worship of the old Gods of Biblio wherever you see them....even if you might be one yourself</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are less than a recruit of the Fleet- you are a native that has been either been press-ganged into service or joined out of desperation. You are not seen as a 'real' Fleet soldier, and many natives probably see you as a traitor. Your job is to keep peace in the town, and stop worship of the old Gods of Biblio wherever you see them....even if you might be one yourself</font></b></span>")
 
 
 /decl/hierarchy/outfit/job/ig/enforcer

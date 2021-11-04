@@ -33,11 +33,11 @@
 		SSwarfare.red.team += H
 		if(can_be_in_squad)
 			H.assign_random_squad(IMPERIUM)
-		H.fully_replace_character_name("Guardsman [H.real_name]")
+		H.fully_replace_character_name("Patrolman [H.real_name]")
 		H.assign_random_quirk()
 		H.witchblood()
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a soldier of the Imperium. Obey your Sergeant and Commissar. The Emperor Protects. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a rank-and-file recruit of the Fleet, above conscripts and volunteers but below actual soldiers. Obey your Sergeant, perform your duties, and you may be promoted to a proper position, off of this freezing rock and into the Fleet proper. </font></b></span>")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
@@ -85,7 +85,7 @@
 		H.assign_squad_leader(IMPERIUM)
 		H.warfare_faction = IMPERIUM
 		H.fully_replace_character_name("Sergeant [current_name]")
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the First Fleet, a proper soldier, and this job is miserable. You haven't gotten orders from the Fleet for months, the pay is nonexistant, and you're stuck with permanent riot control on a snowy, permanently-dark planet. Train the Conscripts, promote those who deserve it, defend the outpost, make sure the ore keeps flowing, and inspect those odd noises natives keep reporting. </font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Sergeant of the First Fleet, a proper soldier, and this job is miserable. You haven't gotten orders from the Fleet for months, the pay is nonexistant, and you're stuck with permanent riot control on a snowy, permanently-dark planet. Manage the Patrolmen and Conscripts, defend the outpost, make sure the ore keeps flowing, and inspect those odd noises natives keep reporting. </font></b></span>")
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
 		/mob/living/carbon/human/proc/nurgle,
@@ -289,27 +289,33 @@
 
 // REGIMENT SELECTION
 
+
+
+
 // TROOPER REGIMENT SELECTION
 
 /mob/living/carbon/human/proc/regimentselection()
 	set name = "Select your regiment"
 	set category = "Guardsmen"
-	set desc = "Choose your regiment"
+	set desc = "Choose your regiment or origin"
 	if(!ishuman(src))
-		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Wel Ard immediately</span>")
+		to_chat(src, "<span class='notice'>How are you seeing this, ping Bear immediately</span>")
 		return
 	if(src.stat == DEAD)
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
+	var/chapter = list("Standard", "Bio-Vat", "Catachan", "Biblio-Native") //lists all possible chapters
 	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
 
 	switch(chapterchoice)
-		if("Krieger")
-			var/troopnum = rand(1,50000)
-			src.name = "Guardsman [troopnum]"
-			src.real_name = "Guardsman [troopnum]"
+		if("Bio-Vat")
+//			var/troopnum = rand(1,1000)
+//			var/current_name = H.real_name
+//			src.name = "Guardsman [troopnum]"
+//			src.real_name = "Guardsman [troopnum]"
+//			H.fully_replace_character_name("Bio-Vat [current_name] [troopnum]")
+			to_chat(H, "<span class='notice'><b><font size=3>You are a Vatgrown soldier, probably grown by the outpost here to shore up their numbers. You're based off of...someone, somewhere.</font></b></span>")
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/krieger, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/shoes/jackboots/krieg, slot_shoes)
@@ -334,12 +340,13 @@
 
 			W.icon_state = "tagred"
 			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-			W.assignment = "Krieg Guardsman"
+			W.assignment = "Vatgrown Patrolman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 
-		if("Cadian")
+		if("Standard")
+			to_chat(H, "<span class='notice'><b><font size=3>You are a standard Fleet Patrolman, probably from the Fleet proper and sent here either to complete your training or as punishment duty for one of your mistakes. At least they didn't take your head, right...?.</font></b></span>")
 			equip_to_slot_or_del(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/guardsman, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
@@ -357,13 +364,14 @@
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+
 			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
 			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-			W.assignment = "Cadian Guardsman"
+			W.assignment = "Fleet Patrolman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
@@ -384,17 +392,20 @@
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			to_chat(H, "<span class='notice'><b><font size=3>You are a-... I'm going to be honest, I have no idea what to do with Catachan. Guess you're a Patrolman but in jungle camo.</font></b></span>")
+
 			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
 			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-			W.assignment = "Catachan Guardsman"
+			W.assignment = "Catachan Patrolman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
-		if("Valhallan")
+
+		if("Biblio-Native")
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallanarmor, slot_wear_suit)
@@ -410,13 +421,14 @@
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/five, slot_in_backpack)
+			to_chat(H, "<span class='notice'><b><font size=3>You are a Biblio native that struggled from Conscript up to Recruit. You have thick clothing that helps against the freezing weather, and a knowledge of local customs. You may be the best candidate to defuse problems with the House Nobility, should they arise. Though...many look at you as a traitor, now. And maybe for good reason.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/regimentselection,)
 
 			var/obj/item/card/id/dog_tag/guardsman/W = new
 
 			W.icon_state = "tagred"
 			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels)
-			W.assignment = "Valhallan Guardsman"
+			W.assignment = "Biblio Patrolman"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
