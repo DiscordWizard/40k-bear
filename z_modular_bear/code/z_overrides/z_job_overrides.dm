@@ -13,3 +13,8 @@
 /datum/job/ig/medicae
 	total_positions = 0
 	spawn_positions = 0
+
+/datum/job/envoy
+	title = "Astartes Envoy"
+	total_positions = 0
+	spawn_positions = 0

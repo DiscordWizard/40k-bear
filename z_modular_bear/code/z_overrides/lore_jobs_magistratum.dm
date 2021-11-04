@@ -45,7 +45,7 @@
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are less than a recruit of the Fleet- you are a native that has been either been press-ganged into service or joined out of desperation. You are not seen as a 'real' Fleet soldier, and many natives probably see you as a traitor. Your job is to keep peace in the town, and stop worship of the old Gods of Biblio wherever you see them....even if you might be one yourself</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are less than a recruit of the Fleet- you are a native that has been either been press-ganged into service or joined out of desperation. You are not seen as a 'real' Fleet soldier, so you're not trusted with a gun, and many natives probably see you as a traitor. You have been assigned to police the village, and stop worship of the old Gods of Biblio wherever you see them, even if you might be one yourself. You take orders from the Mayor as a policing force, and from the Fleet as conscripts.</font></b></span>")
 
 
 /decl/hierarchy/outfit/job/ig/enforcer
@@ -62,7 +62,7 @@
 	id_type = /obj/item/card/id/dog_tag/guardsman
 	pda_slot = null
 	l_ear = /obj/item/device/radio/headset/red_team/delta
-	suit_store = /obj/item/gun/projectile/shotgun/pump/shitty
+	suit_store = /obj/item/melee/trench_axe
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
 	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,

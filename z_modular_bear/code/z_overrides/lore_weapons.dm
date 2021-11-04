@@ -118,3 +118,10 @@
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
 	name = "\improper FTF 'Reliable' Rifle"
 	desc = "A civillian version of the R9-platform. Bolt action, but firing the same ammunition, and with a lighter frame that's generally more innacurate. This one has a bayonet."
+
+
+// MELEE WEAPONS
+
+/obj/item/melee/trench_axe
+	name = "Battle-Axe"
+	desc = "A classic heavy, sharp metal wedge on a stick. Good protection from most anything."
