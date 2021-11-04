@@ -2507,6 +2507,7 @@
 #include "maps\~unit_tests\unit_testing.dm"
 #include "z_modular_bear\code\_defines\size.dm"
 #include "z_modular_bear\code\_helpers\global_lists.dm"
+#include "z_modular_bear\code\game\objects\items\weapons\village.dm"
 #include "z_modular_bear\code\game\objects\structures\signs.dm"
 #include "z_modular_bear\code\maps\bear_areas.dm"
 #include "z_modular_bear\code\maps\warhammer_define.dm"

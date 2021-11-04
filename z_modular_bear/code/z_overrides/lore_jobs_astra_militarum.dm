@@ -305,7 +305,7 @@
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/chapter = list("Standard", "Bio-Vat", "Catachan", "Biblio-Native") //lists all possible chapters
+	var/chapter = list("Standard", "Bio-Vat", /*"Catachan",*/ "Biblio-Native") //lists all possible chapters
 	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
 
 	switch(chapterchoice)
@@ -376,6 +376,7 @@
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 
+/* //no idea what to do with these guys. maybe warm-weather? space-scrappers?
 		if("Catachan")
 			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/catachan, slot_head)
@@ -404,6 +405,7 @@
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+*/
 
 		if("Biblio-Native")
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
@@ -446,18 +448,18 @@
 		to_chat(src, "<span class='notice'>You can't choose a class when you're dead.</span>")
 		return
 	var/mob/living/carbon/human/U = src
-	var/static/list/chapter = list("Cadian", "Krieger", "Catachan", "Valhallan") //lists all possible chapters
+	var/static/list/chapter = list("Standard", "Bio-Vat", "Biblio-Native") //lists all possible chapters
 	if(!length(chapter))
-		chapter = list("Cadian", "Krieger", "Catachan", "Valhallan")
+		chapter = list("Cadian", "Krieger", /*"Catachan",*/ "Valhallan")
 	var/chapterchoice = input("Choose your regiment", "Available regiments") as anything in chapter
 	if(chapterchoice)
 		chapter -= chapterchoice
 
 	switch(chapterchoice)
-		if("Krieger")
-			var/troopnum = rand(1,50000)
-			src.name = "Watchmaster [troopnum]"
-			src.real_name = "Watchmaster [troopnum]"
+		if("Bio-Vat")
+//			var/troopnum = rand(1,50000)
+//			src.name = "Watchmaster [troopnum]"
+//			src.real_name = "Watchmaster [troopnum]"
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/krieg_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/kriegsgt, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/krieger, slot_back)
@@ -481,12 +483,12 @@
 
 			W.icon_state = "tagred"
 			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-			W.assignment = "Krieg Watchmaster"
+			W.assignment = "Bio-Vat Sergeant"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 
-		if("Cadian")
+		if("Standard")
 			equip_to_slot_or_del(new /obj/item/clothing/under/cadian_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/cadiansgt, slot_wear_suit)
 			equip_to_slot_or_del(new /obj/item/clothing/head/helmet/guardhelmet, slot_head)
@@ -511,11 +513,12 @@
 
 			W.icon_state = "tagred"
 			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-			W.assignment = "Cadian Sergeant"
+			W.assignment = "Fleet Sergeant"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
 
+/* //noo idea wtf to do with catachan. maybe, like...warm-weather?? idfk
 		if("Catachan")
 			equip_to_slot_or_del(new /obj/item/clothing/under/casual_pants/catachan, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/catachan, slot_head)
@@ -538,12 +541,13 @@
 
 			W.icon_state = "tagred"
 			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-			W.assignment = "Catachan Sergeant"
+			W.assignment = "Fleet Sergeant"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
+*/
 
-		if("Valhallan")
+		if("Biblio-Native")
 			equip_to_slot_or_del(new /obj/item/clothing/under/rank/valhallan_uniform, slot_w_uniform)
 			equip_to_slot_or_del(new /obj/item/clothing/head/valushanka, slot_head)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/armor/valhallasgt, slot_wear_suit)
@@ -552,9 +556,9 @@
 			equip_to_slot_or_del(new /obj/item/melee/mercycs, slot_belt)
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/gloves/combat/cadian, slot_gloves)
-			equip_to_slot_or_del(new /obj/item/gun/projectile/automatic/stubber, slot_l_hand)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
-			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/shield/buckler/custom, slot_l_hand)
+//			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
+//			equip_to_slot_or_del(new /obj/item/ammo_magazine/box/a556/mg08, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/reagent_containers/food/snacks/warfare/rat, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones2, slot_in_backpack)
@@ -565,7 +569,7 @@
 
 			W.icon_state = "tagred"
 			W.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_guard_armory, access_armory)
-			W.assignment = "Valhallan Sergeant"
+			W.assignment = "Biblio Sergeant"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)
