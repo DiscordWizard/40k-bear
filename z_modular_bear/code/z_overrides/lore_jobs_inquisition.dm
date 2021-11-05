@@ -13,9 +13,9 @@
 	economic_modifier = 7
 	minimal_player_age = 18
 	outfit_type = /decl/hierarchy/outfit/job/acolyte
-	alt_titles = list(
-		"Internal Affairs Agent" = /decl/hierarchy/outfit/job/acolyte/malleus
-		)
+//	alt_titles = list(
+//		"Internal Affairs Agent" = /decl/hierarchy/outfit/job/acolyte/malleus
+//		)
 	announced = FALSE
 	auto_rifle_skill = 5
 	semi_rifle_skill = 5
@@ -65,9 +65,9 @@
 	minimal_player_age = 21
 	open_when_dead = 0
 	outfit_type = /decl/hierarchy/outfit/job/inquisitor
-	alt_titles = list(
-		"Internal Affairs Officer" = /decl/hierarchy/outfit/job/inquisitor/malleus
-		)
+//	alt_titles = list(
+//		"Internal Affairs Officer" = /decl/hierarchy/outfit/job/inquisitor/malleus
+//		)
 	announced = FALSE
 	auto_rifle_skill = 7
 	semi_rifle_skill = 7
@@ -118,3 +118,9 @@
 		to_world("<span class=danger><b>[src.real_name] declares the following an enemy of the Fleet::</b><p style='text-indent: 50px'>[message]</p></span>")
 		log_admin("Announce: [key_name(usr)] : [message]")
 
+
+/decl/hierarchy/outfit/job/acolyte
+	name = OUTFIT_JOB_NAME("Fleet Agent")
+
+/decl/hierarchy/outfit/job/inquisitor
+	name = OUTFIT_JOB_NAME("Fleet Principal Agent")
