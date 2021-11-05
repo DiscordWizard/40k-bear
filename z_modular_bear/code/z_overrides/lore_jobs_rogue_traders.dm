@@ -85,8 +85,6 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are the attendant to the Fleet Governor. You are to handle their issues when they are not present. If the Governer becomes incapacitated then you assume command. While they are alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it.</font></b></span>")
-
-
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,
 			            access_medical, access_engine, access_change_ids, access_ai_upload, access_eva, access_heads,
 			            access_all_personal_lockers, access_maint_tunnels, access_bar, access_janitor, access_construction, access_morgue,
@@ -99,7 +97,6 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			            access_crematorium, access_kitchen, access_cargo, access_cargo_bot, access_mailsorting, access_qm, access_hydroponics, access_lawyer,
 			            access_chapel_office, access_library, access_research, access_mining, access_heads_vault, access_mining_station,
 			            access_hop, access_RC_announce, access_keycard_auth, access_gateway, access_treasury)
-
 	outfit_type = /decl/hierarchy/outfit/job/hop
 
 /mob/living/carbon/human/proc/hire(var/mob/living/carbon/human/M in view(src))
@@ -147,3 +144,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			src.say("Welcome to my service.")
 		else
 			return
+
+
+/decl/hierarchy/outfit/job/hop
+	name = OUTFIT_JOB_NAME("Attendant")
+
