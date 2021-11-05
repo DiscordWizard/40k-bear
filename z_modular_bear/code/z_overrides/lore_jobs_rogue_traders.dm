@@ -1,8 +1,5 @@
 
 
-
-
-
 // Rogue Trader
 
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
@@ -25,7 +22,7 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 	economic_modifier = 20
 	announced = FALSE
 	latejoin_at_spawnpoints = TRUE
-	ideal_character_age = 60
+	ideal_character_age = 40
 	outfit_type = /decl/hierarchy/outfit/job/captain
 	auto_rifle_skill = 5
 	semi_rifle_skill = 5
@@ -146,6 +143,10 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 			return
 
 
+// decl for outfits so access doesn't get messed up
 /decl/hierarchy/outfit/job/hop
 	name = OUTFIT_JOB_NAME("Attendant")
+
+/decl/hierarchy/outfit/job/captain
+	name = OUTFIT_JOB_NAME("Fleet Governor")
 

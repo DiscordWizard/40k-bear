@@ -49,7 +49,7 @@
 
 
 /decl/hierarchy/outfit/job/ig/enforcer
-	name = OUTFIT_JOB_NAME("Magistratum Enforcer")
+	name = OUTFIT_JOB_NAME("Fleet Conscript")
 	head = /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	uniform = /obj/item/clothing/under/color/brown
 	shoes = /obj/item/clothing/shoes/jackboots
