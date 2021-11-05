@@ -143,8 +143,8 @@
 		return 1
 
 /obj/item/melee/whip/censer
-	name = "imperial censer"
-	desc = "A golden censer leaking pure smelling incense. Used by the Ecclesiarchy for blessings."
+	name = "gold-copper censer"
+	desc = "A censer made out of an odd copper-gold material that's warm to the touch, even when unlit. Glows faintly. There are certain runes carved into it."
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "censer"
@@ -161,6 +161,7 @@
 			M.STAT_LEVEL(dex) += 1
 			M.STAT_LEVEL(str) += 1
 			M.isblessed = 1
+			usr.say("Eurydale emta a' [M] et manis.")
 			visible_message("[M] inhales the holy incense and is blessed!")
 
 
@@ -175,6 +176,7 @@
 		O.armor_penetration += 1
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
+//		usr.say("Netha al em'no kor do.")
 		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
 
 //this blesses swords
@@ -188,6 +190,7 @@
 		O.block_chance += 5
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
+//		usr.say("Il alem alsa, Eurydale el matela")
 		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
 
 

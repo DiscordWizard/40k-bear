@@ -1,5 +1,5 @@
 // enforcer, stored in magistratum.dm
-// I HATE THIS I HATE THIS I HATE THIS I HATE THIS. FUCK THIS!! edits are going in the original files! this is terrible!!! this is all here for record-keeping purposes
+// I HATE THIS I HATE THIS I HATE THIS I HATE THIS.
 
 /datum/job/enforcer
 	title = "Fleet Conscript"

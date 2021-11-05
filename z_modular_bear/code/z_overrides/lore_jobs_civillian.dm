@@ -7,8 +7,8 @@
 	department = "Service"
 	department_flag = CIV
 	social_class = SOCIAL_CLASS_MIN
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	latejoin_at_spawnpoints = TRUE
 	open_when_dead = 1
 	supervisors = "Every Imperial Citizen"
@@ -44,6 +44,7 @@
 		H.nutrition = INFINITY
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for managing a bar and serving drinks. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
 
+
 // Cook
 
 /datum/job/chef
@@ -54,7 +55,7 @@
 	spawn_positions = 1
 	open_when_dead = 1
 	latejoin_at_spawnpoints = TRUE
-	supervisors = "the Seneschal, the Commissar"
+	supervisors = "the Governor, anyone higher in ranking"
 	selection_color = "#337C81"
 	access = list(access_hydroponics, access_bar, access_kitchen, access_maint_tunnels)
 	minimal_access = list(access_kitchen)
@@ -65,7 +66,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Pvt. [current_name]")
+		H.fully_replace_character_name("Conscript. [current_name]")
 		H.add_stats(rand(8,12), rand(10,12), rand(10,12), rand(8,11)) //highly trained and skilled
 		H.add_skills(rand(1,3),rand(1,3),0,0,0)
 		H.assign_random_quirk()
@@ -76,7 +77,7 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Trooper, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Conscript, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
 
 // Farmer
 
@@ -86,7 +87,7 @@
 	department_flag = CIV
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the Seneschal"
+	supervisors = "the Attendant"
 	selection_color = "#848484"
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_hydroponics, access_bar, access_kitchen,access_maint_tunnels, access_grox)
@@ -119,7 +120,7 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>Possibly the most important job on the entire planet. The Guard will thrive or starve depending on how skilled you are. Report to your farm in the southeastern corner of the outpost and get growing!</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>The most important job on the planet. You are tasked with growing food on a planet that has not seen a clear sky in seven years. Try your best to do...anything, with what you're given, not that you want to be here, anyway.</font></b></span>")
 
 // Janitor Servitor
 
@@ -127,8 +128,8 @@
 	title = "Janitor Servitor"
 	department = "Service"
 	department_flag = CIV
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	open_when_dead = 1
 	latejoin_at_spawnpoints = TRUE
 	social_class = SOCIAL_CLASS_MIN
@@ -164,3 +165,4 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for cleaning and maintaining the outpost. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
+
