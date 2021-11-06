@@ -1,5 +1,5 @@
 /datum/job/magos
-	title = "Magos Dominus"
+	title = "Nullmind"
 	department = "Adeptus Mechanicus"
 	head_position = 1
 	department_flag = ENG|COM|SCI
@@ -7,7 +7,7 @@
 	total_positions = 1
 	spawn_positions = 1
 	open_when_dead = 0
-	supervisors = "the Adeptus Mechanicus"
+	supervisors = "the Governor and Fleet Admirality"
 	selection_color = "#7f6e2c"
 	req_admin_notify = 1
 	access = list() 			//See get_access()
@@ -41,11 +41,11 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Magos [current_name]")
+		H.fully_replace_character_name("Nullbody [current_name]")
 		H.add_stats(rand(12,15), rand(14,16), rand(15,18), rand(16,20)) //idk what to do with Magos xd
 		H.warfare_faction = IMPERIUM
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
-		to_chat(H, "<span class='notice'><b><font size=3>Bear doesn't know what to do with this job yet! Sorry!</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You carry vague memories of the life before you were taken by the Fleet and turned into a Nullmind. Cold air. Family. Fire. Now, you are a hollow shell of a person, your insides scooped out and replaced with robotics. Unlike the Nullbodies, you still have some of your personality and memories- it is necessary, as you are the one that is responsible for maintaining the outpost.</font></b></span>")
 		H.bladder = -INFINITY
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
@@ -55,13 +55,13 @@
 
 
 /datum/job/engineer
-	title = "Tech Priest Enginseer"
+	title = "Nullbody"
 	department = "Engineering"
 	department_flag = ENG
 	social_class = SOCIAL_CLASS_MED
 	total_positions = 4
 	spawn_positions = 4
-	supervisors = "the Magos"
+	supervisors = "the Governor, any Fleet members, the Nullmind"
 	selection_color = "#B2A15F"
 	economic_modifier = 5
 	minimal_player_age = 7
@@ -86,7 +86,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Tech-Priest [current_name]")
+		H.fully_replace_character_name("Nullbody [current_name]")
 		H.add_stats(rand(12,14), rand(10,13), rand(12,15), rand(14,16)) //idk what to do with Magos xd
 		H.add_skills(rand(2,5),rand(2,5),rand(1,2),rand(6,9),0)
 		H.warfare_language_shit(LANGUAGE_MECHANICUS)
@@ -95,7 +95,7 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
-		to_chat(H, "<span class='notice'><b><font size=3>Praise the Omnissiah! You live to further mankinds knowledge and understanding of technology. Obey your Magos and ensure all machine spirits are pleased.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Nullbody- a native that was taken by the Fleet and turned into a service-thing. In your past life, you were a fierce rebel against the Fleet, or a caring parent, or someone else entirely. Now, your memories are just vague blurs, black-and-white, washed out by the thousands of manuals of technical information the Fleet has pumped into you. Who were you? Does it matter, anymore? <ins>You are playing as a partial lobotomite. Keep this in mind when roleplaying.</ins></font></b></span>")
 
 // Biologis
 
