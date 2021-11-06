@@ -105,8 +105,8 @@
 	title = "Magos Biologis"
 	department = "Medical"
 	department_flag = MED|SCI|ENG
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	minimal_player_age = 7
 	open_when_dead = 1
 	supervisors = "the Sister Hospitaller and Magos"
@@ -145,8 +145,8 @@
 	department = "Science"
 	department_flag = SCI
 
-	total_positions = 3
-	spawn_positions = 2
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Magos Dominus"
 	selection_color = "#633d63"
 	economic_modifier = 7

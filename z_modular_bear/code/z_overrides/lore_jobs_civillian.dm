@@ -77,17 +77,17 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Conscript, your training recently complete you were assigned kitchen duties. It is up to you to feed a hungry outpost.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Conscript, your training recently complete you were assigned kitchen duties. You are safer and warmer inside than the other Conscripts in the village serving as a policing force, but your job is no easier- you have to feed an army that bombed your home into an ash-filled, year-round winter..</font></b></span>")
 
 // Farmer
 
 /datum/job/hydro
-	title = "Farmer"
+	title = "Hydroponics Associate"
 	department = "Service"
 	department_flag = CIV
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the Attendant"
+	supervisors = "the Attendant, cruel entropy"
 	selection_color = "#848484"
 	latejoin_at_spawnpoints = TRUE
 	access = list(access_hydroponics, access_bar, access_kitchen,access_maint_tunnels, access_grox)
@@ -120,7 +120,10 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>The most important job on the planet. You are tasked with growing food on a planet that has not seen a clear sky in seven years. Try your best to do...anything, with what you're given, not that you want to be here, anyway.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>The most important job in the outpost. You are tasked with growing food on a planet that has not seen a clear sky in seven years. Try your best to do...anything, with what you're given, not that you want to be here, anyway.</font></b></span>")
+
+/decl/hierarchy/outfit/job/service/gardener
+
 
 // Janitor Servitor
 

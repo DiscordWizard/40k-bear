@@ -3,7 +3,7 @@
 //Confessor
 
 /datum/job/chaplain
-	title = "Nobility Shaman"
+	title = "Godhead Speaker"
 	department = "Ministorum"
 	department_flag = CIV|COM
 	total_positions = 1
@@ -34,12 +34,12 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Confessor [current_name]")
+		H.fully_replace_character_name("Speaker [current_name]")
 		H.add_stats(rand(10,13), rand(10,13), rand(10,12), rand(12,16)) //frail and holy
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Confessor-Millitant attached to the Rogue Trader through the Missionarus Galaxia. You are one of the Ecclesiarchy's fearsome zealot preachers, your oratory skills can stir entire crowds and cause them to turn on one another, exposing eachother's darkest secrets. You often work on worlds where faith is lacking, and people are rebellious. It is your job to preach to the flock and indoctrinate new individuals into it, protect the chapel, and ensure the relics in your reliquary remain safe and untouched by the unworthly.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
@@ -54,7 +54,7 @@
 
 		spawn(0)
 			var/religion_name = "the olden Gods"
-			var/new_religion = sanitize(input(H, "You are a holy priest of the Olden Gods. Your resolve is clear..", "Name change", religion_name), MAX_NAME_LEN)
+			var/new_religion = sanitize(input(H, "You are a holy priest of the Olden Gods. Your resolve is clear.", "Name change", religion_name), MAX_NAME_LEN)
 
 			if (!new_religion)
 				new_religion = religion_name
@@ -67,9 +67,9 @@
 
 		spawn(1)
 			var/deity_name = "Eurydale"
-			var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is the Emperor", "Name change", deity_name), MAX_NAME_LEN)
+			var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is the Allfather", "Name change", deity_name), MAX_NAME_LEN)
 
-			if ((length(new_deity) == 0) || (new_deity == "Eurydale") )
+			if ((length(new_deity) == 0) || (new_deity == "Allfather") )
 				new_deity = deity_name
 			B.deity_name = new_deity
 
@@ -161,7 +161,7 @@
 			M.STAT_LEVEL(dex) += 1
 			M.STAT_LEVEL(str) += 1
 			M.isblessed = 1
-			usr.say("Eurydale emta a' [M] et manis.")
+			usr.say("Allfather emta a' [M] et manis.")
 			visible_message("[M] inhales the holy incense and is blessed!")
 
 
@@ -377,15 +377,17 @@
 
 //Hospitaller
 
+// chemist - radically different direction. serve as a 'village doctor'.
+
 /datum/job/chemist
-	title = "Hospitaller Advance"
+	title = "Village Doctor"
 	department = "Medical"
 	department_flag = MED
 	social_class = SOCIAL_CLASS_MED
 	minimal_player_age = 7
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the Sister Hospitaller"
+	total_positions = 1
+	spawn_positions = 1
+	supervisors = "the Mayor, your conscience"
 	selection_color = "#967096"
 	economic_modifier = 5
 	latejoin_at_spawnpoints = TRUE
@@ -415,4 +417,4 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You mix and concoct the numerous decoctions, medicines and salves so beloved by the Ordos Hospitaller.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the village doctor, a medicine-person for your wounded whom the Fleet either pass over, will not be quick enough to retrieve...or are trying to kill. Getting advanced medical supplies has been difficult, especially since you are not seen as a 'real' doctor by the Fleet. Carry the wounded's burdens.</font></b></span>")
