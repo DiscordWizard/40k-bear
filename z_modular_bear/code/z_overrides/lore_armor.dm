@@ -50,3 +50,21 @@
 	name = "Fleet Petty Officer Helmet"
 	desc = "A helmet issued to leaders of local Fleet policing forces. It is painted in a dark blue colour."
 
+// Magos / Nullbody
+
+/obj/item/clothing/head/hardhat/techpriest
+	name = "augmented head"
+	desc = "The augmented skull and hood surgically implanted onto Nullbodies. What memories are kept in that chrome head, locked away with the key of your implant?"
+
+/obj/item/clothing/head/hardhat/techpriest
+	name = "augmented head"
+	desc = "The augmented skull and hood surgically implanted onto Nullminds. What memories are kept in that chrome head, locked away with the key of your implant? "
+
+/obj/item/clothing/suit/storage/hazardvest/magos/
+	name = "Nullmind robes"
+	desc = "These robes hide a mess of chrome and wires, grotesque misshapen flesh, secrets. Who was the person underneath this?"
+
+/obj/item/clothing/suit/storage/hazardvest/magos/techpriest
+	name = "Nullbody robes"
+	desc = "These robes hide a mess of chrome and wires, grotesque misshapen flesh, secrets. Who was the person underneath this?"
+

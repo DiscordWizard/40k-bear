@@ -13,7 +13,7 @@
 	force = 35
 	block_chance = 35
 	// force_divisor = 0.8 // Do not turn this back on.
-	// thrown_force_divisor = 0.2 // 
+	// thrown_force_divisor = 0.2 //
 	sharp = 1
 	edge = 1
 	attack_verb = list("slashed", "sliced")

@@ -27,7 +27,7 @@
 
 /obj/item/gun/projectile/lockebolter
 	name = "DSS 'Takeshi' Gyro-Bolt Heavy"
-	desc = "A monstrous beast of a weapon. Only those lucky enough to wear old First-Fleet exosuits could hope to carry this. It's old, but it doesn't have a scratch on it, and it cycles like a charm."
+	desc = "A monstrous beast of a weapon. Found principally in the hands of Fleet Agents and Fleet Exo-Squads. It's old, but it doesn't have a scratch on it, and it cycles like a charm. Kills anything that moves."
 
 /obj/item/gun/projectile/bolter_pistol/astarte
 	name = "DSS 'Takeshi' Gyro-Bolt Medium"
@@ -99,13 +99,13 @@
 
 // firearms
 
-/obj/item/gun/projectile/shotgun/pump/shitty
-	name = "\improper FTF 'Home-Defense' Special"
-	desc = "The civillian variation of the 'Bulldozer' shotgun, the only difference being that this lacks a choke. Cheap and reliable, it uses no advanced technology. Anyone with blueprints, a forge, and some time could make this. Jams occasionally."
-
 /obj/item/gun/projectile/shotgun/pump/shitty/magrave
-	name = "\improper 1stFleet 'Bulldozer' S7A1"
-	desc = "A shotgun administered in small quantities to planetary officers by the First Fleet. This is just the military version of the 'Home-Defense' Special, the only difference being that this has a choke on it and has a few internal changes to increase reliability even further. Usually administered to officers."
+	name = "\improper FTF 'Home-Defense' Special"
+	desc = "A shotgun that's remarkably similar to the WTX 'Defender' shotgun,. Cheap and reliable, it uses no advanced technology. Anyone with blueprints, a forge, and some time could make this. Jams occasionally."
+
+/obj/item/gun/projectile/shotgun/pump/shitty
+	name = "\improper WTX 'Defender' S7A1"
+	desc = "A shotgun made by the Biblio-native 'Wild Terrain' gunforging company. This is remarkably similar to the FTF 'Mome-Defense' Special, the only difference being that this has lacks a choke and is heavier, making quick target acquisition harder and use as a club better. Usually administered to Biblio patrolmen."
 
 /obj/item/gun/projectile/automatic/m22/warmonger
 	name = "1stFleet 'Warmonger' R9-01"
@@ -118,3 +118,34 @@
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/bayonet
 	name = "\improper FTF 'Reliable' Rifle"
 	desc = "A civillian version of the R9-platform. Bolt action, but firing the same ammunition, and with a lighter frame that's generally more innacurate. This one has a bayonet."
+
+/obj/item/gun/projectile/automatic/machinepistol
+	name = "1stFleet 'Wayside' A-80 Machinepistol"
+	desc = "The A-80 is an infamous weapon. It was used by Fleet forces to crack down on dissidents after the Conflict. Old, but still reliable, now mostly seen in the hands of common folk. Can accept rubber or lethal bullets."
+
+/obj/item/gun/projectile/automatic/machinepistol/a80
+	name = "!stFleet 'Night' A-81 Machinepistol"
+	desc = "An updated version of the A-80 machinepistol, featuring better recoil compensation and sights. Also a bit lighter, to boot. This was the weapon used by Fleet forces to crack down on dissidents. Can accept rubber or lethal bullets."
+
+/obj/item/gun/projectile/automatic/autogrim
+	name = "WTX 'Delta' RA52"
+	desc = "A rugged rifle that fires 5.56 rounds with a devastating punch. The internals are suspiciously similar to that of a R9-01 'Warmonger', but scaled for a larger caliber  Debatably, somehow, better than Fleet weapons. Who made this...?"
+
+/obj/item/gun/projectile/automatic/autoshotty
+	name = "1stFleet 'Bulldozer' Shotgun"
+	desc = "A long time ago, back in Sol, someone had the idea for an automatic shotgun. How appropriate that it would be the only design to survive to the next millenium. The only shotgun in the 1stFleet's armory, it fires quickly and kills even quicker. Tears through unarmored flesh like paper."
+
+/obj/item/gun/projectile/warfare/kieji
+	name = "1stFleet 'Skeleton' P-05"
+	desc = "A First Fleet pistol meant for EVA operations. Has a unique design- as opposed to a virtual HUD, the ammo count is instead displayed by an open magazine. Dirt and grime routinely jam the weapon whenever used planetside. Requires lots of maintenance."
+
+/obj/item/gun/projectile/automatic/stubber
+	name = "1stFleet 'Lumberjack' "
+	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
+
+
+// MELEE WEAPONS
+
+/obj/item/melee/trench_axe
+	name = "Battle-Axe"
+	desc = "A classic heavy, sharp metal wedge on a stick. Good protection from most anything."
