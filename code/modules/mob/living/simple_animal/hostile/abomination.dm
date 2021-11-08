@@ -20,13 +20,12 @@
 	response_disarm = "struggles against the mass of"
 	response_harm   = "slaps"
 	stop_automated_movement_when_pulled = 1 //lets you pull and release your new friend
-	maxHealth = 5000 //lamo lets see if this is retarded
-	health = 5000
-	melee_damage_lower = 90
-	melee_damage_upper = 90
-	harm_intent_damage = 90
+	melee_damage_lower = 40 // This value does nothing
+	melee_damage_upper = 50 // This value does nothing
+	harm_intent_damage = 40
 	attacktext = "impaled"
-	speed = -1 //ZOOM
+	speed = 0 //ZOOM
+	environment_smash = 1
 
 
 	//aboms dont need NO ATMOS
@@ -115,7 +114,7 @@
 		return
 	custom_emote(1, pick( list("impales [target_mob]", "vomits on [target_mob]") ) )
 
-	var/damage = rand(100,130)
+	var/damage = rand(40,55)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
