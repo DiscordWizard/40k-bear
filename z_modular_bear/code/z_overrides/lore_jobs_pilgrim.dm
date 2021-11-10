@@ -216,6 +216,34 @@ Pilgrim Fate System
 		to_chat(H, "<span class='notice'><b><font size=3>You are the owner of a sizeable bar and inn, one of the last in the county. Thanks to some deals, you managed to pick up some fancy Fleet equipment that helps you mix drinks and cook food. You need the help, considering it's almost impossible to grow anything with all this snow....</font></b></span>")
 
 
+/datum/job/merchant  //meh lol
+	title = "House Noble"
+	department_flag = PIL
+	social_class = SOCIAL_CLASS_MAX
+	total_positions = 0 //need to finish you first, friend.
+	spawn_positions = 0
+	open_when_dead = 1
+	supervisors = "Money"
+	selection_color = "#848484"
+	access = list(access_bar,)
+	minimal_access = list(access_bar)
+	outfit_type = /decl/hierarchy/outfit/job/merchant
+	latejoin_at_spawnpoints = TRUE
+	announced = FALSE
+
+	equip(var/mob/living/carbon/human/H)
+		H.warfare_faction = IMPERIUM
+		..()
+		H.add_stats(rand(10,14), rand(10,14), rand(10,12), rand (9,11)) //they suck and are supposed to suck
+		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.assign_random_quirk()
+		H.verbs += list(
+		/mob/living/carbon/human/proc/khorne,
+		/mob/living/carbon/human/proc/nurgle,
+		/mob/living/carbon/human/proc/slaanesh,
+		/mob/living/carbon/human/proc/tzeentch)
+		to_chat(H, "<span class='notice'><b><font size=3>You are one of the last nobles on Biblio-32c that survived the Conflict. In a manner of twelve hours, your old life was erased by laser blasts from the sky, huge columns of fire that wiped out all traces of who you were. You life in relative squalor compared to what you used to live in, but it is still better than what the peasants are living in. Your goals often run against the Fleet's, trying to reduce their influence over what is rightly your land by birthright.</font></b></span>")
+
 /datum/job/administrator  //so that the inn always has someone working
 	title = "Mayor"
 	department_flag = PIL|COM
@@ -281,6 +309,24 @@ Pilgrim Fate System
 	/obj/item/stack/thrones3/five = 1,
 )
 
+/decl/hierarchy/outfit/job/merchant
+	name = OUTFIT_JOB_NAME("House Noble")
+	uniform = /obj/item/clothing/suit/merchant
+	pda_type = /obj/item/device/pda/penitent
+	back = /obj/item/storage/backpack/satchel/warfare
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	head = /obj/item/clothing/head/smokingcap
+	l_ear = null
+	r_ear = null
+	pda_slot = null
+	shoes = /obj/item/clothing/shoes/vigilante
+	suit_store = null
+	backpack_contents = list(
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2 = 1,
+	/obj/item/stack/thrones3/five = 1,
+)
+
 
 //Administrator
 /decl/hierarchy/outfit/job/administrator
@@ -302,3 +348,4 @@ Pilgrim Fate System
 
 	)
 	flags = OUTFIT_NO_BACKPACK|OUTFIT_NO_SURVIVAL_GEAR
+
