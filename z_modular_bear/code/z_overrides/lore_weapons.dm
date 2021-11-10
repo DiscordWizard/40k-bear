@@ -149,3 +149,29 @@
 /obj/item/melee/trench_axe
 	name = "Battle-Axe"
 	desc = "A classic heavy, sharp metal wedge on a stick. Good protection from most anything."
+
+/obj/item/toy/katana/seolite
+	name = "single-edged blade"
+	color = "grey"
+	desc = "A blade with a razor-sharp edge. This looks like it was made by masters."
+	force = 39
+	throwforce = 20
+
+/obj/item/material/sword/cane/seolite
+	block_chance = 60
+	force = 33
+	name = "exquisite rapier"
+	desc = "An exquisite rapier, this blade is weighted perfectly in your hand. A large hilt allows for easy blocking."
+
+/obj/item/material/hatchet/machete/deluxe/seolite
+	name = "old cutter"
+	desc = "A cumbersome sword used for hacking and slicing."
+
+/obj/item/melee/classic_baton/daemonhammer
+	name = "daemonhammer"
+	desc = "A power weapon of incredible."
+	str_requirement = 13
+	force = 44
+	block_chance = 38
+	grab_sound_is_loud = TRUE
+	weapon_speed_delay = 12
