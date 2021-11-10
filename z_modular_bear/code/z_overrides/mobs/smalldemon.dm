@@ -72,3 +72,36 @@
 	maxHealth = 150
 	health = 150
 
+
+
+/mob/living/simple_animal/hostile/smalldemon/bubblingmass
+	name = "Grotesque Horror" // Slow. S L O W. Unchanged stats.
+	real_name = "Grotesque Horror"
+	desc = "This violet bubbling mass of flesh and meat crawls toward you. Incredibly slow. Devestatingly powerful." // Bubbling masses similar to Zygotes are slow and more deadly in caves/dungeons.
+	speak_emote = list("harks")
+	emote_hear = list("growls")
+	response_help  = "gnashes"
+	response_disarm = "shoves"
+	response_harm   = "mauls"
+	attacktext = "crushes"
+	see_in_dark = 6
+
+	speed = 6
+
+/mob/living/simple_animal/hostile/smalldemon/bubblingmass/AttackingTarget()
+	if(!Adjacent(target_mob))
+		return
+	custom_emote(1, pick( list("bites [target_mob]", "crushes [target_mob]") ) ) // attack emotes
+
+	var/damage = rand(40,58) // Damage Value
+
+	if(ishuman(target_mob))
+		var/mob/living/carbon/human/H = target_mob
+		var/dam_zone = pick(BP_CHEST)
+		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
+		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE) // damage type
+		return H
+	else if(isliving(target_mob))
+		var/mob/living/L = target_mob
+		L.adjustBruteLoss(damage)
+		return L
