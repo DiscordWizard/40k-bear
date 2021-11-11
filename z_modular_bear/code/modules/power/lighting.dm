@@ -1,10 +1,10 @@
 /obj/machinery/light/stolb/rolb
 	icon = 'z_modular_bear/icons/obj/lighting.dmi'
 	icon_state = "rolb1"
-	base_state = "rolb"
+	base_state = "rolb0 "
 	name = "rolb"
 	desc = "A light that eminates a mysterious pale blue light. What powers it is isn't immediately apparent."
-	light_type = /obj/item/light/bulb/stolb
+	light_type = /obj/item/light/bulb/rolb
 	construct_type = /obj/machinery/light_construct/small
 	idle_power_usage = 0
 	active_power_usage = 0
