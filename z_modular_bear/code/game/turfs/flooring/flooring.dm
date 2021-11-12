@@ -4,7 +4,7 @@
 
 /turf/simulated/floor/dirty/sewers //use exclusively for the sewers on warhammer-1.dm
 	name = "sewers" //"snowy dirt"
-	desc = "Sewer water and...something, at the bottom. Smells revolting. You can barely breathe while near it, let alone submerged in it. Doesn't seem like a good idea to wade through it without a mask and oxygen."
+	desc = "Sewer water and...something, at the bottom. Smells revolting. You can barely breathe while near it, let alone submerged in it. Doesn't seem like a good idea to wade through it without a gas mask."
 	icon = 'icons/turf/dirt.dmi'
 	icon_state = "dirt1"
 	movement_delay = 5
