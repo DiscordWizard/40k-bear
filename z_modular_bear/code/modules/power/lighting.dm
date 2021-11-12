@@ -18,6 +18,6 @@
 	base_state = "fbulb"
 	item_state = "egg4"
 	matter = list("glass" = 100)
-	brightness_range = 7
+	brightness_range = 8
 	brightness_power = 2
 	brightness_color = "#3B95AB"
