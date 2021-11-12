@@ -60,7 +60,7 @@
 /obj/item/material/mekmace
 	name = "scrap mace"
 	desc = "A mace normally used by mek boys made of scrap."
-	force = 30
+	force = 28
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "mekmace"
 	item_state = "mekmace"
@@ -111,7 +111,7 @@
 	item_state = "trenchaxe"
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
-	force = 35
+	force = 30
 	block_chance = 30
 	sharp = TRUE
 	edge = TRUE
@@ -127,25 +127,27 @@
 	name = "runic axe"
 	color = "grey"
 	desc = "A strange alien axe used for unknown purposes, it's construction seems ritualistic in nature."
-	force = 36
+	force = 33
 	block_chance = 40
 
 /obj/item/toy/katana/seolite
 	name = "seolite blade"
 	color = "grey"
 	desc = "A fine blade far exceeding the craftsmanship of the mechanicus."
-	force = 39
+	force = 35
 	throwforce = 20
 
 /obj/item/material/sword/cane/seolite
 	block_chance = 60
-	force = 33
+	force = 30
 	name = "ancient rapier"
 	desc = "This runic blade is of excellent quality and make, it fits perfectly in your hand."
 
 /obj/item/material/hatchet/machete/deluxe/seolite
 	name = "seolite cutter"
 	desc = "A cumbersome sword used for hacking and slicing."
+	force = 25
+	block_chance = 40
 	icon_state = "machetedx"
 	item_state = "machete"
 
@@ -158,7 +160,7 @@
 	slot_flags = SLOT_BACK|SLOT_S_STORE
 	w_class = ITEM_SIZE_HUGE
 	str_requirement = 13
-	force = 44
+	force = 40
 	block_chance = 38
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 12
@@ -174,7 +176,7 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 12
-	force = 44
+	force = 37
 	block_chance = 10
 	sharp = TRUE
 	edge = TRUE
@@ -194,7 +196,7 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 10
-	force = 40
+	force = 35
 	block_chance = 25
 	sharp = TRUE
 	edge = TRUE
@@ -214,7 +216,7 @@
 	wielded_icon = "trenchaxe-w"
 	slot_flags = SLOT_BELT|SLOT_BACK|SLOT_S_STORE
 	str_requirement = 14
-	force = 45
+	force = 38
 	block_chance = 35
 	sharp = TRUE
 	edge = TRUE
@@ -234,7 +236,7 @@
 	wielded_icon ="eviscerator"
 	str_requirement = 12
 	force = 25// it's unwieldy when you don't use two hands, baby sword.
-	force_wielded = 49
+	force_wielded = 42
 	block_chance = 25
 	sharp = 1
 	edge = 1
