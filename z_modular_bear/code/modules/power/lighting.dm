@@ -3,7 +3,7 @@
 	icon_state = "rolb1"
 	base_state = "rolb"
 	name = "rolb"
-	desc = "A light that eminates a mysterious pale blue light. What powers it is isn't immediately apparent."
+	desc = "A light that eminates a mysterious pale blue glow. What powers it is isn't immediately apparent."
 	light_type = /obj/item/light/bulb/rolb
 	construct_type = /obj/machinery/light_construct/small
 	idle_power_usage = 0
@@ -19,5 +19,5 @@
 	item_state = "egg4"
 	matter = list("glass" = 100)
 	brightness_range = 7
-	brightness_power = 1
+	brightness_power = 2
 	brightness_color = "#3B95AB"
