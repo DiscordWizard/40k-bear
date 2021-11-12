@@ -19,6 +19,8 @@
 	response_help  = "licks"
 	response_disarm = "struggles against the mass of"
 	response_harm   = "slaps"
+	maxHealth = 2000
+	health = 2000
 	stop_automated_movement_when_pulled = 1 //lets you pull and release your new friend
 	melee_damage_lower = 40 // This value does nothing
 	melee_damage_upper = 50 // This value does nothing
@@ -26,6 +28,7 @@
 	attacktext = "impaled"
 	speed = 0 //ZOOM
 	environment_smash = 1
+	mob_size = MOB_LARGE
 
 
 	//aboms dont need NO ATMOS
