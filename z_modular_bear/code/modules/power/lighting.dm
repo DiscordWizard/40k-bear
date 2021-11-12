@@ -21,3 +21,6 @@
 	brightness_range = 8
 	brightness_power = 2
 	brightness_color = "#3B95AB"
+
+/obj/item/light/tube
+	brightness_range = 5
