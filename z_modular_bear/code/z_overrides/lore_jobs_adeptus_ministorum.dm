@@ -200,12 +200,12 @@
 // Battle Sister
 
 /datum/job/sisterofbattle
-	title = "Battle Sister"
+	title = "Knight"
 	department = "Ministorum"
 	department_flag = CIV
-	total_positions = 0
-	spawn_positions = 0
-	open_when_dead = 0
+	total_positions = 2
+	spawn_positions = 2
+	open_when_dead = 1
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Adepta Sororitas and the Ministorum Confessor"
@@ -218,8 +218,8 @@
 	shotgun_skill = 9
 	lmg_skill = 9
 	smg_skill = 9
-	melee_skill = 7
-	ranged_skill = 9
+	melee_skill = 9
+	ranged_skill = 7
 	medical_skill = 4
 	engineering_skill = 0
 	surgery_skill = 1
@@ -228,29 +228,31 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Sister Elohiem [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
-		H.add_stats(rand(18,22), rand(18,22), rand(18,22), rand(18,22))
+		H.add_stats(rand(14,18), rand(12,16), rand(10,14), rand(8,12))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
-		H.gender = FEMALE
+//		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.f_style = "shaved"
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose, marked as Elohiem. Half warrior, half preacher, you have willingly spilt blood in the Emperor's name and are one of His most devout and evangelical Sisters. You have been tasked with defending holy Ecclesiarchal relics and the Ecclesiarchy attached to them. Your main goal is to defend the chapel, the three holy relics inside, and the priest, EVERYTHING ELSE IS SECONDARY. Roleplay is required and will be scrutinized by everyone, including staff.</font></b></span>")
-
+		if (H.gender == FEMALE)
+			H.fully_replace_character_name("Dame [current_name]")
+		if (H.gender == MALE)
+			H.fully_replace_character_name("Ser [current_name]")
 
 //outfit
 
 /decl/hierarchy/outfit/job/sisterofbattle
-	name = OUTFIT_JOB_NAME("Sister of Battle")
-	head = /obj/item/clothing/head/helmet/sisterofbattle
+	name = OUTFIT_JOB_NAME("Knight")
+	head = /obj/item/clothing/head/helmet/sentryhelm
 	l_ear = /obj/item/device/radio/headset/red_team
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/sisterofbattle
+	suit = /obj/item/clothing/suit/armor/bear
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
-	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
+	back = /obj/item/storage/backpack/satchel/warfare/kroot
 	gloves = /obj/item/clothing/gloves/sisterofbattle
 	shoes = /obj/item/clothing/shoes/sisterofbattle
 	id_type = /obj/item/card/id/dog_tag
