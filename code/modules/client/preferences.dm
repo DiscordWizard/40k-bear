@@ -217,8 +217,8 @@ datum/preferences
 	character.r_wing			= r_wing
 	character.b_wing			= b_wing
 	character.g_wing			= g_wing
-	character.resize(size_multiplier, animate = FALSE)
 	character.custom_species	= custom_species
+	character.size_multiplier = size_multiplier
 	character.fuzzy				= fuzzy
 	character.appearance_flags	-= fuzzy*PIXEL_SCALE
 
@@ -296,6 +296,8 @@ datum/preferences
 	character.update_underwear(0)
 	character.update_hair(0)
 	character.update_icons()
+
+	character.resize(size_multiplier, animate = FALSE)	//BEARHAMMER EDIT - Resize at the very end so update_icons doesn't mess with it
 
 	character.religion = religion
 
