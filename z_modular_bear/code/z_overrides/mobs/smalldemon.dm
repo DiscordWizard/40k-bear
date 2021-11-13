@@ -8,7 +8,7 @@
 /mob/living/simple_animal/hostile/smalldemon/zygote //squishier, a bit slower
 	name = "melted kobold"
 	real_name = "melted kobold"
-	desc = "A horrific mass of acid and flesh. Looks fragile, but its undulating limbs drip with a vile, acidic-smelling substance. Used to be a kobold. Isn't, now."
+	desc = "A horrific mass of acid and flesh. Looks fragile, but its undulating limbs drip with a vile, acidic-smelling substance, and sharp bone spurs occasionally poke out of its skin. Used to be a kobold. Isn't, now."
 	maxHealth = 100
 	health = 100
 	speed = 2
@@ -62,9 +62,9 @@
 
 // Bloodletter - same features, reduced stats
 /mob/living/simple_animal/hostile/smalldemon/bloodletter
-	name = "Bloodletter"
-	real_name = "Bloodletter"
-	desc = "This terrifying behemoth of rippling muscle and sinew eminates an aura of pure malice. It gazes at you with starving eyes and an intimate desire to rend the flesh from bone." // Bubbling masses similar to Zygotes are slow and more deadly in caves/dungeons.
+	name = "skinned orc"
+	real_name = "skinned orc"
+	desc = "An orc skinned to his flesh. It breathes in and out heavily, gazing at you with starving eyes and a desire to do exactly what happened to it...to you."
 	icon = 'icons/mob/animal.dmi'
 	icon_state = "khorne_daemon" // Average speed. High damage and HP.
 	icon_living = "khorne_daemon"
@@ -72,20 +72,42 @@
 	maxHealth = 150
 	health = 150
 
+/mob/living/simple_animal/hostile/smalldemon/bloodletter/AttackingTarget()
+	if(!Adjacent(target_mob))
+		return
+	custom_emote(1, pick( list("slices at [target_mob]", "tears [target_mob]") ) ) // attack emotes
+
+	var/damage = rand(35,45) // Damage Value
+
+	if(ishuman(target_mob))
+		var/mob/living/carbon/human/H = target_mob
+		var/dam_zone = pick(BP_HEAD, BP_L_HAND, BP_R_HAND)
+		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
+		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE) // damage type
+		return H
+	else if(isliving(target_mob))
+		var/mob/living/L = target_mob
+		L.adjustBruteLoss(damage)
+		return L
+
+	faction = "Nurgle"
+	faction = "Slaanesh"
+	faction = "Khorne"
 
 
 /mob/living/simple_animal/hostile/smalldemon/bubblingmass
-	name = "Grotesque Horror" // Slow. S L O W. Unchanged stats.
+	name = "Grotesque Horror" // Slow. S L O W.
 	real_name = "Grotesque Horror"
-	desc = "This violet bubbling mass of flesh and meat crawls toward you. Incredibly slow. Devestatingly powerful." // Bubbling masses similar to Zygotes are slow and more deadly in caves/dungeons.
+	desc = "This violet bubbling mass of flesh and meat crawls toward you. Incredibly slow. Devestatingly powerful."
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"
 	response_disarm = "shoves"
 	response_harm   = "mauls"
 	attacktext = "crushes"
+	maxHealth = 300
+	health = 300
 	see_in_dark = 6
-
 	speed = 6
 
 /mob/living/simple_animal/hostile/smalldemon/bubblingmass/AttackingTarget()
@@ -93,7 +115,7 @@
 		return
 	custom_emote(1, pick( list("bites [target_mob]", "crushes [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(40,58) // Damage Value
+	var/damage = rand(30,40) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -105,3 +127,27 @@
 		var/mob/living/L = target_mob
 		L.adjustBruteLoss(damage)
 		return L
+
+
+/mob/living/simple_animal/hostile/smalldemon/fleshbeast
+	name = "Flesh Beast"
+	real_name = "Flesh Beast" // Average speed. Medium damage and HP.
+	desc = "This violet mass of flesh and meat scatters toward you."
+	icon = 'icons/mob/animal.dmi'
+	icon_state = "loge"
+	icon_living = "loge"
+	icon_dead = "loge2"
+	maxHealth = 550
+	health = 550
+	speak_emote = list("harks")
+	emote_hear = list("growls")
+	response_help  = "gnashes"
+	response_disarm = "shoves"
+	response_harm   = "mauls"
+	attacktext = "bites"
+	see_in_dark = 6
+
+	speed = 10
+	faction = "Nurgle"
+	faction = "Slaanesh"
+	faction = "Khorne"
