@@ -65,8 +65,7 @@
 	suit_store = /obj/item/melee/trench_axe
 	l_hand = /obj/item/device/flashlight/lantern
 	backpack_contents = list(
-	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,
-	/obj/item/ammo_box/shotgun = 1,
+	/obj/item/ammo_magazine/handful/shotgun/shotgun_handful = 1,,
 	/obj/item/handcuffs = 2,
 	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
 	/obj/item/stack/thrones = 1,

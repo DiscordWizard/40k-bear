@@ -230,7 +230,7 @@
 		..()
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
-		H.add_stats(rand(14,18), rand(12,16), rand(10,14), rand(8,12))
+		H.add_stats(rand(14,18), rand(12,16), rand(12,18), rand(8,12))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
@@ -254,15 +254,13 @@
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
 	back = /obj/item/storage/backpack/satchel/warfare/kroot
 	gloves = /obj/item/clothing/gloves/sisterofbattle
+	belt = /obj/item/melee/classic_baton/trench_club
 	shoes = /obj/item/clothing/shoes/sisterofbattle
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/gun/projectile/sisterbolter
-	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
+	suit_store = /obj/item/melee/trench_axe
 	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare = 1,
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/reagent_containers/food/snacks/warfare = 2,
 	/obj/item/stack/thrones/ten = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/ten = 2,

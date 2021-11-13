@@ -175,3 +175,4 @@
 	block_chance = 38
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 12
+

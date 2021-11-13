@@ -88,3 +88,4 @@
 	name = "steel helmet"
 	desc = "A basic helmet meant to protect the wearer from things that seek to smash their head. Shockingly protective."
 	str_requirement = 12
+	flags_inv = null
