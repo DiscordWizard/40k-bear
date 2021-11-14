@@ -2,13 +2,14 @@
 
 //Confessor
 
+
 /datum/job/chaplain
-	title = "Head Priestess"
+	title = "Deacon"
 	department = "Ministorum"
 	department_flag = CIV|COM
 	total_positions = 1
 	spawn_positions = 1
-	open_when_dead = 0
+	open_when_dead = 1
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the House Nobility, and the Gods of Biblio"
@@ -39,8 +40,8 @@
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		H.gender = FEMALE
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Head Priestess, Healer, and the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. You have also been blessed with insight into the anatomy of people, so you are able to heal them and perform surgery. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
+//		H.gender = FEMALE
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Head Priestess: healer, and the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. You have also been blessed with insight into the anatomy of people, so you are able to heal them and perform surgery. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
@@ -68,7 +69,7 @@
 
 		spawn(1)
 			var/deity_name = "Eurydale"
-			var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is the Allfather", "Name change", deity_name), MAX_NAME_LEN)
+			var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is Eurydale", "Name change", deity_name), MAX_NAME_LEN)
 
 			if ((length(new_deity) == 0) || (new_deity == "Allfather") )
 				new_deity = deity_name
@@ -178,7 +179,7 @@
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
 //		usr.say("Netha al em'no kor do.")
-		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
+		visible_message("[O] is bathed in righteous incense as the Priestess chants a short litany, you can sense a change in the weapon just by touching it.")
 
 //this blesses swords
 /obj/item/melee/whip/censer/attackby(var/obj/item/material/sword/O, var/mob/user)
@@ -192,7 +193,7 @@
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
 //		usr.say("Il alem alsa, Eurydale el matela")
-		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
+		visible_message("[O] is bathed in righteous incense as the Priestess chants a short litany, you can sense a change in the weapon just by touching it.")
 
 
 

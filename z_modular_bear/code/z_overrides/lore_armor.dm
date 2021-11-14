@@ -22,6 +22,10 @@
 	name = "!st Fleet Tan Fatigues"
 	desc = "Tan fatigues of the 1st Fleet. Probably a bad idea on a snowy planet..."
 
+/obj/item/clothing/under/skirt_c/dress/eggshell
+	name = "High Priestess undergarments"
+	desc = "A simple white dress the High Priestess wears underneath their fancy robes. Plain to emphasize that no matter how you appear outwards, you should always stay humble and honest on the inside."
+	color = "#f0ead6"
 
 
 
