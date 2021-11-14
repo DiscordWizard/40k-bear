@@ -23,3 +23,12 @@
 
 /obj/item/shield/buckler/get_block_chance(mob/user, var/damage, atom/damage_source = null, mob/attacker = null)
 	return base_block_chance
+
+
+/obj/item/material/sword/cane/seolite/practice
+	block_chance = 40
+	force = 5
+	name = "practice sword"
+	desc = "A sword belonging to the Nobility. This blade is weighted perfectly in your hand. A large hilt allows for easy blocking. This one has a blunted edge. Still painful."
+	sharp = 0
+	edge = 0

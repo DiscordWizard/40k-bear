@@ -40,8 +40,10 @@
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-//		H.gender = FEMALE
+		H.gender = FEMALE
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Head Priestess: healer, and the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. You have also been blessed with insight into the anatomy of people, so you are able to heal them and perform surgery. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
+
+
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
@@ -244,10 +246,11 @@
 			H.fully_replace_character_name("Dame [current_name]")
 		if (H.gender == MALE)
 			H.fully_replace_character_name("Ser [current_name]")
-		if (prob(1))
-			to_chat(H, "<span class='notice'><b><font size=2>A1</font></b></span>")
+		if (prob(15))
+			to_chat(H, "<span class='notice'><b><font size=2>You have recieved a credible threat about the safety of the Nobility from the villagers. Be extra weary and ensure their safety.</font></b></span>")
 		else if (prob(100))
 			to_chat(H, "<span class='notice'><b><font size=2>A2</font></b></span>")
+
 
 
 //outfit
