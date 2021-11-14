@@ -220,8 +220,8 @@ Pilgrim Fate System
 	title = "House Noble"
 	department_flag = PIL
 	social_class = SOCIAL_CLASS_MAX
-	total_positions = 0 //need to finish you first, friend.
-	spawn_positions = 0
+	total_positions = 1 //need to finish you friend.
+	spawn_positions = 1
 	open_when_dead = 1
 	supervisors = "Money"
 	selection_color = "#848484"
