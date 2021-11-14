@@ -244,6 +244,11 @@
 			H.fully_replace_character_name("Dame [current_name]")
 		if (H.gender == MALE)
 			H.fully_replace_character_name("Ser [current_name]")
+		if (prob(1))
+			to_chat(H, "<span class='notice'><b><font size=2>A1</font></b></span>")
+		else if (prob(100))
+			to_chat(H, "<span class='notice'><b><font size=2>A2</font></b></span>")
+
 
 //outfit
 
