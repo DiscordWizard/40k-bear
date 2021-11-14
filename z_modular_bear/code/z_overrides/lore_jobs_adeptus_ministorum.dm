@@ -3,7 +3,7 @@
 //Confessor
 
 /datum/job/chaplain
-	title = "Godhead Speaker"
+	title = "Head Priestess"
 	department = "Ministorum"
 	department_flag = CIV|COM
 	total_positions = 1
@@ -26,20 +26,21 @@
 	smg_skill = 2
 	melee_skill = 4
 	ranged_skill = 2
-	medical_skill = 5
+	medical_skill = 10
 	engineering_skill = 0
-	surgery_skill = 3
+	surgery_skill = 10
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Speaker [current_name]")
+		H.fully_replace_character_name("Priestess [current_name]")
 		H.add_stats(rand(10,13), rand(10,13), rand(10,12), rand(12,16)) //frail and holy
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
+		H.gender = FEMALE
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Head Priestess, Healer, and the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. You have also been blessed with insight into the anatomy of people, so you are able to heal them and perform surgery. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
@@ -144,7 +145,7 @@
 
 /obj/item/melee/whip/censer
 	name = "gold-copper censer"
-	desc = "A censer made out of an odd copper-gold material that's warm to the touch, even when unlit. Glows faintly. There are certain runes carved into it."
+	desc = "A censer made out of an odd copper-gold material that's warm to the touch, even when unlit. Glows faintly. There are certain runes carved into it. Channels magic to bless warriors and the weapons they hold."
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "censer"
@@ -237,7 +238,7 @@
 //		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.f_style = "shaved"
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose, marked as Elohiem. Half warrior, half preacher, you have willingly spilt blood in the Emperor's name and are one of His most devout and evangelical Sisters. You have been tasked with defending holy Ecclesiarchal relics and the Ecclesiarchy attached to them. Your main goal is to defend the chapel, the three holy relics inside, and the priest, EVERYTHING ELSE IS SECONDARY. Roleplay is required and will be scrutinized by everyone, including staff.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Knight that responds to and works for the House Nobility. You have the keys to the stockades and your barracks. You were alive during the bloody Conflict, barely able to fight against the lasers that descended from the sky and shattered your world, covering it in dakrness and snow. One of the few survivors, you continue your 'fight' against the Fleet, wherever it may be. You aren't just a person-at-arms- you're also expected to carry out whatever duties are expected of you, including subterfuge or espionage. Though the House Nobiltiy squabble amongst themselves, your orders are clear- you must keep them safe and take their orders.</font></b></span>")
 		if (H.gender == FEMALE)
 			H.fully_replace_character_name("Dame [current_name]")
 		if (H.gender == MALE)
@@ -250,6 +251,7 @@
 	head = /obj/item/clothing/head/helmet/sentryhelm
 	l_ear = /obj/item/device/radio/headset/red_team
 	neck = /obj/item/reagent_containers/food/drinks/canteen
+	pda_slot = null
 	suit = /obj/item/clothing/suit/armor/bear
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
 	back = /obj/item/storage/backpack/satchel/warfare/kroot
@@ -264,19 +266,21 @@
 	/obj/item/stack/thrones/ten = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/ten = 2,
+	/obj/item/card/id/stockades = 1,
+	/obj/item/card/id/nobility = 1,
 	)
 
 // Orders Hospitaller
 
 // Almoness Advance
 
-/datum/job/cmo
-	title = "Almoness Advance"
+/datum/job/cmo  // aaaa I DON'T KNOW WHAT TO DOOOOOOOOOOO!!!!!
+	title = "Head Priestess"
 	head_position = 1
 	department = list("Ministorum", "Medical")
 	department_flag = COM|MED
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Orders Hospitaller"
 	selection_color = "#633d63"
 	req_admin_notify = 1
@@ -310,7 +314,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Sister Hospitaller [current_name]")
+		H.fully_replace_character_name("Priestess [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(12,16))
 		H.get_idcard()?.access = get_all_accesses()
@@ -318,10 +322,10 @@
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.f_style = "shaved"
-		H.h_style = "Bob"
+//		H.f_style = "shaved"
+//		H.h_style = "Bob"
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of medical knowledge within the Ordos Hospitaller, organize your sisters and ensure they are doing their duty to both the Lord Trader and the Codex Sororitas. Sanctify and heal this unholy land of it's festering heretical past... in the name of your Emperor.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>Bear doesn't know what to do with this job. Sorry!</font></b></span>")
 
 // Hospitaller Advance
 
