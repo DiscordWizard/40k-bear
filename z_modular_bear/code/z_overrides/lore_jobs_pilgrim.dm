@@ -164,6 +164,11 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from scheme to scheme. You'll do whatever it takes for a coin or two. Scamming, gambling, drug dealing...though your businesses have become more lucrative under the Fleet's restrictive new laws and the chaos the Conflict caused.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			if (prob(100))
+				to_chat(U,"<span class='notice'><b><font size=2>Additionally...you've come across a lucky windfall, recently. Through theft, or your connections, or maybe even dumb luck, you found a key to the nobility's mansion and vault. All you need is a plan, maybe a crew or a disguise, and you'll be set to pull off the greatest heist of your life... (Your key is on the ground underneath your start.)</font></b></span>")
+				new /obj/item/card/id/nobility(U.loc)
+
+
 		if("Unlicensed Physician")
 			U.add_skills(0,0,rand(5,9),0,rand(5,9))
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
