@@ -2,13 +2,14 @@
 
 //Confessor
 
+
 /datum/job/chaplain
-	title = "Godhead Speaker"
+	title = "High Priestess"
 	department = "Ministorum"
 	department_flag = CIV|COM
 	total_positions = 1
 	spawn_positions = 1
-	open_when_dead = 0
+	open_when_dead = 1
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the House Nobility, and the Gods of Biblio"
@@ -26,20 +27,23 @@
 	smg_skill = 2
 	melee_skill = 4
 	ranged_skill = 2
-	medical_skill = 5
+	medical_skill = 10
 	engineering_skill = 0
-	surgery_skill = 3
+	surgery_skill = 10
 
 
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Speaker [current_name]")
+		H.fully_replace_character_name("Priestess [current_name]")
 		H.add_stats(rand(10,13), rand(10,13), rand(10,12), rand(12,16)) //frail and holy
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
+		H.gender = FEMALE
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Head Priestess: healer, and the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. You have also been blessed with insight into the anatomy of people, so you are able to heal them and perform surgery. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
+
+
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)
 		. = ..()
@@ -67,7 +71,7 @@
 
 		spawn(1)
 			var/deity_name = "Eurydale"
-			var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is the Allfather", "Name change", deity_name), MAX_NAME_LEN)
+			var/new_deity = sanitize(input(H, "Would you like to change your deity? Default is Eurydale", "Name change", deity_name), MAX_NAME_LEN)
 
 			if ((length(new_deity) == 0) || (new_deity == "Allfather") )
 				new_deity = deity_name
@@ -144,7 +148,7 @@
 
 /obj/item/melee/whip/censer
 	name = "gold-copper censer"
-	desc = "A censer made out of an odd copper-gold material that's warm to the touch, even when unlit. Glows faintly. There are certain runes carved into it."
+	desc = "A censer made out of an odd copper-gold material that's warm to the touch, even when unlit. Glows faintly. There are certain runes carved into it. Channels magic to bless warriors and the weapons they hold."
 	attack_verb = list("flogged", "whipped", "lashed", "disciplined")
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "censer"
@@ -177,7 +181,7 @@
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
 //		usr.say("Netha al em'no kor do.")
-		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
+		visible_message("[O] is bathed in righteous incense as the Priestess chants a short litany, you can sense a change in the weapon just by touching it.")
 
 //this blesses swords
 /obj/item/melee/whip/censer/attackby(var/obj/item/material/sword/O, var/mob/user)
@@ -191,7 +195,34 @@
 		O.isblessed = 1
 		playsound(src, 'sound/voice/blessing.ogg', 70, 0, 1)
 //		usr.say("Il alem alsa, Eurydale el matela")
-		visible_message("[O] is bathed in righteous incense as the Confessor chants a short litany, you can sense a change in the weapon just by touching it.")
+		visible_message("[O] is bathed in righteous incense as the Priestess chants a short litany, you can sense a change in the weapon just by touching it.")
+
+
+
+//Chaplain outfit
+
+/decl/hierarchy/outfit/job/chaplain
+	name = OUTFIT_JOB_NAME("High Priestess")
+	uniform = /obj/item/clothing/under/skirt_c/dress/eggshell
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = /obj/item/card/id/civilian/chaplain
+	pda_type = null
+	pda_slot = null
+	l_ear = /obj/item/device/radio/headset/red_team
+	r_ear = null
+	l_pocket = /obj/item/storage/box/ifak
+	belt = /obj/item/device/flashlight/lantern
+	back = /obj/item/storage/backpack/satchel/warfare
+	suit = /obj/item/clothing/suit/ministorumrobes
+	suit_store = null
+	l_hand = /obj/item/staff/ministorumstaff
+	r_hand = /obj/item/melee/whip/censer
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+		)
 
 
 
@@ -200,12 +231,12 @@
 // Battle Sister
 
 /datum/job/sisterofbattle
-	title = "Battle Sister"
+	title = "Knight"
 	department = "Ministorum"
 	department_flag = CIV
-	total_positions = 0
-	spawn_positions = 0
-	open_when_dead = 0
+	total_positions = 2
+	spawn_positions = 2
+	open_when_dead = 1
 	social_class = SOCIAL_CLASS_HIGH
 	latejoin_at_spawnpoints = TRUE
 	supervisors = "the Adepta Sororitas and the Ministorum Confessor"
@@ -218,8 +249,8 @@
 	shotgun_skill = 9
 	lmg_skill = 9
 	smg_skill = 9
-	melee_skill = 7
-	ranged_skill = 9
+	melee_skill = 9
+	ranged_skill = 7
 	medical_skill = 4
 	engineering_skill = 0
 	surgery_skill = 1
@@ -228,55 +259,64 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Sister Elohiem [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant)
 		H.set_quirk(new/datum/quirk/dead_inside) // the only thing the sisters of the orders millitant feel is the god emperor's light.
-		H.add_stats(rand(18,22), rand(18,22), rand(18,22), rand(18,22))
+		H.add_stats(rand(14,18), rand(12,16), rand(12,18), rand(8,12))
 		H.get_idcard()?.access = get_all_accesses()
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
-		H.gender = FEMALE
+//		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 		H.f_style = "shaved"
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Sister of Battle belonging to the Order of the Sacred Rose, marked as Elohiem. Half warrior, half preacher, you have willingly spilt blood in the Emperor's name and are one of His most devout and evangelical Sisters. You have been tasked with defending holy Ecclesiarchal relics and the Ecclesiarchy attached to them. Your main goal is to defend the chapel, the three holy relics inside, and the priest, EVERYTHING ELSE IS SECONDARY. Roleplay is required and will be scrutinized by everyone, including staff.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Knight that responds to and works for the House Nobility. You have the keys to the stockades and your barracks. You were alive during the bloody Conflict, barely able to fight against the lasers that descended from the sky and shattered your world, covering it in dakrness and snow. One of the few survivors, you continue your 'fight' against the Fleet, wherever it may be. You aren't just a person-at-arms- you're also expected to carry out whatever duties are expected of you, including subterfuge or espionage. Though the House Nobiltiy squabble amongst themselves, your orders are clear- you must keep them safe and take their orders.</font></b></span>")
+		if (H.gender == FEMALE)
+			H.fully_replace_character_name("Dame [current_name]")
+		if (H.gender == MALE)
+			H.fully_replace_character_name("Ser [current_name]")
+		if (prob(15))
+			to_chat(H, "<span class='notice'><b><font size=2>You have recieved a credible threat about the safety of the Nobility from the villagers. Be extra weary and ensure their safety.</font></b></span>")
+		else if (prob(100))
+			to_chat(H, "<span class='notice'><b><font size=2>Your mind is relatively at ease. Nothing in particular bothers you at this moment.</font></b></span>")
+
 
 
 //outfit
 
 /decl/hierarchy/outfit/job/sisterofbattle
-	name = OUTFIT_JOB_NAME("Sister of Battle")
-	head = /obj/item/clothing/head/helmet/sisterofbattle
+	name = OUTFIT_JOB_NAME("Knight")
+	head = /obj/item/clothing/head/helmet/sentryhelm
 	l_ear = /obj/item/device/radio/headset/red_team
 	neck = /obj/item/reagent_containers/food/drinks/canteen
-	suit = /obj/item/clothing/suit/sisterofbattle
+	pda_slot = null
+	suit = /obj/item/clothing/suit/armor/bear
 	uniform = /obj/item/clothing/under/guard/uniform/sisterofbattle
-	back = /obj/item/storage/backpack/satchel/warfare/sisterofbattle
+	back = /obj/item/storage/backpack/satchel/warfare/kroot
 	gloves = /obj/item/clothing/gloves/sisterofbattle
+	belt = /obj/item/melee/classic_baton/trench_club
 	shoes = /obj/item/clothing/shoes/sisterofbattle
 	id_type = /obj/item/card/id/dog_tag
 	l_pocket = /obj/item/storage/box/ifak
-	l_hand = /obj/item/gun/projectile/sisterbolter
-	r_hand = /obj/item/gun/projectile/bolter_pistol/sisterofbattle
+	suit_store = /obj/item/melee/trench_axe
 	backpack_contents = list(
-	/obj/item/reagent_containers/food/snacks/warfare = 1,
-	/obj/item/ammo_magazine/bolt_rifle_magazine/sister = 3,
-	/obj/item/ammo_magazine/bolt_pistol_magazine = 3,
+	/obj/item/reagent_containers/food/snacks/warfare = 2,
 	/obj/item/stack/thrones/ten = 1,
 	/obj/item/stack/thrones2/ten = 1,
 	/obj/item/stack/thrones3/ten = 2,
+	/obj/item/card/id/stockades = 1,
+	/obj/item/card/id/nobility = 1,
 	)
 
 // Orders Hospitaller
 
 // Almoness Advance
 
-/datum/job/cmo
-	title = "Almoness Advance"
+/datum/job/cmo  // aaaa I DON'T KNOW WHAT TO DOOOOOOOOOOO!!!!!
+	title = "Head Priestess"
 	head_position = 1
 	department = list("Ministorum", "Medical")
 	department_flag = COM|MED
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the Orders Hospitaller"
 	selection_color = "#633d63"
 	req_admin_notify = 1
@@ -310,7 +350,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Sister Hospitaller [current_name]")
+		H.fully_replace_character_name("Priestess [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(12,16))
 		H.get_idcard()?.access = get_all_accesses()
@@ -318,10 +358,10 @@
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
-		H.f_style = "shaved"
-		H.h_style = "Bob"
+//		H.f_style = "shaved"
+//		H.h_style = "Bob"
 
-		to_chat(H, "<span class='notice'><b><font size=3>You are the pinnacle of medical knowledge within the Ordos Hospitaller, organize your sisters and ensure they are doing their duty to both the Lord Trader and the Codex Sororitas. Sanctify and heal this unholy land of it's festering heretical past... in the name of your Emperor.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>Bear doesn't know what to do with this job. Sorry!</font></b></span>")
 
 // Hospitaller Advance
 

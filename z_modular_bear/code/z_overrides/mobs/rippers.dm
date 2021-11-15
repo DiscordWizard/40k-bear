@@ -1,9 +1,9 @@
-//moved to modular_bear
+//moved from code/rippers.dm
 
 /mob/living/simple_animal/hostile/rippers
 	name = "Ripper"
 	real_name = "Ripper"
-	desc = "Gnawing, gnashing worms!"
+	desc = "A tiny, carnivorous half-worm, half-snake that's extremely social. Mostly hang around in dark caves and sewage. The animal of Ester, God of Decay."
 	icon = 'icons/mob/human_races/tyranids/tyranids.dmi'
 	icon_state = "ripper"
 	icon_living = "ripper"
@@ -16,13 +16,13 @@
 	emote_hear = list("growls")
 	response_help  = "barks"
 	response_disarm = "shoves"
-	response_harm   = "mauls"
+	response_harm   = "stomps on"
 	melee_damage_lower = 10
 	melee_damage_upper = 10
-	attacktext = "mauls and bites with all its might!"
+	attacktext = "chomps down!"
 	maxbodytemp = 1000
-	see_in_dark = 10
-	wander = 1
+	see_in_dark = 6
+	wander = 0
 
 	speed = -2.5
 
@@ -108,13 +108,13 @@
 /mob/living/simple_animal/hostile/rippers/AttackingTarget()
 	if(!Adjacent(target_mob))
 		return
-	custom_emote(1, pick( list("slashes at [target_mob]", "bites [target_mob]") ) )
+	custom_emote(1, pick( list("chomps on [target_mob]", "gnaws [target_mob]") ) )
 
 	var/damage = rand(10,12)
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
-		var/dam_zone = pick(BP_CHEST, BP_L_HAND, BP_R_HAND, BP_L_LEG, BP_R_LEG)
+		var/dam_zone = pick(BP_L_HAND, BP_R_HAND, BP_L_LEG, BP_R_LEG, BP_L_FOOT, BP_R_FOOT)
 		var/obj/item/organ/external/affecting = H.get_organ(ran_zone(dam_zone))
 		H.apply_damage(damage, BRUTE, affecting, H.run_armor_check(affecting, "melee"), DAM_SHARP|DAM_EDGE)
 		return H
@@ -122,3 +122,4 @@
 		var/mob/living/L = target_mob
 		L.adjustBruteLoss(damage)
 		return L
+

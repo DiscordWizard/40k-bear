@@ -158,10 +158,10 @@
 	throwforce = 20
 
 /obj/item/material/sword/cane/seolite
-	block_chance = 60
-	force = 33
-	name = "exquisite rapier"
-	desc = "An exquisite rapier, this blade is weighted perfectly in your hand. A large hilt allows for easy blocking."
+	block_chance = 40
+	force = 25
+	name = "house sword"
+	desc = "A sword belonging to the Nobility. This blade is weighted perfectly in your hand. A large hilt allows for easy blocking."
 
 /obj/item/material/hatchet/machete/deluxe/seolite
 	name = "old cutter"
@@ -175,3 +175,4 @@
 	block_chance = 38
 	grab_sound_is_loud = TRUE
 	weapon_speed_delay = 12
+

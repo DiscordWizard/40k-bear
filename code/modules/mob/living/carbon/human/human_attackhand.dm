@@ -191,14 +191,15 @@
 
 			return H.make_grab(H, src)
 
+
 		if(I_HURT)
 			if(ticker.current_state == GAME_STATE_FINISHED)
 				to_chat(M, "<span class='warning'>The battle is over! There is no need to fight!</span>")
 				return
-			if(H.warfare_faction)
-				if(H.warfare_faction == src.warfare_faction && src.stat != DEAD)
-					log_and_message_admins("[H] has punched his teammate [src]!", H)
-					GLOB.ff_incidents++
+//			if(H.warfare_faction) //modular bearstation / bearhammer
+//				if(H.warfare_faction == src.warfare_faction && src.stat != DEAD) //modular bearstation / bearhammer
+//					log_and_message_admins("[H] has punched his teammate [src]!", H) //modular bearstation / bearhammer
+//					GLOB.ff_incidents++ //modular bearstation / bearhammer
 			M.adjustStaminaLoss(rand(5,15))
 
 			aggro_npc()

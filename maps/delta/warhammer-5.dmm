@@ -56,10 +56,10 @@
 "bF" = (/turf/simulated/floor/asteroid,/area/cadiaoutpost/gma/inquisitoracolyte)
 "bG" = (/obj/structure/window_frame{color = "grey"},/obj/structure/grille,/turf/simulated/floor/asteroid,/area/cadiaoutpost/gma/inquisitoracolyte)
 "bH" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 9; icon_state = "spline_plain"},/obj/machinery/computer/shuttle_control/ferry/inquisition,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"bI" = (/obj/machinery/computer/exterminatus,/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/sign/double/planet/left{desc = "A screen showing the planet from orbit. It's covered in ugly gashes from the mineral-extractors, and shrouded in ash and snow. How beautiful it must have been before the Conflict..."; name = "satelite feed"; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"bI" = (/obj/machinery/computer/exterminatus,/obj/effect/floor_decal/turf/brick,/obj/structure/sign/double/planet/left{desc = "A screen showing the planet from orbit. It would be a beautiful sight. The screen itself would be decorated in various holy markings."; name = "The Emperor's Eye"; pixel_y = 32},/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "bJ" = (/obj/effect/floor_decal/carpet/red{dir = 1},/turf/simulated/floor/carpet/red,/area/centcom)
 "bK" = (/obj/structure/sign/art/blindfolds,/turf/simulated/wall/techno,/area/cadiaoutpost/gma/inquisitoracolyte)
-"bL" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/table/steel,/obj/item/reagent_containers/food/drinks/bottle/amasecexpensive,/obj/item/reagent_containers/food/drinks/glass2/wine,/obj/item/reagent_containers/food/drinks/glass2/wine,/obj/item/reagent_containers/food/drinks/glass2/wine,/obj/structure/sign/double/planet/right{desc = "A screen showing the planet from orbit. It's covered in ugly gashes from the mineral-extractors, and shrouded in ash and snow. How beautiful it must have been before the Conflict..."; name = "satelite feed"; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"bL" = (/obj/effect/floor_decal/turf/brick,/obj/structure/sign/double/planet/right{desc = "A screen showing the planet from orbit. It would be a beautiful sight. The screen itself would be decorated in various holy markings."; name = "The Emperor's Eye"; pixel_y = 32},/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/table/steel,/obj/item/reagent_containers/food/drinks/bottle/amasecexpensive,/obj/item/reagent_containers/food/drinks/glass2/wine,/obj/item/reagent_containers/food/drinks/glass2/wine,/obj/item/reagent_containers/food/drinks/glass2/wine,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "bM" = (/obj/effect/wingrille_spawn/reinforced/crescent,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "bN" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 8; icon_state = "spline_plain"},/obj/structure/torchwall/service{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "bO" = (/obj/structure/bed/chair/wood{dir = 1; icon_state = "wooden_chair_preview"},/obj/effect/floor_decal/carpet/red{dir = 1},/turf/simulated/floor/carpet/red,/area/centcom)
@@ -69,7 +69,7 @@
 "bS" = (/obj/structure/table/steel,/obj/effect/floor_decal/turf/brick,/obj/random/loot/heavystubber,/obj/random/loot/heavystubber,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "bT" = (/obj/structure/table/rack/dark,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/item/ammo_magazine/bolt_pistol_magazine,/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "bU" = (/obj/effect/floor_decal/carpet/red{dir = 4},/obj/effect/floor_decal/carpet/red{dir = 1},/obj/effect/floor_decal/carpet/red{dir = 5},/turf/simulated/floor/carpet/red,/area/centcom)
-"bV" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/brick,/obj/item/shield/riot,/obj/item/shield/riot,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"bV" = (/obj/structure/table/rack/dark,/obj/effect/floor_decal/turf/brick,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/obj/random/loot/heavystubberammo,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "bW" = (/turf/simulated/floor/airless/lava,/area/space)
 "bY" = (/obj/structure/sign/warning/secure_area{pixel_x = 30},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "bZ" = (/obj/structure/sign/church,/turf/simulated/wall/techno,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -77,21 +77,21 @@
 "cb" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/closet/secure_closet/freezer/fridge,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cc" = (/obj/effect/floor_decal/carpet/red{dir = 8},/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/carpet/red,/area/centcom)
 "cd" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/rack/dark,/obj/random/loot/guardgear,/obj/item/handcuffs,/obj/item/handcuffs,/obj/random/loot/guardgear,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"ce" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 10; icon_state = "spline_plain"},/obj/structure/sign/imperial{desc = "Sol still stands, and you will make sure of it."; icon_state = "imperials"; name = "the Insignia"; pixel_x = -32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ce" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 10; icon_state = "spline_plain"},/obj/structure/sign/imperial{desc = "Some may question your right to destroy ten billion people. Those who understand realise that you have no right to let them live!"; icon_state = "imperials"; name = "Exterminatus Extremis"; pixel_x = -32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cf" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"cg" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 6; icon_state = "spline_plain"},/obj/structure/sign/imperial{desc = "Sol still stands, and you will make sure of it."; icon_state = "imperials"; name = "the Insignia"; pixel_x = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"cg" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 6; icon_state = "spline_plain"},/obj/structure/sign/imperial{desc = "You must face the truth squarely and without flinching from duty. Our Enemies are mortal no longer. Mercy for such as they is a chimera, self-deception is its only ally. Dedicate this weapon, given unto your hand at the behest of the Emperor, to their destruction. Regard its function as your only duty: you live only to bring cleansing fire. Take up your rod and staff, your armour and psycannon, and go forth."; icon_state = "imperials"; name = "Wisdom of Inquisitor Historical Galbus Heer"; pixel_x = 32; pixel_y = 0},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "ch" = (/obj/effect/floor_decal/turf/plating,/obj/structure/sign/aquilalong,/obj/structure/window/reinforced/reliquary,/obj/item/stack/thrones/five{desc = "A bundle of ancient and weathered thrones. They date back to during the Great Crusade."; name = "ancient thrones"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"ci" = (/obj/effect/floor_decal/turf/plating,/obj/structure/window/reinforced/reliquary,/obj/structure/sign/double/planet/left{desc = "A screen showing the planet from orbit. It's covered in ugly gashes from the mineral-extractors, and shrouded in ash and snow. How beautiful it must have been before the Conflict..."; name = "satelite feed"; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ci" = (/obj/effect/floor_decal/turf/plating,/obj/structure/sign/aquilalong{density = 1; desc = "A dark aquila surrounded by a pile of bones."; icon_state = "aquillabones"; pixel_y = 5},/obj/structure/window/reinforced/reliquary,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cj" = (/obj/effect/floor_decal/turf/plating,/obj/structure/torchwall/service{pixel_y = 32},/obj/structure/flora/pottedplant/bamboo,/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "ck" = (/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cl" = (/obj/machinery/shower,/obj/structure/curtain/open/privacy,/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cm" = (/obj/structure/toilet,/obj/structure/curtain/open/privacy,/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cn" = (/obj/effect/floor_decal/turf/brick,/obj/structure/torchwall/service{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cp" = (/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"cq" = (/obj/effect/floor_decal/turf/brick/two,/obj/effect/floor_decal/turf/plating,/obj/machinery/door/airlock/imperiumdoor,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"cq" = (/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Minor Imperialis Doorway - Retinue"},/obj/effect/floor_decal/turf/brick/two,/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cr" = (/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"cs" = (/obj/effect/floor_decal/turf/plating,/obj/machinery/door/airlock/highsecurity/imperiumdoor{name = "Fleet Agent's Chambers"},/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
-"ct" = (/obj/machinery/door/airlock/highsecurity/imperiumdoor{name = "Fleet Agent's Chambers"},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
+"cs" = (/obj/machinery/door/airlock/highsecurity/imperiumdoor{maxhealth = 1200; name = "Imperialis Door - Inquisitor"},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ct" = (/obj/machinery/door/airlock/highsecurity/imperiumdoor{name = "Imperialis Door - Inquisitor's Bedchamber"},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cu" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cv" = (/obj/structure/table/steel,/obj/effect/floor_decal/turf/brick,/obj/random/loot/lightstubber,/obj/random/loot/lightstubber,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cw" = (/obj/structure/table/steel,/obj/effect/floor_decal/turf/brick,/obj/random/loot/lightlasgun,/obj/random/loot/lightlasgun,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -105,7 +105,7 @@
 "cE" = (/obj/effect/floor_decal/turf/plating,/obj/structure/torchwall/service{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cF" = (/obj/effect/floor_decal/turf/plating,/obj/structure/bed/chair/wood/wings,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cG" = (/obj/structure/railing{dir = 1; icon_state = "railing0"},/turf/simulated/floor/plating,/area/cadiaoutpost/oa/krootship)
-"cH" = (/obj/structure/closet/cabinet,/obj/effect/floor_decal/turf/brick/two,/obj/item/clothing/head/inquisitor,/obj/item/clothing/shoes/jackboots/inquisitor,/obj/item/clothing/suit/inquisitor,/obj/item/clothing/under/inquisitor,/obj/item/cane/concealed,/obj/item/ammo_magazine/a357,/obj/item/ammo_magazine/a357,/obj/item/clothing/accessory/holster/waist,/obj/item/gun/projectile/lockebolter,/obj/item/clothing/glasses/chameleon,/obj/item/clothing/mask/chameleon,/obj/item/card/id/captains_spare{desc = "The spare ID of the Fleet Agent. It automatically overrides access to all standard-issue Fleet airlocks."; name = "Fleet Agent"; registered_name = "Fleet Agent"},/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
+"cH" = (/obj/structure/closet/cabinet,/obj/effect/floor_decal/turf/brick/two,/obj/item/clothing/head/inquisitor,/obj/item/clothing/shoes/jackboots/inquisitor,/obj/item/clothing/suit/inquisitor,/obj/item/clothing/under/inquisitor,/obj/item/cane/concealed,/obj/item/ammo_magazine/a357,/obj/item/ammo_magazine/a357,/obj/item/clothing/accessory/holster/waist,/obj/item/gun/projectile/lockebolter,/obj/item/clothing/glasses/chameleon,/obj/item/clothing/mask/chameleon,/obj/item/card/id/captains_spare{desc = "The spare ID of the Inquisitor"; name = "Inquisitor"; registered_name = "Inquisitor"},/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cJ" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/steel,/obj/item/ammo_magazine/bolt_rifle_magazine/empty,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter,/obj/item/ammo_casing/bolter{pixel_x = -4; pixel_y = 5},/obj/item/ammo_casing/bolter{pixel_x = -4; pixel_y = -4},/obj/item/ammo_casing/bolter{pixel_x = -4},/obj/item/ammo_casing/bolter{pixel_x = 4; pixel_y = 4},/obj/item/ammo_casing/bolter{pixel_y = -4},/obj/item/ammo_casing/bolter{pixel_x = 3},/obj/item/ammo_casing/bolter{pixel_y = 3},/obj/item/ammo_casing/bolter{pixel_y = 3},/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cL" = (/obj/effect/floor_decal/turf/plating,/obj/effect/decal/cleanable/blood/gibs/limb,/obj/structure/torchwall/service{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cM" = (/obj/effect/floor_decal/turf/plating,/obj/effect/floor_decal/chapel{dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -115,8 +115,9 @@
 "cQ" = (/obj/effect/floor_decal/carpet/red{dir = 4},/turf/simulated/floor/carpet/red,/area/centcom)
 "cR" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/table/marble{color = "grey"},/obj/item/book/manual{desc = "The Emperor once walked among men, but He is, and always has been, a god. The Emperor is the one true god, regardless of what past faiths any human may have worshipped. To purge the heretic, beware the psyker and mutant, and abhor the alien. Every human being has a place within the Emperor's divine order. To unquestionably obey the authority of the Imperial government and one's superiors."; name = "Lectitio Divinitatus"},/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cS" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 1; icon_state = "spline_plain"},/obj/structure/table/marble{color = "grey"},/obj/item/paper_bin,/obj/item/pen,/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
-"cT" = (/obj/structure/toilet{dir = 4},/obj/effect/floor_decal/turf/metal/six,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"cU" = (/obj/structure/torchwall/service{pixel_y = 32},/obj/effect/floor_decal/turf/metal/six,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"cT" = (/obj/structure/torchwall{dir = 4; icon_state = "torchwall0"},/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
+"cU" = (/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
+"cV" = (/obj/effect/decal/dead/two,/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cW" = (/obj/effect/floor_decal/carpet/red{dir = 8},/obj/structure/bed/chair/wood{dir = 4; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet/red,/area/centcom)
 "cX" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/rack/dark,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/obj/random/canned_food,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "cY" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/torchwall/service{dir = 1; icon_state = "torchwall0"},/obj/structure/closet/crate/ateopoine,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -129,11 +130,12 @@
 "df" = (/obj/effect/floor_decal/turf/brick,/obj/structure/torchwall/service{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/wood,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dg" = (/obj/effect/floor_decal/turf/brick,/obj/structure/sign/sancposter{pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dh" = (/obj/machinery/optable,/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"di" = (/mob/living/simple_animal/hostile/shafra{health = 380; melee_damage_upper = 40; mob_size = 25; name = "The Beast"},/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dj" = (/obj/effect/floor_decal/turf/brick,/obj/structure/sink{dir = 4; pixel_x = 12},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"dk" = (/obj/effect/floor_decal/turf/metal/six,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"dl" = (/obj/effect/floor_decal/turf/metal/six,/obj/machinery/door/blast/id_door,/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
-"dm" = (/obj/effect/floor_decal/turf/metal/six,/obj/effect/floor_decal/turf/metal,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"dn" = (/obj/structure/bed/chair,/obj/effect/floor_decal/turf/metal/six,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dk" = (/obj/effect/decal/dead,/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dl" = (/obj/machinery/door/blast/id_door{desc = "A large, apathetic, imposing, and cold looking door. Blood stains cover the surface as do what appear to be scratch marks. Uh oh."; id = "inqexec"; name = "blood stained door"},/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dm" = (/obj/effect/decal/cleanable/blood,/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dn" = (/obj/structure/bed/chair,/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
 "do" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/spline/plain{dir = 8; icon_state = "spline_plain"},/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dp" = (/obj/structure/window_frame{color = "grey"},/obj/structure/grille,/obj/machinery/door/blast/grates/open{dir = 4; icon_state = "gshutter0"; id = "inqexec"},/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/asteroid,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dq" = (/obj/structure/torchwall/service{pixel_y = 32},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -142,8 +144,8 @@
 "dt" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/torchwall/service{pixel_y = 32},/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "du" = (/obj/effect/floor_decal/turf/brick/two,/obj/effect/floor_decal/spline/plain,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dw" = (/obj/item/storage/firstaid/surgery,/obj/effect/floor_decal/turf/brick,/obj/item/toothpuller,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/item/reagent_containers/syringe/ld50_syringe/choral,/obj/structure/table/steel_reinforced,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"dx" = (/obj/structure/torchwall/service{dir = 1; icon_state = "torchwall0"},/obj/effect/floor_decal/turf/metal/six,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"dy" = (/obj/machinery/door/blast/grates/open{dir = 4; icon_state = "gshutter0"; id = "inqexec"},/obj/effect/floor_decal/turf/plating,/obj/machinery/door/airlock/imperiumdoor,/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dx" = (/obj/structure/torchwall/service{dir = 1; icon_state = "torchwall0"},/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dy" = (/obj/machinery/door/blast/grates/open{dir = 4; icon_state = "gshutter0"; id = "inqexec"},/obj/effect/floor_decal/turf/plating,/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Minor Imperialis Doorway - Retinue"},/turf/simulated/floor/asteroid/air,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dz" = (/obj/machinery/button/remote/blast_door/lever{color = "grey"; id = "inqexec"; pixel_y = -32},/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dA" = (/obj/effect/floor_decal/turf/plating,/obj/structure/table/steel,/obj/item/storage/box/handcuffs,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dB" = (/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -151,7 +153,7 @@
 "dD" = (/obj/machinery/atmospherics/pipe/tank/carbon_dioxide,/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/plating,/area/centcom)
 "dF" = (/obj/effect/floor_decal/turf/plating,/obj/structure/window/reinforced{dir = 8; icon_state = "rwindow"},/obj/structure/window/reinforced{color = "grey"; dir = 8; maxhealth = 400},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dG" = (/obj/effect/floor_decal/turf/plating,/obj/structure/window/reinforced{dir = 4; icon_state = "rwindow"},/obj/structure/window/reinforced{color = "grey"; dir = 4},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"dI" = (/obj/structure/statue/aquilla{color = "red"; desc = "The blood-soaked, two-headed eagle looms, fire glinting as it reflects off of it. It looks like it's glaring at you."},/turf/simulated/floor/airless/lava,/area/cadiaoutpost/gma/inquisitoracolyte)
+"dI" = (/obj/structure/statue/verina,/turf/simulated/floor/airless/lava,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dJ" = (/obj/machinery/door/airlock/highsecurity/imperiumdoor{maxhealth = 900},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dK" = (/obj/effect/floor_decal/turf/metal/five,/obj/structure/bed/roller,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "dM" = (/obj/effect/floor_decal/turf/metal/five,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/item/defensive_barrier,/obj/structure/table/rack/dark,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -176,7 +178,6 @@
 "fJ" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/wood,/area/centcom)
 "fL" = (/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/structure/closet/crate/meat,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "fO" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/suit_storage_unit/engineering,/obj/machinery/light,/turf/simulated/floor/tiled/dark,/area/centcom)
-"fQ" = (/obj/effect/floor_decal/turf/metal/five,/obj/structure/sign/bear/fugue{color = "grey"; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "fR" = (/obj/machinery/computer/operating,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "fT" = (/obj/machinery/telecomms/allinone,/turf/unsimulated/miningtime,/area/inqmoon)
 "fZ" = (/obj/structure/table/rack,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/obj/item/ammo_magazine/flamer,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
@@ -197,11 +198,11 @@
 "gR" = (/obj/effect/floor_decal/turf/plating,/obj/structure/torchwall{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
 "gW" = (/obj/effect/floor_decal/turf/brick,/obj/structure/table/steel_reinforced,/obj/item/reagent_containers/glass/jar/radium,/obj/item/reagent_containers/glass/jar/sulphuric_acid,/obj/item/reagent_containers/glass/jar/ethanol,/obj/item/reagent_containers/glass/jar/hydrochloric,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "gX" = (/obj/item/modular_computer/console/preset/civilian,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
-"gY" = (/obj/effect/floor_decal/turf/plating,/obj/structure/sign/bear/fugue{color = "grey"; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"gY" = (/obj/structure/sign/inquisition,/turf/simulated/wall/techno,/area/cadiaoutpost/gma/inquisitoracolyte)
 "ha" = (/obj/structure/bed/chair/office/dark,/turf/simulated/floor/wood,/area/centcom)
 "hb" = (/obj/effect/floor_decal/industrial/warning_red/corner{dir = 4},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "hc" = (/obj/effect/floor_decal/carpet/red{dir = 8},/obj/machinery/hologram/holopad/longrange,/turf/simulated/floor/carpet/red,/area/centcom)
-"hd" = (/obj/structure/bed/chair{dir = 4; icon_state = "chair_preview"},/obj/structure/sign/bear/gnome{color = "grey"; pixel_x = -32},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"hd" = (/obj/structure/sign/inquisition,/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/cadiaoutpost/oa/shuttle/inquisition)
 "he" = (/obj/effect/floor_decal/turf/bloodbar,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "hg" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/item/paper_bin,/obj/item/pen/multi,/turf/simulated/floor/carpet/red,/area/centcom)
 "hk" = (/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
@@ -210,7 +211,7 @@
 "hy" = (/obj/machinery/light/spot{dir = 8; icon_state = "tube1"},/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "hz" = (/obj/structure/table/woodentable,/obj/item/book/manual/barman_recipes,/obj/machinery/light{dir = 8; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/bar/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "hC" = (/obj/machinery/light/small/red,/obj/effect/floor_decal/turf/plating,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
-"hD" = (/obj/effect/floor_decal/turf/plating,/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Shuttle"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
+"hD" = (/obj/effect/floor_decal/turf/plating,/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Minor Imperialis Doorway - Retinue"},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
 "hE" = (/obj/effect/floor_decal/carpet/red,/turf/simulated/floor/carpet/red,/area/centcom)
 "hF" = (/obj/effect/floor_decal/turf/metal/three,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
 "hG" = (/obj/effect/floor_decal/turf/metal,/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -334,7 +335,6 @@
 "kQ" = (/obj/structure/table/standard{name = "plastic table frame"},/obj/machinery/light/spot,/obj/machinery/cell_charger,/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/tauship)
 "kV" = (/obj/machinery/door/airlock/centcom,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "kX" = (/obj/machinery/shower{dir = 1; icon_state = "shower"},/obj/structure/curtain/open/shower,/turf/simulated/floor/tiled/dark,/area/centcom)
-"kY" = (/obj/effect/floor_decal/turf/brick,/obj/machinery/door/airlock/imperiumdoor,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "ll" = (/obj/structure/table/rack,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/obj/item/storage/firstaid/toxin,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "lp" = (/obj/machinery/door/airlock/cone,/turf/simulated/floor/tiled/dark,/area/centcom)
 "lu" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/structure/filingcabinet/filingcabinet,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -346,16 +346,16 @@
 "mb" = (/obj/machinery/chemical_dispenser/full,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "md" = (/obj/machinery/chem_master,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "me" = (/obj/structure/table/steel,/obj/machinery/reagentgrinder,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
-"mD" = (/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Shuttle"},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
+"mD" = (/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Minor Imperialis Doorway - Retinue"},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
 "mG" = (/obj/machinery/sleeper,/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "mN" = (/turf/simulated/floor/carpet,/area/centcom)
 "mQ" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/item/forensics/swab,/obj/item/forensics/sample_kit/powder,/obj/structure/table/steel,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "mV" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/cult/tome,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"mY" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/machinery/door/airlock/medical{color = "grey"; desc = "If anyone knew why the Fleet Agent was truly here, they'd be horrified."; maxhealth = 600; name = "Laboratory"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"mY" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/machinery/door/airlock/medical{color = "grey"; maxhealth = 600; name = "Laboratorum"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "nh" = (/obj/structure/closet/crate/meat,/turf/simulated/floor/tiled/freezer,/area/cadiaoutpost/gma/inquisitoracolyte)
 "ni" = (/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/door/window/brigdoor/westleft{color = "grey"; health = 900; maxhealth = 900},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "nl" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/effect/decal/cleanable/blood/gibs/xeno/limb,/obj/effect/decal/cleanable/blood/gibs/xeno/down,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"ns" = (/obj/effect/floor_decal/turf/brick,/obj/structure/bed{desc = "A mass produced sleeping mat, now with actual cloth!"; icon_state = "bed_padding1"; name = "sleeping mat"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"ns" = (/obj/effect/floor_decal/turf/brick,/obj/item/material/knife/folding/combat/switchblade,/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "nt" = (/obj/effect/floor_decal/carpet{dir = 8},/turf/simulated/floor/carpet,/area/centcom)
 "nz" = (/obj/machinery/teleport/station,/obj/effect/floor_decal/turf/metal/five,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "nH" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/structure/reagent_dispensers/watertank,/obj/machinery/light,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -397,7 +397,6 @@
 "sm" = (/turf/simulated/shuttle/wall/corner/dark/nw{color = "grey"},/area/centcom)
 "sy" = (/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "sC" = (/turf/simulated/shuttle/wall/corner/dark/ne{color = "grey"},/area/centcom)
-"sS" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/sign/sancposter/four{desc = "'...as for categorization, I'm stumped. It's a carbon-based lifeform, but beyond that, its biological proccesses are like nothing I've seen before, and nothing like what is on Biblio-32c. More samples are likely required to...'"; name = "research"; pixel_y = -28},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "sX" = (/obj/machinery/atmospherics/pipe/tank/air,/turf/simulated/floor/plating,/area/centcom)
 "sY" = (/obj/structure/railing{dir = 4},/obj/effect/floor_decal/industrial/warning_red{dir = 4},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "sZ" = (/obj/structure/window/reinforced{color = "grey"; dir = 8; maxhealth = 400},/obj/structure/bed/chair{dir = 1; icon_state = "chair_preview"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
@@ -408,7 +407,6 @@
 "tv" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/bed{desc = "A mass produced sleeping mat, now with actual cloth!"; icon_state = "bed_padding1"; name = "sleeping mat"},/obj/structure/sign/sancposter{pixel_y = 32},/obj/effect/landmark/start{name = "Principal Agent"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "tC" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/effect/floor_decal/industrial/warning_red/corner{dir = 8},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "tM" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/woodentable{color = "#36261B"},/obj/item/material/sword/commissword{name = "Ornate Sword"},/obj/structure/torchwall/service{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
-"tO" = (/obj/structure/bed/chair{dir = 8; icon_state = "chair_preview"},/obj/structure/sign/bear/gnome{color = "grey"; pixel_x = 32},/turf/simulated/floor/shuttle/black,/area/cadiaoutpost/oa/shuttle/inquisition)
 "tU" = (/obj/machinery/teleport/station,/obj/machinery/light/spot{dir = 1; icon_state = "tube1"},/turf/simulated/floor/shuttle/white,/area/cadiaoutpost/oa/tauship)
 "ue" = (/obj/structure/table/woodentable,/obj/effect/floor_decal/newcorner/bar/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "ug" = (/obj/structure/closet/secure_closet/freezer/meat,/turf/simulated/floor/tiled/freezer,/area/centcom)
@@ -418,12 +416,12 @@
 "uz" = (/obj/structure/bed/chair/office/dark{dir = 1; icon_state = "officechair_dark_preview"},/obj/machinery/light{dir = 4; icon_state = "tube1"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "uD" = (/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/plating/reinforced,/area/centcom)
 "uG" = (/obj/machinery/light,/obj/structure/table/rack,/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,/obj/item/gun/energy/las/lasgun/tinkered/lascarbine,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
-"uI" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/statue/xenotube/l2{desc = "A containment tube housing some sort of horrific...something. It looks like it's been here a long time."},/obj/effect/floor_decal/turf/bloodbar,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"uI" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/statue/xenotube/l2,/obj/effect/floor_decal/turf/bloodbar,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "uK" = (/obj/machinery/atmospherics/pipe/tank/oxygen,/turf/simulated/floor/plating,/area/centcom)
 "uT" = (/obj/structure/closet/emcloset{color = "grey"},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "uY" = (/obj/machinery/computer/crew,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "vd" = (/obj/machinery/gibber,/turf/simulated/floor/tiled/freezer,/area/cadiaoutpost/gma/inquisitoracolyte)
-"vm" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/statue/xenotube/r2{desc = "A containment tube housing some sort of horrific...something. It looks like it's been here a long time."},/obj/effect/floor_decal/turf/bloodbar,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"vm" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/statue/xenotube/r2,/obj/effect/floor_decal/turf/bloodbar,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "vn" = (/obj/structure/table/steel,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "vw" = (/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "vE" = (/turf/unsimulated/wall,/area/centcom)
@@ -431,7 +429,7 @@
 "vG" = (/obj/machinery/light{dir = 8; icon_state = "tube1"},/obj/effect/floor_decal/newcorner/plazaf/diagonal,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "vK" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/structure/bed/chair/office/dark{dir = 1; icon_state = "officechair_dark_preview"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "vO" = (/turf/simulated/shuttle/wall{color = "grey"; icon_state = "wall3"},/area/centcom)
-"vS" = (/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Watercloset"},/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"vS" = (/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Minor Imperialis Doorway - Retinue"},/obj/effect/floor_decal/turf/brick/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "vT" = (/obj/machinery/computer/shuttle_control/emergency,/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "vV" = (/obj/effect/floor_decal/newcorner/bar/diagonal,/obj/structure/closet/secure_closet/bar,/turf/simulated/floor/tiled/dark,/area/centcom)
 "vW" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/computer/rcon,/turf/simulated/floor/tiled/dark,/area/centcom)
@@ -482,7 +480,7 @@
 "BA" = (/obj/machinery/teleport/hub,/turf/simulated/floor/shuttle/yellow,/area/cadiaoutpost/oa/tauship)
 "BC" = (/obj/effect/floor_decal/carpet{dir = 8},/obj/structure/bed/chair/wood{dir = 4; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet,/area/centcom)
 "BK" = (/obj/structure/table/rack,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/obj/item/storage/firstaid/adv,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
-"BZ" = (/obj/effect/floor_decal/turf/brick,/obj/machinery/door/airlock/medical{color = "grey"; desc = "If anyone knew why the Fleet Agent was truly here, they'd be horrified."; maxhealth = 600; name = "Laboratory"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"BZ" = (/obj/effect/floor_decal/turf/brick,/obj/machinery/door/airlock/medical{color = "grey"; maxhealth = 600; name = "Laboratorum"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ci" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/bookcase/manuals{name = "Tomes Of The Ordos Malleus"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Cn" = (/obj/machinery/optable,/obj/machinery/oxygen_pump/anesthetic{pixel_x = -32},/turf/simulated/floor/tiled{color = "grey"},/area/centcom)
 "Cw" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/curtain/open/privacy,/obj/structure/window/reinforced,/obj/structure/window/reinforced{dir = 1; icon_state = "rwindow"},/obj/machinery/shower,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -536,10 +534,8 @@
 "Hu" = (/obj/machinery/door/airlock/centcom,/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
 "HF" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/structure/bed/chair/office/dark{dir = 8; icon_state = "officechair_dark_preview"},/turf/simulated/floor/tiled/dark,/area/centcom)
 "HK" = (/obj/structure/table/rack,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/obj/item/grenade/frag/high_yield/krak,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
-"HN" = (/obj/effect/floor_decal/turf/brick,/obj/machinery/door/airlock/imperiumdoor{name = "Armory"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "HQ" = (/obj/structure/railing{dir = 4},/obj/effect/floor_decal/industrial/warning_red{dir = 4},/obj/machinery/computer/ertcogitator,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "Ia" = (/obj/structure/table/steel,/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/door/window/northleft,/obj/machinery/door/window/southleft,/turf/simulated/floor/tiled/dark,/area/centcom)
-"If" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/sign/sancposter{desc = "'...to call the creature inside 'poorly understood' would be a wild understatement. The creature appears to, despite our best attempts to kill it, actually be regenerating in its tube. We have tried everything from temperature to radiation to poison to viral agents."; name = "research"; pixel_y = -28},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Ig" = (/obj/machinery/suit_storage_unit/medical,/obj/effect/floor_decal/newcorner/teal/diagonal,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "Io" = (/obj/structure/table/steel,/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/door/window/northright,/obj/machinery/door/window/southright,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Is" = (/obj/effect/floor_decal/carpet,/obj/structure/bed/chair/wood{dir = 4; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet,/area/centcom)
@@ -559,7 +555,7 @@
 "JW" = (/obj/machinery/door/airlock/freezer{name = "Freezer"},/obj/machinery/door/firedoor,/turf/simulated/floor/tiled/freezer,/area/cadiaoutpost/gma/inquisitoracolyte)
 "JZ" = (/obj/structure/closet/secure_closet/freezer/fridge,/turf/simulated/floor/tiled/freezer,/area/centcom)
 "Ko" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
-"Ks" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/statue/xenotube/l1{desc = "A containment tube housing some sort of horrific...something. It looks like it's been here a long time."},/obj/effect/floor_decal/turf/bloodbar,/obj/effect/decal/cleanable/blood,/obj/structure/cult/forge,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"Ks" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/statue/xenotube/l1,/obj/effect/floor_decal/turf/bloodbar,/obj/effect/decal/cleanable/blood,/obj/structure/cult/forge,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Kz" = (/mob/living/simple_animal/cow,/turf/simulated/floor/tiled/freezer,/area/centcom)
 "KB" = (/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "KZ" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/rack/dark,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/reagent_containers/food/drinks/canteen,/obj/item/reagent_containers/food/drinks/canteen,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -591,7 +587,7 @@
 "Ng" = (/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/structure/closet/crate/ateopoine,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "Ni" = (/obj/structure/sign/double/impbar/left{pixel_y = 30},/obj/item/stool/bar/padded,/turf/simulated/floor/wood,/area/centcom)
 "Nk" = (/obj/structure/sign/double/impbar/right{pixel_y = 30},/turf/simulated/floor/wood,/area/centcom)
-"Nz" = (/obj/effect/floor_decal/turf/brick/two,/obj/machinery/door/airlock/imperiumdoor,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"Nz" = (/obj/effect/floor_decal/turf/brick/two,/obj/machinery/door/airlock/imperiumdoor{maxhealth = 1200; name = "Minor Imperialis Doorway - Retinue"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "NF" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/torchwall/service{dir = 8; icon_state = "torchwall0"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "NL" = (/obj/effect/wingrille_spawn/reinforced/full,/turf/simulated/floor/tiled/dark,/area/centcom)
 "NN" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/effect/floor_decal/carpet,/turf/simulated/floor/carpet,/area/centcom)
@@ -610,11 +606,10 @@
 "Pz" = (/obj/effect/floor_decal/newcorner/plazaf/diagonal,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "PR" = (/obj/structure/table/rack,/obj/item/gun/energy/las/lasgun/tinkered,/obj/item/gun/energy/las/lasgun/tinkered,/obj/item/gun/energy/las/lasgun/tinkered,/obj/item/gun/energy/las/lasgun/tinkered,/obj/item/gun/energy/las/lasgun/tinkered,/obj/item/gun/energy/las/lasgun/tinkered,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "PY" = (/turf/simulated/floor/tiled/freezer,/area/centcom)
-"PZ" = (/obj/effect/floor_decal/turf/brick,/obj/structure/toilet{color = "grey"; dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"PZ" = (/obj/effect/floor_decal/turf/brick,/obj/item/reagent_containers/food/snacks/poo,/obj/structure/toilet{color = "grey"; dir = 8},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Qc" = (/obj/machinery/light{dir = 4; icon_state = "tube1"},/obj/effect/floor_decal/industrial/warning_red/corner{dir = 1},/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "Qd" = (/obj/effect/floor_decal/carpet{dir = 1},/obj/structure/bed/chair/wood{dir = 4; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet,/area/centcom)
 "Qg" = (/obj/machinery/atmospherics/pipe/tank/oxygen,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/plating,/area/centcom)
-"Qn" = (/obj/effect/floor_decal/turf/metal/two,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Qo" = (/turf/simulated/floor/plating,/area/centcom)
 "Qs" = (/obj/effect/floor_decal/carpet{dir = 1},/obj/structure/table/woodentable{color = "#36261B"},/turf/simulated/floor/carpet,/area/centcom)
 "Qy" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/effect/floor_decal/carpet{dir = 4},/obj/effect/floor_decal/carpet{dir = 1},/obj/effect/floor_decal/carpet{dir = 5},/obj/structure/bed/chair/wood{dir = 8; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet,/area/centcom)
@@ -625,7 +620,6 @@
 "QN" = (/obj/item/modular_computer/console/preset/command,/turf/simulated/floor/wood,/area/centcom)
 "QP" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/sink{dir = 4; pixel_x = 12},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "QU" = (/obj/structure/bed/chair/office/dark{dir = 1; icon_state = "officechair_dark_preview"},/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
-"Ra" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/sign/sancposter/two{desc = "A warning of foreign viral agents and chemicals."; name = "hazard plaque"; pixel_x = -27},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Re" = (/obj/machinery/door/airlock/glass,/obj/effect/floor_decal/newcorner/plazaf/diagonal,/obj/effect/floor_decal/newcorner/plazaf,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
 "Rm" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/vending/engineering,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Rt" = (/obj/machinery/door/airlock/glass,/turf/simulated/floor/tiled/freezer,/area/centcom)
@@ -633,7 +627,7 @@
 "RF" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/bed{desc = "A mass produced sleeping mat, now with actual cloth!"; icon_state = "bed_padding1"; name = "sleeping mat"},/obj/effect/landmark/start{name = "Principal Agent"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "RG" = (/turf/simulated/floor/tiled/dark,/area/centcom)
 "RO" = (/obj/machinery/fusion_fuel_injector{dir = 4; icon_state = "injector0"},/obj/effect/floor_decal/newcorner/yellow/diagonal,/turf/simulated/floor/tiled/dark,/area/centcom)
-"Sk" = (/obj/effect/floor_decal/turf/brick/two,/obj/effect/floor_decal/turf/plating,/obj/machinery/door/airlock/imperiumdoor{name = "Armory"},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"Sk" = (/obj/effect/floor_decal/turf/brick,/obj/effect/decal/cleanable/blood/gibs,/obj/effect/decal/cleanable/blood/gibs/core,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Sv" = (/obj/effect/floor_decal/newcorner/yellow/diagonal,/obj/machinery/computer/robotics,/turf/simulated/floor/tiled/dark,/area/centcom)
 "Sw" = (/turf/simulated/shuttle/wall/corner/dark/se{color = "grey"},/area/centcom)
 "SE" = (/obj/machinery/light{dir = 1; icon_state = "tube1"},/obj/structure/table/rack,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/obj/item/storage/belt/medical/full,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
@@ -668,10 +662,9 @@
 "Wa" = (/obj/machinery/atmospherics/pipe/tank/phoron,/obj/machinery/light{dir = 8; icon_state = "tube1"},/turf/simulated/floor/plating,/area/centcom)
 "Wb" = (/obj/structure/bed/chair/wood{dir = 8; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet,/area/centcom)
 "Wk" = (/obj/structure/table/woodentable{color = "#36261B"},/obj/machinery/reagentgrinder,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
-"Wm" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/statue/xenotube{desc = "A containment tube housing some sort of horrific...something. It looks like it's been here a long time."},/obj/effect/floor_decal/turf/bloodbar,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"Wm" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/metal/five,/obj/structure/statue/xenotube,/obj/effect/floor_decal/turf/bloodbar,/obj/effect/decal/cleanable/blood,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Wp" = (/obj/structure/bed/chair/wood{dir = 4; icon_state = "wooden_chair_preview"},/turf/simulated/floor/carpet,/area/centcom)
 "Wr" = (/obj/structure/window/shuttle{color = "grey"},/turf/unsimulated/wall/fakeglass{color = "grey"; dir = 8; icon_state = "fakewindows2"},/area/centcom)
-"WH" = (/obj/effect/floor_decal/turf/plating,/obj/structure/sign/bear/fugue{color = "grey"; pixel_y = 32},/turf/simulated/floor/plating,/area/cadiaoutpost/gma/inquisitoracolyte)
 "WI" = (/obj/effect/floor_decal/newcorner/teal/diagonal,/obj/structure/closet/secure_closet/medical3,/turf/simulated/floor/tiled{icon_state = "white1"},/area/centcom)
 "Xd" = (/obj/effect/floor_decal/turf/brick/two,/obj/structure/table/steel,/obj/item/material/knife/butch,/turf/simulated/wall/techno,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Xe" = (/obj/structure/table/marble{color = "grey"},/obj/effect/floor_decal/newcorner/plazaf/diagonal,/turf/simulated/floor/tiled/dark{color = "grey"},/area/centcom)
@@ -683,7 +676,7 @@
 "XU" = (/obj/effect/floor_decal/turf/brick/two,/obj/machinery/cooker/oven,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "XZ" = (/turf/unsimulated/wall/fakeglass{color = "grey"; dir = 8; icon_state = "fakewindows"},/area/centcom)
 "Ye" = (/obj/machinery/light,/turf/simulated/floor/wood,/area/centcom)
-"Yq" = (/obj/effect/floor_decal/turf/plating,/obj/structure/window/reinforced/reliquary,/obj/structure/sign/double/planet/right{desc = "A screen showing the planet from orbit. It's covered in ugly gashes from the mineral-extractors, and shrouded in ash and snow. How beautiful it must have been before the Conflict..."; name = "satelite feed"; pixel_y = 32},/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
+"Yq" = (/obj/effect/floor_decal/turf/brick,/obj/effect/decal/cleanable/blood/gibs,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
 "Yr" = (/turf/unsimulated/wall/fakeglass{color = "grey"; dir = 8; icon_state = "fakewindows2"},/area/centcom)
 "Yt" = (/turf/unsimulated/wall/fakeglass{color = "grey"; dir = 4; icon_state = "fakewindows"},/area/centcom)
 "YD" = (/obj/effect/floor_decal/turf/brick,/obj/effect/floor_decal/turf/brick,/turf/simulated/floor/tiled/dark,/area/cadiaoutpost/gma/inquisitoracolyte)
@@ -767,34 +760,34 @@ axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUJWlUlUlUcpEUEUEUcplUymlRmVtMlURFcpcpcpRFlUJOvSlUlUjbaxaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblULKLKLKnhlUcpcpcpcpNFlUlUlUlUlUlUihcpcpcpcplUcpcpQPlUjbbDbDaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUvdLKLKlwlUcpcpcpcpcplUbHbIbLeflURFyGLTTVRFlUCwcpAIlUjbbEbDbDaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUlUlUlUlUlUlUSkSklUlUbNbPbPbQlUlUlUlUlUlUlUlUlUlUlUjbbEbEbDbDaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbjblUbRbSbTbVlUcdcpcpcdlUcecfcfcglUchciYqchlUcjckclcmlUjbbEbEbEbDbDaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUcnbPbPbPHNcpcpcpcpSkcrcrcrcrcscrcrcrcrctcucucuculUjbbEbEbEbEbDbDaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUcwcwcxcylUczcpcpcAlUcrcCcDcrlUcEcrcFcrlUeEcHcJcJlUjbbEbEbEbEbEbDaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUlUlUlUlUlUlUcqcqlUlUbNbPbPbQlUlUlUlUlUlUlUlUlUlUlUjbbEbEbDbDaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbjblUbRbSbTbVlUcdcpcpcdlUcecfcfcglUchcicichlUcjckclcmlUjbbEbEbEbDbDaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUcnbPbPbPZacpcpcpcpcqcrcrcrcrcscrcrcrcrctcucucuculUjbbEbEbEbEbDbDaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUcvcwcxcylUczcpcpcAlUcrcCcDcrlUcEcrcFcrlUeEcHcJcJlUjbbEbEbEbEbEbDaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUlUlUlUlUcXcpcpfclUcrcMcNcrlUcOcPcRcSlUlUlUlUlUlUjbbEbEbEbEbEbDbDaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxlUlUcTcUdklUcXMRcYKZlUcrcZdacrlUdbdddedflUcndgdhlUjbjbbEbEbEbEbEbEbDbDbD
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxlUlUlUdkdklUlUlUlUlUlUcrlUlUcrlUlUlUlUlUlUbPdjlUlUjbbEbEbEbEbEbEbEbEbEbD
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxfTaxaxaxaxaxlUlUdkQndldmdndodpcrcrgYdqcrcrdrdsdtduZabPdwdXlUjbbEbEbEbEbEbEbEbEbEbD
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblUlUlUlUlUdxdkdodydzGocrcrcrdAbGdBdBdBlUbPbPbPlUjbbEbEbEbEbEbEbEbEbDbD
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUlUJOlUlUlUlUlUlUlUlUlUlUJOlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUdCdClUlUlUlUlUlUlUgzgQgWlUjbbEbEbEbEbEbEbEbEbDax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgAgAgAgAgAgAWHgAgAgAWHgAgAgAgAeplUgBgPlUlUbFbFbFbFlUdSdSdSfDfDdSdFdGdSfDfDdSdSlUlUlUlUlUlUjbbEbEbEbEbEbEbEbEbDax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxlUlUcTcUcVlUcXMRcYKZlUcrcZdacrlUdbdddedflUcndgdhlUjbjbbEbEbEbEbEbEbDbDbD
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxlUlUlUdicUlUlUlUlUlUlUcrgYlUcrlUlUlUlUlUlUbPdjlUlUjbbEbEbEbEbEbEbEbEbEbD
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxfTaxaxaxaxaxlUlUdkcUdldmdndodpcrcrcrdqcrcrdrdsdtduZabPdwdXlUjbbEbEbEbEbEbEbEbEbEbD
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjblUlUlUlUlUdxcUdodydzGocrcrcrdAbGdBdBdBlUbPbPbPlUjbbEbEbEbEbEbEbEbEbDbD
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUlUJOlUlUlUgYlUlUlUgYlUlUJOlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUdCdClUlUlUlUlUlUlUgzgQgWlUjbbEbEbEbEbEbEbEbEbDax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAeplUgBgPlUlUbFbFbFbFlUdSdSdSfDfDdSdFdGdSfDfDdSdSlUlUlUlUlUlUjbbEbEbEbEbEbEbEbEbDax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUcLgAgAgAgAgAgAgAgAgAgAgAgAgAgAgAdNdNdNlUlUbFbFbFbFlUdSdSdSdIfDdSdFdGdSdIfDdSlUlUjbjbjbjbjbjbbEbEbEbEbEbEbEbDbDax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgAgAgAhCgAgAgAgAgAgAhCgAgAgAgAgRlUdNdNlUlUlUlUlUlUlUdSdSdSdSdSdSdFdGdSdSdSlUlUjbjbjbjbbEbEbEbEbEbEbEbEbEbEbDaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUgsgslUlUhDlUlUgsgslUlUlUiJiJlUlUheLslUlUlUlUlUlUlUdSdSdSdSdSdSdFdGdSlUlUlUJOlUlUlUlUbEbEbEbEbEbEbEbEbEbDbDaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbjblUhFhFlUhGixiIlUhFhFlUlUlUlUlUlUlUdNdNhedNfQhedNdNlUdSdSdSdSdSlUdJdJlUquSOSOLlbPPZlUlUbEbEbEbEbEbEbEbEbEbDaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUgsgslUlUhDlUlUgsgslUlUlUiJiJlUlUheLslUlUgYlUlUlUlUdSdSdSdSdSdSdFdGdSlUlUlUJOlUlUlUlUbEbEbEbEbEbEbEbEbEbDbDaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjbjblUhFhFlUhGixiIlUhFhFlUlUlUlUlUlUlUdNdNhedNdNhedNdNlUdSdSdSdSdSlUdJdJlUquSOSOLlbPPZlUlUbEbEbEbEbEbEbEbEbEbDaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxgxgxhGixiIgxgxgxlUjbaxaxaxlUlUdNdNhedNdNhedNjllUdSdSdSdSdSlUbPbPlUbPYDbPrAbPbPlUlUbEbEbEbEbEbEbEbEbDbDaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxgxgxhGixiIgxgxgxlUjbaxaxaxlUlUlUlUlUlUlUlUhehelUdSdSdSdSdSlUbPbPkYbPbPbPCLbPbPlUlUbEbEbWbEbWbWbEbEbDaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxgxgxhGixiIgxgxgxlUjbaxaxaxlUlUlUlUlUlUlUlUhehelUdSdSdSdSdSlUbPbPZabPbPbPCLbPbPlUlUbEbEbWbEbWbWbEbEbDaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxgxgxhGixiIgxgxgxlUjbaxaxaxjbjbjbjbjbjblUlUdNdNlUlUlUdSdSdSlUbPbPlUqalEZXMBGpnslUlUlUlUlUlUbWbWbWbDbDaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUirgxhGixiIgxislUlUjbbDbDbDbDbDbDbDbDjblUlUdNdNdKjtlUJOlUbKlUbPzUlUlUlUlUlUlUlUlUlUlUlUlUlUiwiwiwbDaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHiHjjjojjjqiHgxlUjbbDbDbDbDbDbDbDbDjblUdMdNdNdNQnkYbPbPbPbPbPbPbPjkbPbPbPbPbPbPbPbPbPZtlUpfjmbDbDaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHiNiOiOiOiPiHgxlUjbbDbDbEbDbDbDbDbDjblUdPdNdNdNQnkYbPbPbPbPbPbPbPjkbPbPbPbPbPbPbPbPbPZtlUpfjmbDaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHiHjjjojjjqiHgxlUjbbDbDbDbDbDbDbDbDjblUdMdNdNdNdNZabPbPbPbPbPbPSkjkbPbPbPbPbPbPbPbPbPZtlUpfjmbDbDaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHiNiOiOiOiPiHgxlUjbbDbDbEbDbDbDbDbDjblUdPdNdNdNdNZabPbPbPbPbPbPYqjkbPbPbPbPbPbPbPbPbPZtlUpfjmbDaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHiNiOiOiOiPiHgxlUjbbDbEbEbEbEbEbEbEjblUlUdNdNdNiQlUlUlUBZlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUbDbDaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHiWiOiOiOiXiHgxlUjbbDbEbEbEbEbEbEbEjblUlUlUlUlUlUlUlUQBVWSNlUGDxxqOAtVxrqJfxxVWxppSVWVWlUjbaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHhdiOiOiOtOiHgxlUjbbEbEbEbEbEbEbWbWaxjbjbYWnzoqjbjblURaVWVWlULaVWVWVWVWVWVWVWVWxppSVWVWlUjbaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxhdiWiOiOiOiXhdgxlUjbbEbEbEbEbEbEbWbWaxjbjbYWnzoqjbjblUVWVWVWlULaVWVWVWVWVWVWVWVWxppSVWVWlUjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHiHiHmDiHiHiHgxlUjbbEbEbEbEbEbWbWbWbWbWbWbWbWbWbWjblUQBVWqllUmQVWBhUsVWozBhVWVWxppSVWVWlUjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHrDiOiOiOICiHgxlUjbbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWjblUlUmYlUlUVNVWVWVWVWVWVWVWVWqjFFVWPwlUjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxiHiHjrqwjsiHiHgxlUjbbEbEbEbEbEbEbWbWbWbWbWbWbWbWbWjblUFGVWVWVxVWVWVWVWVWvmuIVWVWxppSVWnllUjbaxaxaxaxaxaxaxax
-axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxgxiHiHjhiHiHgxgxlUjbbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWjblUFGVWVWVWVWVWMDVWIfWmKssSVWxppSVWxllUjbaxaxaxaxaxaxaxax
+axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxgxiHiHjhiHiHgxgxlUjbbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWjblUFGVWVWVWVWVWMDVWVWWmKsVWVWxppSVWxllUjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxgxgxiHjuiHgxgxgxlUjbbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWjblUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUlUjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUgxgxgxgxgxgxgxgxgxlUjbbEbEbEbEbEbEbEbWbWbWbWbWbWbWbWjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbjbaxaxaxaxaxaxaxax
 axaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxjblUlUlUlUlUlUlUlUlUlUlUjbbEbEbEbEbEbEbEbEbWbWbWbWbEbEbEbEaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxaxax

@@ -48,3 +48,6 @@ tools/dmitool/bin/main/dmitool/RGBA.class
 /config/space_ruin_blacklist.txt
 /config/custom_sprites.txt
 /config/custom_items.txt
+/config/admins.txt
+/config/admin_ranks.txt
+/config/in_character_filter.txt

@@ -50,6 +50,13 @@
 		H.bowels = -INFINITY //he's too heavily modified to require things like a toilet
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
+		if (prob(15))
+			to_chat(H, "<span class='notice'><b><font size=2>You keep getting flashes of memories. You need to remember who you were. Your name- you remember your name. Seek out records, people, anyone who may remember traces of your past.</font></b></span>")
+		else if (prob(15))
+			to_chat(H, "<span class='notice'><b><font size=2>You feel a deep aching in the pit of your stomach, looking at how...inadequite this outpost is. You must improve it immediately.</font></b></span>")
+		else if (prob(100))
+			to_chat(H, "<span class='notice'><b><font size=2>Your mind is relatively at ease. Nothing in particular bothers you at this moment.</font></b></span>")
+
 
 
 

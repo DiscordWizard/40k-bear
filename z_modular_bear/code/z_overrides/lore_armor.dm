@@ -22,6 +22,10 @@
 	name = "!st Fleet Tan Fatigues"
 	desc = "Tan fatigues of the 1st Fleet. Probably a bad idea on a snowy planet..."
 
+/obj/item/clothing/under/skirt_c/dress/eggshell
+	name = "High Priestess undergarments"
+	desc = "A simple white dress the High Priestess wears underneath their fancy robes. Plain to emphasize that no matter how you appear outwards, you should always stay humble and honest on the inside."
+	color = "#f0ead6"
 
 
 
@@ -68,3 +72,24 @@
 	name = "Nullbody robes"
 	desc = "These robes hide a mess of chrome and wires, grotesque misshapen flesh, secrets. Who was the person underneath this?"
 
+
+// Armor
+
+/obj/item/clothing/shoes/sisterofbattle
+	name = "steel greaves"
+	desc = "A pair of steel greaves. Rather protective."
+	icon_state = "sister"
+	item_state = "sister"
+	armor = list(melee = 40, bullet = 30, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
+	species_restricted = null
+
+/obj/item/clothing/gloves/sisterofbattle
+	name = "steel gauntlets"
+	desc = "A pair of steel gauntlets. Rather protective."
+	color = "grey"
+
+/obj/item/clothing/head/helmet/sentryhelm
+	name = "steel helmet"
+	desc = "A basic helmet meant to protect the wearer from things that seek to smash their head. Shockingly protective."
+	str_requirement = 12
+	flags_inv = null
