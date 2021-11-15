@@ -1,9 +1,9 @@
-//moved to modular_bear
+//moves from code/rippers.dm
 
 /mob/living/simple_animal/hostile/rippers
 	name = "Ripper"
 	real_name = "Ripper"
-	desc = "Gnawing, gnashing worms!"
+	desc = "A tiny, carnivorous half-worm, half-snake that's extremely communal. Mostly hang around in dark caves and sewage. They're kind of cute, actually- ow! Ouch! It's RIP-ing off my fingers! Get it? Ripper? Rippin- OW!"
 	icon = 'icons/mob/human_races/tyranids/tyranids.dmi'
 	icon_state = "ripper"
 	icon_living = "ripper"
@@ -19,10 +19,10 @@
 	response_harm   = "mauls"
 	melee_damage_lower = 10
 	melee_damage_upper = 10
-	attacktext = "mauls and bites with all its might!"
+	attacktext = "chomps down!"
 	maxbodytemp = 1000
-	see_in_dark = 10
-	wander = 1
+	see_in_dark = 6
+	wander = 0
 
 	speed = -2.5
 
@@ -122,3 +122,4 @@
 		var/mob/living/L = target_mob
 		L.adjustBruteLoss(damage)
 		return L
+

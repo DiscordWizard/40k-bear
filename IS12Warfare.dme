@@ -1784,7 +1784,6 @@
 #include "code\modules\mob\living\simple_animal\hostile\mining.dm"
 #include "code\modules\mob\living\simple_animal\hostile\pike.dm"
 #include "code\modules\mob\living\simple_animal\hostile\pirate.dm"
-#include "code\modules\mob\living\simple_animal\hostile\rippers.dm"
 #include "code\modules\mob\living\simple_animal\hostile\russian.dm"
 #include "code\modules\mob\living\simple_animal\hostile\smalldemon.dm"
 #include "code\modules\mob\living\simple_animal\hostile\syndicate.dm"
@@ -2536,6 +2535,7 @@
 #include "z_modular_bear\code\z_overrides\lore_obj.dm"
 #include "z_modular_bear\code\z_overrides\lore_weapons.dm"
 #include "z_modular_bear\code\z_overrides\z_job_overrides.dm"
+#include "z_modular_bear\code\z_overrides\mobs\rippers.dm"
 #include "z_modular_bear\code\z_overrides\mobs\smalldemon.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
