@@ -4,7 +4,7 @@
 
 
 /datum/job/chaplain
-	title = "Deacon"
+	title = "High Priestess"
 	department = "Ministorum"
 	department_flag = CIV|COM
 	total_positions = 1
@@ -199,6 +199,33 @@
 
 
 
+//Chaplain outfit
+
+/decl/hierarchy/outfit/job/chaplain
+	name = OUTFIT_JOB_NAME("High Priestess")
+	uniform = /obj/item/clothing/under/skirt_c/dress/eggshell
+	neck = /obj/item/reagent_containers/food/drinks/canteen
+	id_type = /obj/item/card/id/civilian/chaplain
+	pda_type = null
+	pda_slot = null
+	l_ear = /obj/item/device/radio/headset/red_team
+	r_ear = null
+	l_pocket = /obj/item/storage/box/ifak
+	belt = /obj/item/device/flashlight/lantern
+	back = /obj/item/storage/backpack/satchel/warfare
+	suit = /obj/item/clothing/suit/ministorumrobes
+	suit_store = null
+	l_hand = /obj/item/staff/ministorumstaff
+	r_hand = /obj/item/melee/whip/censer
+	backpack_contents = list(
+	/obj/item/reagent_containers/food/snacks/warfare/rat = 1,
+	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones2/five = 1,
+	/obj/item/stack/thrones3/ten = 1
+		)
+
+
+
 // Adepta Sororitas
 
 // Battle Sister
@@ -249,7 +276,7 @@
 		if (prob(15))
 			to_chat(H, "<span class='notice'><b><font size=2>You have recieved a credible threat about the safety of the Nobility from the villagers. Be extra weary and ensure their safety.</font></b></span>")
 		else if (prob(100))
-			to_chat(H, "<span class='notice'><b><font size=2>A2</font></b></span>")
+			to_chat(H, "<span class='notice'><b><font size=2>Your mind is relatively at ease. Nothing in particular bothers you at this moment.</font></b></span>")
 
 
 
