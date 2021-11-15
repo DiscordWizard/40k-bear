@@ -136,6 +136,7 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			to_chat(U,"<span class='notice'><b><font size=3>You're a laborer directly employed by the House Nobility. You get access to their outpost at the northwest corner of the town. It's dangerous work, but...hey, at least you can cook whatever's trying to kill you down there, right...?.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+
 		if("Stalker")
 			U.add_skills(rand(1,3),rand(5,8),0,0,0)
 			equip_to_slot_or_del(new /obj/item/storage/belt/stalker, slot_belt)
@@ -150,6 +151,9 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			to_chat(U,"<span class='notice'><b><font size=3>You're a hunter that captures or kills game, and either brings it back to town to sell or use it to feed yourself.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
+			if (prob(5))
+				to_chat(U,"<span class='danger'><b><font size=2>Today, you are hunting the most dangerous game. You feel a dark craving in you stir...and you can feel your hunger gnawing inside of you. You feel like you'll never eat again unless you can eat...people.</font></b></span>")
+
 		if("Scum")
 			equip_to_slot_or_del(new /obj/item/storage/backpack/satchel/warfare, slot_back)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/scum, slot_wear_suit)
@@ -165,8 +169,9 @@ Pilgrim Fate System
 			to_chat(U,"<span class='notice'><b><font size=3>Always on the run, always moving from scheme to scheme. You'll do whatever it takes for a coin or two. Scamming, gambling, drug dealing...though your businesses have become more lucrative under the Fleet's restrictive new laws and the chaos the Conflict caused.</font></b></span>")
 			U.verbs -= list(/mob/living/carbon/human/proc/penitentclass,)
 			if (prob(100))
-				to_chat(U,"<span class='notice'><b><font size=2>Additionally...you've come across a lucky windfall, recently. Through theft, or your connections, or maybe even dumb luck, you found a key to the nobility's mansion and vault. All you need is a plan, maybe a crew or a disguise, and you'll be set to pull off the greatest heist of your life... (Your key is on the ground underneath your start.)</font></b></span>")
-				new /obj/item/card/id/nobility(U.loc)
+				to_chat(U,"<span class='notice'><b><font size=2>Additionally...you've come across a lucky windfall, recently. Through theft, or your connections, or maybe even dumb luck, you found a key to the nobility's mansion and vault. All you need is a plan, maybe a crew or a disguise, and you'll be set to pull off the greatest heist of your life... (Your key should be in your backpack. If it isn't, tell Bear!)</font></b></span>")
+				var/obj/item/card/id/nobility/IN = new
+				equip_to_slot_or_del(IN, slot_in_backpack) //look into getting this spawning in your pocket, somehow...?
 
 
 		if("Unlicensed Physician")
