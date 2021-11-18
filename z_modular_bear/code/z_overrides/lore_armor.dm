@@ -65,6 +65,10 @@
 	name = "Bio-Vat Overcoat"
 	desc = "An overcoat that reeks of chlorine and chemicals. Treated to shield the wearer from chemical leaks, biological hazards, and minor radiation leaks."
 
+/obj/item/clothing/suit/ministorumrobes
+	name = "ministorum robes"
+	desc = "Gorgeous robes littered  with holy seals and writs. Smells faintly of incense."
+
 
 //helmet
 /obj/item/clothing/head/helmet/guardhelmet/enforcer
