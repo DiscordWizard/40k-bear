@@ -27,9 +27,9 @@
 	smg_skill = 2
 	melee_skill = 4
 	ranged_skill = 2
-	medical_skill = 10
+	medical_skill = 8
 	engineering_skill = 0
-	surgery_skill = 10
+	surgery_skill = 8
 
 
 	equip(var/mob/living/carbon/human/H)
@@ -41,7 +41,7 @@
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
-		to_chat(H, "<span class='notice'><b><font size=3>You are the Head Priestess: healer, and the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. You have also been blessed with insight into the anatomy of people, so you are able to heal them and perform surgery. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the Head Priestess: healer, and the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. You have also been blessed with insight into the anatomy of people, so you are able to heal them and perform surgery, although you should leave this to your Head Aide. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
 
 
 
@@ -311,13 +311,13 @@
 // Almoness Advance
 
 /datum/job/cmo  // aaaa I DON'T KNOW WHAT TO DOOOOOOOOOOO!!!!!
-	title = "Head Priestess"
+	title = "Priestess Aide"
 	head_position = 1
 	department = list("Ministorum", "Medical")
 	department_flag = COM|MED
 	total_positions = 0
 	spawn_positions = 0
-	supervisors = "the Orders Hospitaller"
+	supervisors = "the Head Priestess, the Old Gods"
 	selection_color = "#633d63"
 	req_admin_notify = 1
 	economic_modifier = 10
@@ -350,7 +350,7 @@
 	equip(var/mob/living/carbon/human/H)
 		var/current_name = H.real_name
 		..()
-		H.fully_replace_character_name("Priestess [current_name]")
+		H.fully_replace_character_name("Aide [current_name]")
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(12,16))
 		H.get_idcard()?.access = get_all_accesses()
@@ -361,7 +361,7 @@
 //		H.f_style = "shaved"
 //		H.h_style = "Bob"
 
-		to_chat(H, "<span class='notice'><b><font size=3>Bear doesn't know what to do with this job. Sorry!</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Priestess Aide- a doctor, and priestess or close enough to one. You operate the healing center in the church.</font></b></span>")
 
 // Hospitaller Advance
 
@@ -457,4 +457,4 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the village doctor, a medicine-person for your wounded whom the Fleet either pass over, will not be quick enough to retrieve...or are trying to kill. Getting advanced medical supplies has been difficult, especially since you are not seen as a 'real' doctor by the Fleet. Carry the wounded's burdens.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the village doctor, a medicine-person for wounded townsfolk when the Church is full or the Fleet does not care. Getting advanced medical supplies has been difficult, especially since you are not seen as a 'real' doctor by the Fleet. Mix your concoctions and do your best...!.</font></b></span>")

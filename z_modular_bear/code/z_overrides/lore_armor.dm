@@ -19,7 +19,7 @@
 //under
 
 /obj/item/clothing/under/cadian_uniform
-	name = "!st Fleet Tan Fatigues"
+	name = "!st Fleet tan fatigues"
 	desc = "Tan fatigues of the 1st Fleet. Probably a bad idea on a snowy planet..."
 
 /obj/item/clothing/under/skirt_c/dress/eggshell
@@ -27,7 +27,13 @@
 	desc = "A simple white dress the High Priestess wears underneath their fancy robes. Plain to emphasize that no matter how you appear outwards, you should always stay humble and honest on the inside."
 	color = "#f0ead6"
 
+/obj/item/clothing/under/rank/valhallan_uniform
+	name = "1st Fleet brown fatigues"
+	desc = "Brown fatigues of the 1st Fleet. Designed for general groundside use- has some added heat-retaining layering for this."
 
+/obj/item/clothing/under/rank/krieg_uniform
+	name = "1st Fleet bio-fatigues"
+	desc = "Brown fatigues of the 1st Fleet. Has a special antimicrobial fiber woven into its construction."
 
 // armor
 /obj/item/clothing/suit/armor/enforcer
@@ -42,6 +48,13 @@
 	name = "Fleet Enforcer Armour - Light"
 	desc = "The flak armor worn by Fleet Enforcers- not quite fleet soldiers proper, but no longer quite natives. This one is in a light configuration, On its chest and shoulderplate bears the Red Cross"
 
+/obj/item/clothing/suit/armor/valhallanarmor
+	name = "Fur-lined greatcoat"
+	desc = "A thick, fur great coat designed for living on Biblio. It is thermally-insulated to protect against extreme cold weather conditions. Races with cooler body temperatures find this useful."
+
+/obj/item/clothing/suit/armor/kriegsgt
+	name = "Bio-Vat Overcoat"
+	desc = "An overcoat that reeks of chlorine and chemicals. Treated to shield the wearer from chemicals, biological hazards, and minor radiation leaks."
 
 
 
@@ -53,6 +66,11 @@
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/captain
 	name = "Fleet Petty Officer Helmet"
 	desc = "A helmet issued to leaders of local Fleet policing forces. It is painted in a dark blue colour."
+
+/obj/item/clothing/head/valushanka
+	name = "Biblio ushanka"
+	desc = "A thick ushanka that smells faintly disgusting. It's incredibly warm, though!"
+
 
 // Magos / Nullbody
 
@@ -92,4 +110,10 @@
 	name = "steel helmet"
 	desc = "A basic helmet meant to protect the wearer from things that seek to smash their head. Shockingly protective."
 	str_requirement = 12
-	flags_inv = null
+//	flags_inv = null
+
+
+// face
+
+/obj/item/clothing/mask/gas/krieg
+	desc = "A face-mask issued to vatgrown soldiers that generally lack a strong immune system as a result of being tube-grown. Doubles for CBRN protection. You can probably wade through a toxic dump with this on."
