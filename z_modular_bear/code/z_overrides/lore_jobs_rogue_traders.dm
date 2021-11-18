@@ -42,6 +42,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		H.fully_replace_character_name("Governor [current_name]")
 		H.add_stats(rand(12,18), rand(12,18), rand(12,18), rand(12,18))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(/mob/living/carbon/human/proc/hire,)
 		to_chat(H, "<span class='notice'><b><font size=3>You are an administrator-governor, and have been assigned to preside over this world while the First Fleet continues its two-century-long offensive across the galaxy. Messages from the Fleet come rarely, and even rarer still are resupplies. You aren't entirely alone- you have a small group of local recruits with dubious loyalties and, maybe, one or two good men. Keep your outpost functioning until the Fleet returns- if it ever does. </font></b></span>")
@@ -80,6 +82,8 @@ var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 		..()
 		H.add_stats(rand(10,12), rand(10,14), rand(10,13), rand(13,18))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_faction = IMPERIUM
 		to_chat(H, "<span class='notice'><b><font size=3>You are the attendant to the Fleet Governor. You are to handle their issues when they are not present. If the Governer becomes incapacitated then you assume command. While they are alive organize his affairs and coordinate trade with the surrounding settlements. You are also responsible for the vault and exchanging currency from it.</font></b></span>")
 	access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers,

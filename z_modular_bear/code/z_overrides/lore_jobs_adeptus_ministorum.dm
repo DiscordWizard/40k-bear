@@ -39,6 +39,8 @@
 		H.add_stats(rand(10,13), rand(10,13), rand(10,12), rand(12,16)) //frail and holy
 		H.get_idcard()?.access = list(access_heads, access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels, access_sob,)
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC)
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Head Priestess: healer, and the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. You have also been blessed with insight into the anatomy of people, so you are able to heal them and perform surgery, although you should leave this to your Head Aide. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
@@ -267,6 +269,8 @@
 		H.warfare_faction = IMPERIUM
 //		H.gender = FEMALE
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.f_style = "shaved"
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Knight that responds to and works for the House Nobility. You have the keys to the stockades and your barracks. You were alive during the bloody Conflict, barely able to fight against the lasers that descended from the sky and shattered your world, covering it in dakrness and snow. One of the few survivors, you continue your 'fight' against the Fleet, wherever it may be. You aren't just a person-at-arms- you're also expected to carry out whatever duties are expected of you, including subterfuge or espionage. Though the House Nobiltiy squabble amongst themselves, your orders are clear- you must keep them safe and take their orders.</font></b></span>")
 		if (H.gender == FEMALE)
@@ -354,6 +358,8 @@
 		H.set_trait(new/datum/trait/death_tolerant())
 		H.add_stats(rand(11,15), rand(11,15), rand(11,15), rand(12,16))
 		H.get_idcard()?.access = get_all_accesses()
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
@@ -402,6 +408,8 @@
 		H.add_stats(rand(10,14), rand(10,14), rand(10,14), rand(12,15))
 		H.get_idcard()?.access = get_all_accesses()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.get_equipped_item(slot_s_store)
 		H.gender = FEMALE
 		H.warfare_faction = IMPERIUM
@@ -451,6 +459,8 @@
 		..()
 		H.add_stats(rand(9,13), rand(9,13), rand(9,13), rand(10,13))
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,

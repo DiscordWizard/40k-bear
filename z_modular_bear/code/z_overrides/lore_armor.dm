@@ -54,28 +54,41 @@
 	desc = "A thick, fur great coat designed for living on Biblio. It is thermally-insulated to protect against extreme cold weather conditions. Races with cooler body temperatures find this useful."
 
 /obj/item/clothing/suit/armor/kriegsgt
-	name = "Bio-Vat Overcoat"
-	desc = "An overcoat that reeks of chlorine and chemicals. Treated to shield the wearer from chemicals, biological hazards, and minor radiation leaks."
+	name = "Bio-Vat Greatcoat"
+	desc = "An overcoat that reeks of chlorine and chemicals. Treated to shield the wearer from chemical leaks, biological hazards, and minor radiation leaks. This one is extra protective."
 
 /obj/item/clothing/suit/armor/cadiansgt
 	name = "1st Fleet Sgt's Flak Vest"
 	desc = "The well-worn armor of a Fleet Sargeant, this one is padded with flexible plasteel-based plates, giving it better protection than average Patrolman or conscript. It has the three-chevrons marked on it upper chest."
 
-
+/obj/item/clothing/suit/armor/krieger
+	name = "Bio-Vat Overcoat"
+	desc = "An overcoat that reeks of chlorine and chemicals. Treated to shield the wearer from chemical leaks, biological hazards, and minor radiation leaks."
 
 
 //helmet
 /obj/item/clothing/head/helmet/guardhelmet/enforcer
-	name = "Fleet Enforcer Helmet"
-	desc = "The Enforcer Helmet is issued to local planetary policing agencies the Fleet controls, Surprisingly protective for how cheap it is. May even keep your brain intact after a direct cranium-shot."
+	name = "Fleet H-01A Helmet"
+	desc = "An Enforcer Helmet, issued to local planetary policing agencies the Fleet controls, Surprisingly protective for how cheap it is. May even keep your brain intact after a direct cranium-shot."
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/captain
-	name = "Fleet Petty Officer Helmet"
-	desc = "A helmet issued to leaders of local Fleet policing forces. It is painted in a dark blue colour."
+	name = "Fleet H-01B Helmett"
+	desc = "A helmet issued to leaders of local Fleet policing forces. It is painted in a dark blue colour and has a larger insignia to signify this is the king of shrimp."
 
 /obj/item/clothing/head/valushanka
 	name = "Biblio ushanka"
 	desc = "A thick ushanka that smells faintly disgusting. It's incredibly warm, though!"
+
+/obj/item/clothing/head/helmet/krieghelmet
+	name = "Fleet H-03A Helmet"
+	desc = "A helmet much heavier than the standard Fleet H-02 helmets. Fairly protective."
+
+/obj/item/clothing/head/helmet/guardhelmet
+	name = "Fleet H-02A Helmet"
+	desc = "The standard Fleet helmet for in-atmosphere operation. Unfortunately, it's a mass-produced plastic bucket that probably can't help with anything heavier than a punch to the head."
+
+
+
 
 
 // Magos / Nullbody
@@ -97,7 +110,9 @@
 	desc = "These robes hide a mess of chrome and wires, grotesque misshapen flesh, secrets. Who was the person underneath this?"
 
 
-// Armor
+
+
+// village / knight armor
 
 /obj/item/clothing/shoes/sisterofbattle
 	name = "steel greaves"
@@ -123,3 +138,4 @@
 
 /obj/item/clothing/mask/gas/krieg
 	desc = "A face-mask issued to vatgrown soldiers that generally lack a strong immune system as a result of being tube-grown. Doubles for CBRN protection. You can probably wade through a toxic dump with this on."
+
