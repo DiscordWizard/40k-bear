@@ -93,7 +93,7 @@
 		H.warfare_faction = IMPERIUM
 		H.witchblood()
 		H.verbs += list(/mob/living/carbon/human/proc/declareheretic,)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Principal Fleet Agent, an internal affairs specialist. You operate under a loose set of duties, a rarity in the Fleet- you're allowed to go anywhere, do anything, as long as what you're doing is beneficial to the Admirality and war effort. Your 'proper' duties include auditing Fleet installations, responding to mutinies, and general upkeep. You theoretically have authority over almost all Fleet members.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Principal Fleet Agent, an internal affairs specialist. You operate under a loose set of duties, a rarity in the Fleet- you're allowed to go anywhere, do anything, as long as what you're doing is beneficial to the Admirality and war effort. Your 'proper' duties include auditing Fleet installations, responding to mutinies, espionage, and counter-espionage. You theoretically have authority over almost all Fleet members.</font></b></span>")
 /datum/job/inquisitor/equip(var/mob/living/carbon/human/H)
 	. = ..()
 	if(.)

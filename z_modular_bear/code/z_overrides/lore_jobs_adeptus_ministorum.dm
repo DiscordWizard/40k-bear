@@ -457,4 +457,4 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		to_chat(H, "<span class='notice'><b><font size=3>You are the village doctor, a medicine-person for wounded townsfolk when the Church is full or the Fleet does not care. Getting advanced medical supplies has been difficult, especially since you are not seen as a 'real' doctor by the Fleet. Mix your concoctions and do your best...!.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are the village doctor, a medicine-person for wounded townsfolk when the Church is full or the Fleet does not care. Getting advanced medical supplies has been difficult, especially since you are not seen as a 'real' doctor by the Fleet and are not part of the Church. Mix your concoctions and do your best...!.</font></b></span>")

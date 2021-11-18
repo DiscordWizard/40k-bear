@@ -35,7 +35,8 @@
 	name = "1st Fleet bio-fatigues"
 	desc = "Brown fatigues of the 1st Fleet. Has a special antimicrobial fiber woven into its construction."
 
-// armor
+// ARMOR //
+
 /obj/item/clothing/suit/armor/enforcer
 	name = "Fleet Enforcer Armor - Medium"
 	desc = "The flak armour worn by Fleet Enforcers- not quite Fleet soldiers proper, but no longer quite natives. Light plastic-alloy vest meant to protect against stabbing, light flak, and small arms."
@@ -55,6 +56,11 @@
 /obj/item/clothing/suit/armor/kriegsgt
 	name = "Bio-Vat Overcoat"
 	desc = "An overcoat that reeks of chlorine and chemicals. Treated to shield the wearer from chemicals, biological hazards, and minor radiation leaks."
+
+/obj/item/clothing/suit/armor/cadiansgt
+	name = "1st Fleet Sgt's Flak Vest"
+	desc = "The well-worn armor of a Fleet Sargeant, this one is padded with flexible plasteel-based plates, giving it better protection than average Patrolman or conscript. It has the three-chevrons marked on it upper chest."
+
 
 
 
