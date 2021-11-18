@@ -39,16 +39,17 @@
 				src.update_inv_r_hand()
 				src.rage++
 			else
-				to_chat(src, "You need a certain type of meat... Something filled with rage and a lust for bloodshed.")
+				to_chat(src, "You feel a primal fury boiling inside of you. Two gleaming eyes stare at you from the darkness. <font color='#720202'> Kill my youngest. My weakest. Prove you are worthy. Consume their meat in front of me.</font>")
 				return
 		if(1)
-			to_chat(src, "Strength and fury fills your muscles. A feeling begins to grow in your gut, you must fight, you must kill, you must be victorious.")
+			to_chat(src, "Strength and fury fills your muscles. A feeling begins to grow in your gut. You...you feel FUCKING INVINCIBLE!")
 			STAT_LEVEL(str)+=5
+			STAT_LEVEL(end)+=5
 			src.rage++
 			src.verbs -= list(/mob/living/carbon/human/proc/nurgle, /mob/living/carbon/human/proc/slaanesh, /mob/living/carbon/human/proc/tzeentch)
 			src.mind.special_role = "Khorne Cultist"
 			src.faction = "Khorne"
-			src.verbs += list(/mob/living/carbon/human/proc/bludforbludguy)
+			src.verbs += list(/mob/living/carbon/human/proc/bludforbludguy, /mob/living/carbon/human/proc/bloodescape)
 			AddInfectionImages()
 		if(2)
 			src.verbs += /mob/living/carbon/human/proc/khornerune
@@ -85,4 +86,27 @@
 		src.khorne_cd = 0
 	else
 		to_chat(src, "You cannot yell again so soon!")
+		return
+
+/mob/living/carbon/human/proc/bloodescape()
+	set name = "Breakout!"
+	set category = "Ruinous Powers"
+	set desc = "These restraints can't hold you. ROAR! BREAK THEM! (WARNING: THIS IS SUPER VISIBLE.)"
+
+	if(!ishuman(src))
+		to_chat(src, "<span class='notice'>How tf are you seeing this, ping Bear immediately</span>")
+		return
+	if(src.stat == DEAD)
+		to_chat(src, "<span class='notice'>You can't do this while you're dead.</span>")
+		return
+	if(!src.restrained())
+		to_chat(src, "<span class='notice'>You aren't restrained!</span>")
+		return
+	else if((src.handcuffed) && (istype(src.handcuffed, /obj/item/handcuffs)))
+		visible_message("[src] roars and breaks their restraints!")
+		src.say("ALLFATHER, BREAK MY CHAINS!")
+		src.handcuffed = null
+		if(src.buckled && src.buckled.buckle_require_restraints)
+			src.buckled.unbuckle_mob()
+		src.update_inv_handcuffed()
 		return
