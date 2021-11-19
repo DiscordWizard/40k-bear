@@ -1,5 +1,5 @@
 // This entire section is a MODULAR BEARHAMMER / BEARSTATION EDIT of a removed file, children.dm.
-// file was removed due to gameplay/lore decisions. putting kids up against murderous aliens is pretty uncomfortable
+// file was removed due to gameplay/lore decisions. putting kids in this setting makes me very uncomfortable
 
 /datum/species/human/amogus
 	name = "Amogus"
