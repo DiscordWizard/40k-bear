@@ -105,8 +105,8 @@
 	response_disarm = "shoves"
 	response_harm   = "mauls"
 	attacktext = "crushes"
-	maxHealth = 300
-	health = 300
+	maxHealth = 150
+	health = 150
 	see_in_dark = 6
 	speed = 6
 
@@ -115,7 +115,7 @@
 		return
 	custom_emote(1, pick( list("bites [target_mob]", "crushes [target_mob]") ) ) // attack emotes
 
-	var/damage = rand(30,40) // Damage Value
+	var/damage = rand(20,25) // Damage Value
 
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/H = target_mob
@@ -137,8 +137,8 @@
 	icon_state = "loge"
 	icon_living = "loge"
 	icon_dead = "loge2"
-	maxHealth = 550
-	health = 550
+	maxHealth = 150
+	health = 150
 	speak_emote = list("harks")
 	emote_hear = list("growls")
 	response_help  = "gnashes"

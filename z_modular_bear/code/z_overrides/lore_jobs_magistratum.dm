@@ -37,6 +37,8 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_faction = IMPERIUM
 		H.get_idcard()?.access = list(access_security, access_sec_doors, access_brig, access_forensics_lockers, access_all_personal_lockers, access_maint_tunnels,)
 		H.verbs += list(

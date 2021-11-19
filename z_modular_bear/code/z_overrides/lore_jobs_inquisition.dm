@@ -37,6 +37,8 @@
 		H.assign_random_quirk()
 		H.witchblood()
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.warfare_faction = IMPERIUM
@@ -90,10 +92,12 @@
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC )
 		H.warfare_language_shit(LANGUAGE_HIGH_GOTHIC )
 		H.set_trait(new/datum/trait/death_tolerant())
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_faction = IMPERIUM
 		H.witchblood()
 		H.verbs += list(/mob/living/carbon/human/proc/declareheretic,)
-		to_chat(H, "<span class='notice'><b><font size=3>You are a Principal Fleet Agent, an internal affairs specialist. You operate under a loose set of duties, a rarity in the Fleet- you're allowed to go anywhere, do anything, as long as what you're doing is beneficial to the Admirality and war effort. Your 'proper' duties include auditing Fleet installations, responding to mutinies, and general upkeep. You theoretically have authority over almost all Fleet members.</font></b></span>")
+		to_chat(H, "<span class='notice'><b><font size=3>You are a Principal Fleet Agent, an internal affairs specialist. You operate under a loose set of duties, a rarity in the Fleet- you're allowed to go anywhere, do anything, as long as what you're doing is beneficial to the Admirality and war effort. Your 'proper' duties include auditing Fleet installations, responding to mutinies, espionage, and counter-espionage. You theoretically have authority over almost all Fleet members.</font></b></span>")
 /datum/job/inquisitor/equip(var/mob/living/carbon/human/H)
 	. = ..()
 	if(.)

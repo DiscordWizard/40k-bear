@@ -73,7 +73,7 @@
 	desc = "A semi-auto civillian version of the F-50 weapons platform, Frontier Firearm's 'Leviathan' is surprisingly deadly. Although it features the same receiver as the F-50 models, nearly everything else has been swapped out. This variant has a modified heatsink and crystal assembly, the frame has also been replaced with a light polymer."
 
 /obj/item/gun/energy/captain
-	name = "antique las-pistol"
+	name = "antique las-gun"
 	desc = "An ancient weapon from the Second Fleet, before their final voyage into the KBC Supervoid. The last remaining artifact of Humanity's hubris. What did they find out there, and who sent back this pristine artifact from a missing armada?"
 
 /obj/item/gun/energy/las/boarding
@@ -140,15 +140,20 @@
 	desc = "A First Fleet pistol meant for EVA operations. Has a unique design- as opposed to a virtual HUD, the ammo count is instead displayed by an open magazine. Dirt and grime routinely jam the weapon whenever used planetside. Requires lots of maintenance."
 
 /obj/item/gun/projectile/automatic/stubber
-	name = "1stFleet 'Lumberjack' "
+	name = "1stFleet 'Warsaw' MG-02"
 	desc = "Belt-fed and with a bipod for stable firing from the prone position, the weapon was fitted with both backsight and foresight, carrying handle, and perforated outer barrel to aid in cooling."
+
 
 
 // MELEE WEAPONS
 
 /obj/item/melee/trench_axe
 	name = "Battle-Axe"
-	desc = "A classic heavy, sharp metal wedge on a stick. Good protection from most anything."
+	desc = "A classic heavy, sharp metal wedge on a stick. Hurts like hell, though it has trouble with the heaviest of armors, and it's rather good for defending, too."
+
+/obj/item/melee/classic_baton/trench_club
+	name = "war-club"
+	desc = "A truncheon for beating other people. Not the most damaging tool in the shed, but its crushing force makes it brutally effective."
 
 /obj/item/toy/katana/seolite
 	name = "single-edged blade"

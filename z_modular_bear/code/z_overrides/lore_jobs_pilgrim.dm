@@ -31,6 +31,8 @@ Pilgrim Fate System
 		..()
 		H.add_stats(rand(6,11), rand(7,12), rand(8,12), rand (8,11)) //they suck and are supposed to suck
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.assign_random_quirk()
 		H.witchblood()
 		H.verbs += list(
@@ -321,15 +323,15 @@ Pilgrim Fate System
 
 /decl/hierarchy/outfit/job/merchant
 	name = OUTFIT_JOB_NAME("House Noble")
-	uniform = /obj/item/clothing/suit/merchant
+	suit = /obj/item/clothing/suit/merchant
 	pda_type = /obj/item/device/pda/penitent
 	back = /obj/item/storage/backpack/satchel/warfare
 	neck = /obj/item/reagent_containers/food/drinks/canteen
 	head = /obj/item/clothing/head/smokingcap
 	l_ear = null
-	r_ear = null
+	r_ear = /obj/item/device/radio/headset/red_team
 	pda_slot = null
-	shoes = /obj/item/clothing/shoes/vigilante
+	shoes = /obj/item/clothing/shoes/laceup
 	suit_store = null
 	backpack_contents = list(
 	/obj/item/stack/thrones = 1,

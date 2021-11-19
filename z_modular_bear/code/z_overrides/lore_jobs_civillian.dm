@@ -71,6 +71,8 @@
 		H.add_skills(rand(1,3),rand(1,3),0,0,0)
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
@@ -117,6 +119,8 @@
 		H.add_stats(rand(13,15), rand(10,13), rand(12,15), rand(8,13))
 		H.assign_random_quirk()
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
+		H.bladder = -INFINITY // jank bearstation way of removing bathroom stuff
+		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_faction = IMPERIUM
 		H.verbs += list(
 		/mob/living/carbon/human/proc/khorne,
