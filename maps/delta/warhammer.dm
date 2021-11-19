@@ -5,11 +5,11 @@
 	#include "../shared/items/clothing.dm"
 	#include "../shared/items/cards_ids.dm"
 
-	#include "warhammer-1.dmm"
-	#include "warhammer-2.dmm"
-	#include "warhammer-3.dmm"
-	#include "warhammer-4.dmm"
-	#include "warhammer-5.dmm"
+	#include "bear/warhammer-1.dmm"
+	#include "bear/warhammer-2.dmm"
+	#include "bear/warhammer-3.dmm"
+	#include "bear/warhammer-4.dmm"
+	#include "bear/warhammer-5.dmm"
 
 	#include "../../code/modules/lobby_music/generic_songs.dm"
 
