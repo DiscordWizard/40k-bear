@@ -69,6 +69,15 @@
 	name = "ministorum robes"
 	desc = "Gorgeous robes littered  with holy seals and writs. Smells faintly of incense."
 
+/obj/item/clothing/suit/prac_arpon
+	name = "thick robes"
+	desc = "Thick robes that smell faintly of lavender. Shockingly warm and comfortable, and can soften blows."
+
+/obj/item/clothing/suit/armor/flak/heavy
+	name = "Fleet CTV - Heavy"
+	desc = "A Combined Tactical Vest worn by high-ranking assault-squads. It's rare to get your hands on one of these."
+
+
 
 //helmet
 /obj/item/clothing/head/helmet/guardhelmet/enforcer
@@ -142,4 +151,8 @@
 
 /obj/item/clothing/mask/gas/krieg
 	desc = "A face-mask issued to vatgrown soldiers that generally lack a strong immune system as a result of being tube-grown. Doubles for CBRN protection. You can probably wade through a toxic dump with this on."
+
+/obj/item/clothing/mask/gas/prac_mask
+	name = "skull mask"
+	desc = "A skull mask that filters gases from the air and obscures the wearer's face."
 

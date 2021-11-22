@@ -64,7 +64,7 @@ Pilgrim Fate System
 	var/fates = list() //lists all possible fates
 
 	fates += pick("Merchant","Bounty Hunter","Penitent",) //adds a fate randomly to essentially give rng pick
-	fates += pick("Sherpa","Musician","Unlicensed Physician",) //adds a fate randomly to essentially give rng pick
+	fates += pick("Sherpa","Musician","Witch",) //adds a fate randomly to essentially give rng pick
 	fates += pick("Stalker","Scum","Miner",) //adds a fate randomly to essentially give rng pick
 
 	mind.store_memory("[fates]") //should stop people from closing client and rerolling fates
@@ -176,7 +176,7 @@ Pilgrim Fate System
 				equip_to_slot_or_del(IN, slot_in_backpack) //look into getting this spawning in your pocket, somehow...?
 
 
-		if("Unlicensed Physician")
+		if("Witch")
 			U.add_skills(0,0,rand(5,9),0,rand(5,9))
 			equip_to_slot_or_del(new /obj/item/clothing/mask/gas/prac_mask, slot_wear_mask)
 			equip_to_slot_or_del(new /obj/item/clothing/suit/prac_arpon, slot_wear_suit)
@@ -187,11 +187,15 @@ Pilgrim Fate System
 			equip_to_slot_or_del(new /obj/item/torch/self_lit, slot_l_hand)
 			equip_to_slot_or_del(new /obj/item/stack/thrones3/twenty, slot_in_backpack)
 			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
-			to_chat(U,"<span class='notice'><b><font size=3>The only 'licensed' physicians are the one the Fleet approves. Maybe you're native, maybe you're one of the many doctors that are stuck in beuracratic hell waiting for a license. Set up shop on this new world and hope no one asks to see your credentials.</font></b></span>")
+			equip_to_slot_or_del(new /obj/item/stack/thrones, slot_in_backpack)
+			equip_to_slot_or_del(new /obj/item/spellbook)
+			U.add_spell(new /spell/radiant_aura/light)
+			U.add_spell(new /spell/noclothes)
+			to_chat(U,"<span class='notice'><b><font size=3>You are an unchained Arcanist. ..literally. After the Conflict, those in the great House Arcane were arrested and taken away, somewhere, for study. They simply vanished, one day, almost without a trace. Though the majority of those who carry a true magical spark are gone, you are one of the few that remain. You must keep your magic secret, however. The Fleet may not take too kindly to you...</font></b></span>")
 			var/obj/item/card/id/ring/disgracedmedicae/W = new
 
 			W.icon_state = "medicae_ring"
-			W.assignment = "Medicae"
+			W.assignment = "Scholar"
 			W.registered_name = real_name
 			W.update_label()
 			equip_to_slot_or_del(W, slot_wear_id)

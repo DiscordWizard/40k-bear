@@ -4,12 +4,12 @@
 	icon_state = "fire_goon"
 	plane = OBJ_PLANE
 	layer = ABOVE_WINDOW_LAYER
-	alpha = 150
+	alpha = 30
 
 /obj/aura/radiant_aura/New()
 	..()
 	to_chat(user,"<span class='notice'>A faint bubble of light begins orbiting around you.</span>")
-	set_light(4,4, "#e09d37")
+	set_light(2,4, "#d6d65c")
 
 /obj/aura/radiant_aura/Destroy()
 	to_chat(user, "<span class='warning'>The light around you flickers and abruptly fades, leaving you alone.</span>")
@@ -24,10 +24,10 @@
 	invocation = "begins to softly glow."
 	school = "conjuration"
 	charge_max = 300
-	cooldown_min = 6000
+	cooldown_min = 600
 	level_max = list(Sp_TOTAL = 0, Sp_SPEED = 0, Sp_POWER = 0)
 	cast_sound = 'sound/effects/snap.ogg'
-	duration = 5000
+	duration = 500
 	hud_state = "gen_immolate"
 
 

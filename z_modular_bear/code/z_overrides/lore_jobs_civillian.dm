@@ -79,7 +79,7 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
-		H.add_spell(new /spell/targeted/projectile/magic_missile)
+		H.add_spell(new /spell/radiant_aura/light)
 		H.add_spell(new /spell/noclothes)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Conscript, your training recently complete you were assigned kitchen duties. You are safer and warmer inside than the other Conscripts in the village serving as a policing force, but your job is no easier- you have to feed an army that bombed your home into an ash-filled, year-round winter..</font></b></span>")
 		if (prob(10))
