@@ -43,6 +43,11 @@
 		H.bowels = -INFINITY// jank bearstation way of removing bathroom stuff
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
+		H.add_spell(new /spell/radiant_aura/light)
+		H.add_spell(new /spell/targeted/heal_target)
+		H.add_spell(new /spell/targeted/heal_target/sacrifice)
+		H.add_spell(new /spell/noclothes)
+
 		to_chat(H, "<span class='notice'><b><font size=3>You are the Head Priestess: healer, and the Godhead-Speaker, a devout follower of the Old Gods that exhonerates their worship and shuns the false idol of the Fleet's Insignia. You are able to find more information about the Gods in the books in your office and are encouraged to hold sermons in their name. Beyond spiritual matters, your church also has a medical area that you may tend to the wounded with. You have also been blessed with insight into the anatomy of people, so you are able to heal them and perform surgery, although you should leave this to your Head Aide. Although the worship of the Old Gods has been forbidden, surely, the Fleet dare not attack a holy place.</font></b></span>")
 
 
@@ -363,6 +368,9 @@
 		H.get_equipped_item(slot_s_store)
 		H.warfare_faction = IMPERIUM
 		H.gender = FEMALE
+		H.add_spell(new /spell/radiant_aura/light)
+		H.add_spell(new /spell/targeted/heal_target)
+		H.add_spell(new /spell/targeted/heal_target/sacrifice)
 		H.warfare_language_shit(LANGUAGE_LOW_GOTHIC)
 //		H.f_style = "shaved"
 //		H.h_style = "Bob"
