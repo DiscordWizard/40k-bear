@@ -79,6 +79,7 @@
 		/mob/living/carbon/human/proc/nurgle,
 		/mob/living/carbon/human/proc/slaanesh,
 		/mob/living/carbon/human/proc/tzeentch)
+		H.add_spell(/spell/targeted/projectile/magic_missile)
 		to_chat(H, "<span class='notice'><b><font size=3>You are a newly recruited Conscript, your training recently complete you were assigned kitchen duties. You are safer and warmer inside than the other Conscripts in the village serving as a policing force, but your job is no easier- you have to feed an army that bombed your home into an ash-filled, year-round winter..</font></b></span>")
 		if (prob(10))
 			to_chat(H, "<span class='notice'><b><font size=3>You managed to smuggle in a trinket to remind you of home. It's extremely valuable to you. Keep it safe. (You'll find it on the ground underneath you, sorry.)</font></b></span>")
@@ -175,4 +176,5 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY
 		to_chat(H, "<span class='notice'><b><font size=3>You are a servitor, specifically one designed for cleaning and maintaining the outpost. You are to obey Imperial citizens and serve their every need. You are nearly mindless and will follow any order given to you by a superior.</font></b></span>")
+
 

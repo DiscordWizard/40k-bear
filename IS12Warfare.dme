@@ -2537,6 +2537,7 @@
 #include "z_modular_bear\code\z_overrides\z_job_overrides.dm"
 #include "z_modular_bear\code\z_overrides\mobs\rippers.dm"
 #include "z_modular_bear\code\z_overrides\mobs\smalldemon.dm"
+#include "z_modular_bear\game\objects\auras\spell_light.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
 // This is a buffer
