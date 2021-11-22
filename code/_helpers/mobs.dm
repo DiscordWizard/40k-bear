@@ -126,6 +126,7 @@ proc/random_skin_tone(var/datum/species/current_species)
 
 	return min(max(. + rand(-25, 25), species_tone), 34)
 
+/* //modularly overwritten in z_modular_bear\code\_helpers\mobs.dm
 proc/skintone2racedescription(tone)
 	switch (tone)
 		if(30 to INFINITY)		return "albino"
@@ -168,6 +169,8 @@ proc/ageAndGender2Desc(age, gender)//Used for the radio
 			if(45 to 59)		return "Middle Aged Man"
 			if(60 to INFINITY)	return "Old Man"
 			else				return "Unknown"
+*/
+
 
 /proc/RoundHealth(health)
 	var/list/icon_states = icon_states('icons/mob/hud_med.dmi')

@@ -32,3 +32,23 @@
 	desc = "A sword belonging to the Nobility. This blade is weighted perfectly in your hand. A large hilt allows for easy blocking. This one has a blunted edge. Still painful."
 	sharp = 0
 	edge = 0
+
+
+
+/obj/item/material/sword/chaosknife/lament
+	name = "lamenting knife"
+	desc = "A knife made of solid tears and mourning. Just holding it in your hand makes you feel so heavy, but ready to lash out with rage."
+	icon = 'icons/obj/weapons/melee/misc.dmi'
+	icon_state = "chaos_knife"
+	item_state = "EB-knife"//"knife"
+	attack_verb = list("slashed", "stabbed")
+	force_divisor = 0.6
+	block_chance = 15
+	w_class = ITEM_SIZE_SMALL
+	grab_sound_is_loud = TRUE
+	grab_sound = 'sound/items/unholster_knife.ogg'
+	equipsound = 'sound/items/holster_knife.ogg'
+	sharpness = TRUE//No cutting peoples heads off with a knife please.
+	weapon_speed_delay = 10
+	drop_sound = 'sound/items/knife_drop.ogg'
+	swing_sound = "blunt_swing"

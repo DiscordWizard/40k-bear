@@ -103,6 +103,14 @@
 		H.thirst = INFINITY
 		H.nutrition = INFINITY //he is sustained by the Omnissiah, he requires neither food nor drink
 		to_chat(H, "<span class='notice'><b><font size=3>You are a Nullbody- a native that was taken by the Fleet and turned into a service-thing. In your past life, you were a fierce rebel against the Fleet, or a caring parent, or someone else entirely. Now, your memories are just vague blurs, black-and-white, washed out by the thousands of manuals of technical information the Fleet has pumped into you. Who were you? Does it matter, anymore? <ins>You are playing as a partial lobotomite. Keep this in mind when roleplaying.</ins></font></b></span>")
+		if (prob(15))
+			to_chat(H, "<span class='notice'><b><font size=2>You keep getting flashes of memories. You need to remember who you were. Your name- you remember your name. Seek out records, people, anyone who may remember traces of your past.</font></b></span>")
+		else if (prob(15))
+			to_chat(H, "<span class='notice'><b><font size=2>You feel a deep aching in the pit of your stomach, looking at how...inadequite this outpost is. You must improve it immediately.</font></b></span>")
+		else if (prob(100))
+			to_chat(H, "<span class='notice'><b><font size=2>Your mind is relatively at ease. Nothing in particular bothers you at this moment. Your clear mind allows you to have sharper focus.</font></b></span>")
+
+
 
 // Biologis
 

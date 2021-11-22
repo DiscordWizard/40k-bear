@@ -2506,6 +2506,7 @@
 #include "maps\~unit_tests\unit_testing.dm"
 #include "z_modular_bear\code\_defines\size.dm"
 #include "z_modular_bear\code\_helpers\global_lists.dm"
+#include "z_modular_bear\code\_helpers\mobs.dm"
 #include "z_modular_bear\code\game\objects\items\weapons\cards_ids.dm"
 #include "z_modular_bear\code\game\objects\items\weapons\village.dm"
 #include "z_modular_bear\code\game\objects\structures\signs.dm"
@@ -2537,6 +2538,8 @@
 #include "z_modular_bear\code\z_overrides\z_job_overrides.dm"
 #include "z_modular_bear\code\z_overrides\mobs\rippers.dm"
 #include "z_modular_bear\code\z_overrides\mobs\smalldemon.dm"
+#include "z_modular_bear\game\objects\auras\spell_light.dm"
+#include "z_modular_bear\modules\mob\living\simple_animal\hostile\mining.dm"
 #include "~code\global_init.dm"
 // END_INCLUDE
 // This is a buffer
