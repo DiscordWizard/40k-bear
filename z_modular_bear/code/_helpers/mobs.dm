@@ -1,4 +1,6 @@
 
+// from code\_helpers\mobs.dm
+
 
 proc/skintone2racedescription(tone)
 	switch (tone)
@@ -14,10 +16,10 @@ proc/skintone2racedescription(tone)
 
 proc/age2agedescription(age)
 	switch(age)
-		if(0 to 1)			return "young adult"
-		if(1 to 3)			return "young adult"
-		if(3 to 13)			return "young adult"
-		if(13 to 19)		return "young adult"
+		if(0 to 1)			return "invalid age, please tell Bear"
+		if(1 to 3)			return "invalid age, please tell Bear"
+		if(3 to 13)			return "invalid age, please tell Bear"
+		if(13 to 19)		return "teenager"
 		if(19 to 30)		return "young adult"
 		if(30 to 45)		return "adult"
 		if(45 to 60)		return "middle-aged"
@@ -28,7 +30,7 @@ proc/age2agedescription(age)
 proc/ageAndGender2Desc(age, gender)//Used for the radio
 	if(gender == FEMALE)
 		switch(age)
-			if(0 to 17)			return "Young Woman"
+			if(0 to 17)			return "Lass"
 			if(18 to 29)		return "Young Woman"
 			if(30 to 44)		return "Woman"
 			if(45 to 59)		return "Middle Aged Woman"
@@ -36,7 +38,7 @@ proc/ageAndGender2Desc(age, gender)//Used for the radio
 			else				return "Unknown"
 	else
 		switch(age)
-			if(0 to 18)			return "Young Man"
+			if(0 to 18)			return "Lad"
 			if(18 to 29)		return "Young Man"
 			if(30 to 44)		return "Man"
 			if(45 to 59)		return "Middle Aged Man"
