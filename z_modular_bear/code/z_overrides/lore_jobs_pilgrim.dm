@@ -338,9 +338,11 @@ Pilgrim Fate System
 	shoes = /obj/item/clothing/shoes/laceup
 	suit_store = null
 	backpack_contents = list(
-	/obj/item/stack/thrones = 1,
+	/obj/item/stack/thrones = 2,
 	/obj/item/stack/thrones2 = 1,
 	/obj/item/stack/thrones3/five = 1,
+	/obj/item/card/id/nobility = 1,
+	/obj/item/card/id/stockades=1
 )
 
 
