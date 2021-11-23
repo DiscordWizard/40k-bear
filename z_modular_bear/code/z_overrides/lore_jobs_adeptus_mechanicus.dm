@@ -27,7 +27,6 @@
 	engineering_skill = 10
 	surgery_skill = 5
 
-	ideal_character_age = 70 // Old geezer captains ftw
 	outfit_type = /decl/hierarchy/outfit/job/engineering/chief_engineer
 	access = list(access_engine, access_engine_equip, access_tech_storage, access_maint_tunnels,
 			            access_teleporter, access_external_airlocks, access_atmospherics, access_emergency_storage, access_eva,
@@ -187,8 +186,7 @@
 	id = null
 	id_slot = null
 	pda_slot = null
-	backpack_contents = list(/obj/item/reagent_containers/food/snacks/warfare/rat = 1,)
-
+	backpack_contents = null
 
 /*
 /datum/job/atmos
