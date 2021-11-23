@@ -31,11 +31,11 @@
 		to_chat(usr,"This tool cannot be toggled!")
 		return
 	if(src.is_toggled == 2)
-		if(istype(usr.l_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
+		if(istype(usr.l_hand, /obj/item/device/boombox)) //Not the nicest way to do it, but eh
 			visible_message("<span class='warning'> [usr] quickly retracts an entire boombox into their arm.</span>", "<span class='notice'>You quickly retract the boombox into your arm.</span>", "<span class='warning>What was that sound?</span>")
 			qdel(usr.l_hand)
 			update_icon()
-		if(istype(usr.r_hand, /obj/item/device/allenwrench)) //Not the nicest way to do it, but eh
+		if(istype(usr.r_hand, /obj/item/device/boombox)) //Not the nicest way to do it, but eh
 			qdel(usr.r_hand)
 			visible_message("<span class='warning'>  [usr] quickly retracts an entire boombox into their arm.</span>", "<span class='notice'>You quickly retract the boombox into your arm.</span>", "<span class='warning>What was that sound?</span>")
 		src.icon_state = initial(icon_state)
@@ -43,5 +43,5 @@
 		src.is_toggled = 1
 	else
 		to_chat(usr,"You pull out a boombox.")
-		usr.put_in_hands(new /obj/item/device/allenwrench(usr))
+		usr.put_in_hands(new /obj/item/device/boombox(usr))
 		src.is_toggled = 2
