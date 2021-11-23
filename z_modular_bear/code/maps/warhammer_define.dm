@@ -3,4 +3,11 @@
 
 /datum/map/warhammer
 	map_lore = "The First Fleet shattered Biblio-32c on a quiet night, seven years ago. They invaded in a brief, bloody war that lasted twelve hours, and resulted in the death of over seventy percent of all native flora and fauna. As the natives were reeling from the bloody Conflict, the First Fleet was moving to set up their mineral-extractors. Just as soon as they arrived, the Fleet left, leaving behind only a skeleton-crew to occupy the planet and send back resources. It's been four years, since then- all of them have been cold, dark winters, year-round. Though the remnants of the last governments, the House Nobility, have attempted to plead for help from the occupying Fleet force, none has come. To make matters worse...ever since the Conflict, shadows creep in the night. Unnatural things bubble from the underground. People hear whispers..."
-.
+.	station_name  = "Biblio-32c"
+	station_short = "Biblio-32c"
+	dock_name     = "Biblio-32c"
+	boss_name     = "Fleet Command"
+	boss_short    = "FC"
+	company_name  = "First Fleet"
+	company_short = "1stFleet"
+	system_name = "Biblio-32"
