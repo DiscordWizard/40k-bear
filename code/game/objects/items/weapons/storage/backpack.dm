@@ -123,7 +123,7 @@
 
 /obj/item/storage/backpack/toxins
 	name = "\improper NanoTrasen backpack"
-	desc = "It's a light backpack modeled for use in laboratories and other scientific institutions. The colors on it denote it as a NanoTrasen backpack."
+	desc = "It's a light backpack modeled for use in laboratories and other scientific institutions."
 	icon_state = "ntpack"
 
 
@@ -228,14 +228,14 @@
 
 /obj/item/storage/backpack/satchel/warfare/sisterofbattle
 	name = "Order of the Sacred Rose Powerpack"
-	desc = "A Powerpack belongs to the Battle Sister of the Order Of The Sacred Rose. It bears the Sigil of the Adepta Sororitas.</i>"
+	desc = "This powerpack belongs to the Knights of the Church. It bears the sigil of the Eurydale.</i>"
 	icon_state = "sister"
 	max_storage_space = DEFAULT_BACKPACK_STORAGE
 	canremove = 0
 
 /obj/item/storage/backpack/satchel/astartes
-	name = "Astarte Mark VII Powerpack"
-	desc = "A Adeptus Astartes's standard issued powerpack."
+	name = "Fleet Mark VII Powerpack"
+	desc = "A fleet marine's standard issued power armor pack."
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
@@ -243,38 +243,38 @@
 	max_storage_space = DEFAULT_BACKPACK_STORAGE //backpack storage with satchel access.
 
 /obj/item/storage/backpack/satchel/astartes/ultramarine
-	name = "Astarte Mark VII Powerpack"
-	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XIIIth Chapter, Ultramarines."
+	name = "Fleet Mark VII Powerpack"
+	desc = "A fleet marine's standard issued power armor pack. This one bears the marking of the XIIIth division, Ultramarines."
 	icon_state = "ultrapack"
 	item_state = "ultrapack"
 
 /obj/item/storage/backpack/satchel/astartes/ravenguard
-	name = "RAstarte Mark VII Powerpack"
-	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XIXth Chapter, Raven Guards."
+	name = "Fleet Mark VII Powerpack"
+	desc = "A fleet marine's standard issued power armor pack. This one bears the marking of the XIXth division, Raven Guards."
 	icon_state = "ravpack"
 	item_state = "ravpack"
 
 /obj/item/storage/backpack/satchel/astartes/bloodravens
-	name = "Blood Ravens powerpack"
-	desc = "A Blood Raven powerpack"
+	name = "Fleet Mark VII Powerpack"
+	desc = A fleet marine's standard issued power armor pack. This one bears the marking of the XXVIIth division, Blood Ravens"
 	icon_state = "bravpack"
 	item_state = "bravpack"
 
 /obj/item/storage/backpack/satchel/astartes/salamander
-	name = "Astarte Mark VII Powerpack"
-	desc = "A Adeptus Astartes's standard issued powerpack. This one bears the marking of the XVIIIth Chapter, Salamanders."
+	name = "Fleet Mark VII Powerpack"
+	desc = "A fleet marine's standard issued power armor pack. This one bears the marking of the XVIIIth division, Salamanders."
 	icon_state = "salpack"
 	item_state = "salpack"
 
 /obj/item/storage/backpack/satchel/astartes/apothecary
-	name = "Astarte Mark VII Medipack"
-	desc = "A Adeptus Astartes's standard issued powerpack. This Powerpack has been upgraded with additional spotlight and surgical arms."
+	name = "Fleet Mark VII Medipack"
+	desc = "A fleet marine's standard issued power armor pack. This powerpack has been upgraded with an additional spotlight and surgical arms."
 	icon_state = "salpack"
 	item_state = "salpack"
 
 /obj/item/storage/backpack/satchel/warfare/techpriest/techpack //because it uses techpriest stuff.
-	name = "Astarte Mark VII Servo-Harness"
-	desc = "A Adeptus Astartes's standard issued powerpack. This Powerpack has been equipped with additional Servo-Arms."
+	name = "Fleet Mark VII Servo-Harness"
+	desc = "A fleet marine's standard issued power armor pack. This Powerpack has been equipped with additional Servo-Arms."
 	item_icons = list(slot_back_str = 'icons/mob/32x40/storage.dmi')
 	icon_state = "techpack"
 	item_state = "techpack"
@@ -519,7 +519,7 @@
 
 /obj/item/storage/backpack/satchel/satchel_tox
 	name = "\improper NanoTrasen satchel"
-	desc = "Useful for holding research materials. The colors on it denote it as a NanoTrasen bag."
+	desc = "Useful for holding research materials."
 	icon_state = "satchel-nt"
 
 /obj/item/storage/backpack/satchel/satchel_sec
@@ -589,7 +589,7 @@
 
 /obj/item/storage/backpack/messenger/chem
 	name = "chemistry messenger bag"
-	desc = "A serile backpack worn over one shoulder.  This one is in Chemsitry colors."
+	desc = "A serile backpack worn over one shoulder. This one is in Chemsitry colors."
 	icon_state = "courierbagchem"
 
 /obj/item/storage/backpack/messenger/med
@@ -599,27 +599,27 @@
 
 /obj/item/storage/backpack/messenger/viro
 	name = "virology messenger bag"
-	desc = "A sterile backpack worn over one shoulder.  This one is in Virology colors."
+	desc = "A sterile backpack worn over one shoulder. This one is in Virology colors."
 	icon_state = "courierbagviro"
 
 /obj/item/storage/backpack/messenger/tox
 	name = "\improper NanoTrasen messenger bag"
-	desc = "A backpack worn over one shoulder.  Useful for holding science materials. The colors on it denote it as a NanoTrasen bag."
+	desc = "A backpack worn over one shoulder. Useful for holding science materials."
 	icon_state = "courierbagnt"
 
 /obj/item/storage/backpack/messenger/com
 	name = "captain's messenger bag"
-	desc = "A special backpack worn over one shoulder.  This one is made specifically for officers."
+	desc = "A special backpack worn over one shoulder. This one is made specifically for officers."
 	icon_state = "courierbagcom"
 
 /obj/item/storage/backpack/messenger/engi
 	name = "engineering messenger bag"
-	desc = "A strong backpack worn over one shoulder. This one is designed for Industrial work."
+	desc = "A strong backpack worn over one shoulder.This one is designed for Industrial work."
 	icon_state = "courierbagengi"
 
 /obj/item/storage/backpack/messenger/hyd
 	name = "hydroponics messenger bag"
-	desc = "A backpack worn over one shoulder.  This one is designed for plant-related work."
+	desc = "A backpack worn over one shoulder. This one is designed for plant-related work."
 	icon_state = "courierbaghyd"
 
 /obj/item/storage/backpack/messenger/sec
