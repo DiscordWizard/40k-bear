@@ -333,8 +333,8 @@
 //servitor robes
 
 /obj/item/clothing/suit/servitor
-	name = "servitor's robes"
-	desc = "Shabby robes worn by a servitor unit."
+	name = "nullbody's robes"
+	desc = "Shabby robes worn by a nullbody unit."
 	icon_state = "servitor_robe"
 	item_state = "servitor_robe"
 	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
@@ -353,8 +353,8 @@
 
 //ministorum priest
 /obj/item/clothing/suit/ministorumrobes
-	name = "ministorum robes"
-	desc = "Gorgeous robes littered  with holy seals and writs. Smells faintly of incense."
+	name = "priestess robes"
+	desc = "Gorgeous robes littered with holy seals and writs. Smells faintly of incense."
 	icon_state = "ministorum_priest"
 	item_state = "ministorum_priest"
 	armor = list(melee = 25, bullet = 25, laser = 25, energy = 0, bomb = 10, bio = 5, rad = 5)
@@ -420,8 +420,8 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/storage/sistersuperiorsuit
-	name = "sister hospitaller's suit"
-	desc = "The holy garments marking the wearer as sister hospitaller"
+	name = "hospitaller's suit"
+	desc = "The holy garments marking the wearer as a church hospitaller"
 	icon_state = "hospitaller"
 	item_state = "hospitaller"
 	armor = list(melee = 45, bullet = 45, laser = 30, energy = 25, bomb = 35, bio = 70, rad = 70)
@@ -431,7 +431,7 @@
 
 
 /obj/item/clothing/suit/storage/sistersuit
-	name = "sister discipulus's suit"
+	name = "discipulus's suit"
 	desc = "The holy garments marking the wearer as a discipulus hospitaller"
 	icon_state = "hospitallerold"
 	item_state = "hospitallerold"
