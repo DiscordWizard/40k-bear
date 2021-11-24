@@ -413,14 +413,14 @@
 
 /obj/item/clothing/suit/storage/toggle/hoodie/mu
 	name = "\improper Mariner University hoodie"
-	desc = "A warm, gray sweatshirt.  It bears the letters MU on the front, a lettering to the well-known public college, Mariner University."
+	desc = "A warm, gray sweatshirt.  It bears the letters MU on the front, a lettering to the well-known public college. Mariner University."
 	icon_state = "mu_hoodie"
 	icon_open = "mu_hoodie_open"
 	icon_closed = "mu_hoodie"
 
 /obj/item/clothing/suit/storage/toggle/hoodie/nt
 	name = "NanoTrasen hoodie"
-	desc = "A warm, blue sweatshirt.  It proudly bears the silver NanoTrasen insignia lettering on the back.  The edges are trimmed with silver."
+	desc = "A warm, blue sweatshirt.  It proudly bears the silver NanoTrasen insignia lettering on the back. The edges are trimmed with silver."
 	icon_state = "nt_hoodie"
 	icon_open = "nt_hoodie_open"
 	icon_closed = "nt_hoodie"
@@ -445,7 +445,7 @@
 
 /obj/item/clothing/suit/poncho/roles/security
 	name = "security poncho"
-	desc = "A simple, comfortable cloak without sleeves. This one is black and red, which are standard NanoTrasen Security colors."
+	desc = "A simple, comfortable cloak without sleeves. This one is black and red."
 	icon_state = "secponcho"
 	item_state = "secponcho"
 
@@ -463,7 +463,7 @@
 
 /obj/item/clothing/suit/poncho/roles/science
 	name = "science poncho"
-	desc = "A simple, comfortable cloak without sleeves. This one is white with a few red stripes, which are standard NanoTrasen Science colors."
+	desc = "A simple, comfortable cloak without sleeves. This one is white with a few red stripes."
 	icon_state = "sciponcho"
 	item_state = "sciponcho"
 
@@ -539,8 +539,8 @@
 	icon_state = "lizsuit"
 
 /obj/item/clothing/suit/inquisitor
-	name = "inquisitor's coat"
-	desc = "This inquisitor attire was made for new recruits, and has excellent straightforward defense. But not nearly enough to allow an ordinary man to stand any real chance against the the wicked."
+	name = "agent's coat"
+	desc = "This fleet agent attire was made for new recruits, and has excellent straightforward defense. But not nearly enough to allow an ordinary man to stand any real chance against the the wicked."
 	icon_state = "coat-church"
 	item_state = "coat-church"
 	body_parts_covered = UPPER_TORSO|ARMS|LOWER_TORSO|LEGS
