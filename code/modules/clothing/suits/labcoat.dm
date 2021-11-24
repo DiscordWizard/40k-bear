@@ -13,7 +13,7 @@
 	restricted_accessory_slots = list(ACCESSORY_SLOT_ARMBAND)
 
 /obj/item/clothing/suit/storage/toggle/labcoat/cmo
-	name = "Sister Hospitaller's labcoat"
+	name = "Hospitaller's labcoat"
 	desc = "Bluer than the standard model."
 	icon_state = "labcoat_cmo_open"
 	//item_state = "labcoat_cmo"
@@ -21,7 +21,7 @@
 	icon_closed = "labcoat_cmo"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/cmoalt
-	name = "Sister Hospitaller labcoat"
+	name = "Hospitaller labcoat"
 	desc = "A labcoat with command blue highlights."
 	icon_state = "labcoat_cmoalt_open"
 	icon_open = "labcoat_cmoalt_open"
@@ -67,15 +67,15 @@
 	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 60, rad = 0)
 
 /obj/item/clothing/suit/storage/toggle/labcoat/science
-	name = "\improper NanoTrasen labcoat"
-	desc = "A suit that protects against minor chemical spills. Has a red stripe on the shoulder and red trim on the sleeves, denoting it as a NanoTrasen labcoat."
+	name = "\improper labcoat"
+	desc = "A suit that protects against minor chemical spills. Has a red stripe on the shoulder and red trim on the sleeves."
 	icon_state = "labcoat_nt_open"
 	icon_open = "labcoat_nt_open"
 	icon_closed = "labcoat_nt"
 
 /obj/item/clothing/suit/storage/toggle/labcoat/rd
 	name = "research director's labcoat"
-	desc = "A full-body labcoat covered in red and black designs, denoting it as a NanoTrasen management coat. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of NanoTrasen employees."
+	desc = "A full-body labcoat covered in red and black designs. Judging by the amount of designs on it, it is only to be worn by the most enthusiastic of employees."
 	icon_state = "labcoat_rd_open"
 	icon_open = "labcoat_rd_open"
 	icon_closed = "labcoat_rd"
