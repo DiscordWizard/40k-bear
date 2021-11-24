@@ -218,7 +218,7 @@
 //end bs12 hats
 
 /obj/item/clothing/head/witchwig
-	name = "witch costume wig"
+	name = "witch wig"
 	desc = "Eeeee~heheheheheheh!"
 	icon_state = "witch"
 	flags_inv = BLOCKHAIR
@@ -333,8 +333,8 @@
 	armor = list(melee = 15, bullet = 0, laser = 15, energy = 15, bomb = 0, bio = 0, rad = 0)
 
 /obj/item/clothing/head/hospitallerhelm
-	name = "sister hospitaller's medical rig"
-	desc = "The holy garments marking the wearer as a sister hospitaller"
+	name = "church's medical rig"
+	desc = "The holy garments marking the wearer as a sister or a brother trained in medicine"
 	armor = list(melee = 30, bullet = 30, laser = 30, energy = 10, bomb = 30, bio = 40, rad = 10)
 	icon_state = "medical_rig"
 	item_state = "medical_rig"
