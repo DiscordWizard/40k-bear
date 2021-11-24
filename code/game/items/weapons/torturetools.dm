@@ -1,6 +1,6 @@
 /obj/item/toothpuller
 	name = "pliars of truth"
-	desc = "A form of modified wirecutters. Specially designed by the Ordos Hereticus to inflict maximum pain while extracting teeth. It is sure to get to the truth."
+	desc = "A form of modified wirecutters. Specially designed by fleet interrogators to inflict maximum pain while extracting teeth. It is sure to get to the truth."
 	icon = 'icons/obj/torturetools.dmi'
 	icon_state = "teefrippa"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
@@ -83,7 +83,7 @@
 		return
 /obj/item/halter
 	name = "adrenergic reuptake inhibitor"
-	desc = "The Inquisition's brightest chemists have devised this adrenergic reuptake inhibitor as a suitable tool to reveal followers of Slaanesh. It ceases all feeling causing them more discomfort than one could imagine."
+	desc = "The fleet's brightest chemists have devised this adrenergic reuptake inhibitor as a suitable tool to reveal followers of Asmodeus. It ceases all feeling causing them more discomfort than one could imagine."
 	icon = 'icons/obj/torturetools.dmi'
 	icon_state = "halter"
 	obj_flags = OBJ_FLAG_CONDUCTIBLE
