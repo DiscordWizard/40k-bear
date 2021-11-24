@@ -47,7 +47,7 @@
 	//else if(!oxy_mole)
 	//	snuff()
 */
-	if(prob(1)) //Needs playtesting. This seems a little high.
+	if(prob(0.05)) //Needs playtesting. This seems a little high. - BEARSTATION / BEARHAMMER EDIT: moved from 1 to 0.05. TODO: make this be only for unattended torches
 		if(istype(src.loc, /obj/structure/torchwall))
 			return //Please don't put out torches that are on the walls.
 		visible_message("A rush of wind puts out the torch.")

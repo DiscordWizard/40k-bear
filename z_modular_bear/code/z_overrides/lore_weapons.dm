@@ -37,7 +37,7 @@
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle
 	name = "Scrap Slug-Rifle"
-	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform. Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform. Fires a malformed slug sure to tear through the enemy."
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/krootrifle/bayonet
 	name = "Scrap Slug-Rifle"
@@ -45,7 +45,7 @@
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle
 	name = "Scrap Slug-Rifle"
-	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform.  Fires a malformed slug sure to tear through the enemy. The end of the rifle is decorated with blades sharpened to tear flesh."
+	desc = "A rifle made from scrap. Quite exotic-looking, if not surprisingly uniform.  Fires a malformed slug sure to tear through the enemy."
 
 /obj/item/gun/projectile/shotgun/pump/boltaction/shitty/krootrifle/bayonet
 	name = "Scrap Slug-Rifle"
