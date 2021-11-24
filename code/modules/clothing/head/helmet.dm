@@ -212,7 +212,7 @@
 
 /obj/item/clothing/head/helmet/fw
 	name = "fire warrior Helmet"
-	desc = "A advanced helmet produced for Tau Fire Warriors, made out Plasteel Ceramic, Thus it's relatively lightweight & durable."
+	desc = "A advanced helmet produced for Fire Warriors, made out Plasteel Ceramic, Thus it's relatively lightweight & durable."
 	icon_state = "fwhelm"
 	item_state = "fwhelm"
 	armor = list(melee = 35, bullet = 50, laser = 40, energy = 45, bomb = 30, bio = 100, rad = 100)
@@ -223,7 +223,7 @@
 
 /obj/item/clothing/head/helmet/scout
 	name = "fire warrior scout helmet"
-	desc = "A advanced helmet produced for Tau Fire Warriors, made out Plasteel Ceramic, Thus it's relatively lightweight & durable."
+	desc = "A advanced helmet produced for Fire Warriors, made out Plasteel Ceramic, thus it's relatively lightweight & durable."
 	icon_state = "scout"
 	item_state = "scout"
 	armor = list(melee = 30, bullet = 55, laser = 45, energy = 45, bomb = 25, bio = 100, rad = 100)
