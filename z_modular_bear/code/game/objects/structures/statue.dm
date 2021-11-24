@@ -6,5 +6,12 @@
 	anchored = 1
 	density = 1
 	layer = 4
-	bound_height = 128
-	bound_width = 128
+	bound_height = 96
+	bound_width = 96
+
+/obj/structure/statue/ester
+	name = "statue of Ester"
+	icon = 'z_modular_bear/icons/obj/structures/64x64.dmi'
+	icon_state = "ester"
+	bound_height = 64
+	bound_width = 64

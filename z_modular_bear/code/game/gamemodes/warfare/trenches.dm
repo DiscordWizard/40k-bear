@@ -1,3 +1,5 @@
+// copied from code/game/gamemodes/warfare/trenches.dmi
+/*
 /turf/simulated/floor/trenches
 	name = "trench"
 	icon = 'icons/turf/trenches_turfs.dmi'
@@ -37,37 +39,24 @@
 	overlays += snow_overlay
 	//snow_overlay.turf_decal_layerise()
 */
+*/
 
-
-/turf/simulated/floor/trench
+/turf/simulated/floor/trench/bear
 	icon = 'icons/obj/warfare.dmi'
 	icon_state = "trench"
 	name = "trench"
 	movement_delay = 0.5
-	has_coldbreath = TRUE
-	var/can_be_dug = TRUE
 
-/turf/simulated/floor/trench/fake
-	atom_flags = null
-	can_be_dug = FALSE
 
-/turf/simulated/floor/trench/tough
-	can_be_dug = FALSE
 
-/turf/simulated/floor/trench/ex_act(severity)
-	return
-
-/turf/simulated/floor/trench/update_dirt()
-	return	// Dirt doesn't doesn't become dirty
-
-/turf/simulated/floor/trench/New()
+/turf/simulated/floor/trench/bear/New()
 	..()
-//	if(!locate(/obj/effect/lighting_dummy/daylight) in src) --MODULAR BEARHAMMER EDIT: moved to z_modular_bear/code/game/gamemodes/warfare/trenches.dm
-//		new /obj/effect/lighting_dummy/daylight(src) --MODULAR BEARHAMMER EDIT: moved to z_modular_bear/code/game/gamemodes/warfare/trenches.dm
+	if(!locate(/obj/effect/lighting_dummy/daylight) in src) // --MODULAR BEARHAMMER EDIT: moved from code/game/gamemodes/warfare/trenches.dm
+		new /obj/effect/lighting_dummy/daylight(src) // --MODULAR BEARHAMMER EDIT: moved from code/game/gamemodes/warfare/trenches.dm
 	dir = pick(GLOB.alldirs)
 	update_icon()
 
-/turf/simulated/floor/trench/RightClick(mob/living/user)
+/turf/simulated/floor/trench/bear/RightClick(mob/living/user)
 	if(!CanPhysicallyInteract(user))
 		return
 	var/obj/item/shovel/S = user.get_active_hand()
@@ -103,46 +92,13 @@
 		to_chat(user, "You're already digging.")
 
 
-/turf/simulated/floor/proc/update_trench_layers()
-	overlays.Cut()
-	for(var/direction in GLOB.cardinal)
-		var/turf/turf_to_check = get_step(src,direction)
-		if(istype(turf_to_check, /turf/simulated/floor/trench))
-			continue
-		if(istype(turf_to_check, /turf/space) || istype(turf_to_check, /turf/simulated/floor) || istype(turf_to_check, /turf/simulated/floor/exoplanet/water/shallow) || istype(turf_to_check, /turf/simulated/wall))
-			var/image/trench_side = image('icons/obj/warfare.dmi', "trench_side", dir = turn(direction, 180))
-			trench_side.turf_decal_layerise()
-			switch(direction)
-				if(NORTH)
-					trench_side.pixel_y += ((world.icon_size) - 22)
-				if(SOUTH)
-					trench_side.pixel_y -= ((world.icon_size) - 16)
-					trench_side.plane = ABOVE_OBJ_PLANE
-				if(EAST)
-					trench_side.pixel_x += (world.icon_size)
-					trench_side.plane = ABOVE_OBJ_PLANE
-					trench_side.layer = BASE_MOB_LAYER
-				if(WEST)
-					trench_side.pixel_x -= (world.icon_size)
-					trench_side.plane = ABOVE_OBJ_PLANE
-					trench_side.layer = BASE_MOB_LAYER
-			overlays += trench_side
 
-/turf/simulated/floor/trench/update_icon()
+/turf/simulated/floor/trench/bear/update_icon()
 	update_trench_shit()
-
-
-/turf/simulated/floor/proc/update_trench_shit()
-	for(var/direction in GLOB.cardinal)
-		var/turf/turf_to_check = get_step(src,direction)
-		if(istype(turf_to_check, /turf/simulated/floor/trench))//Rebuild our neighbors.
-			var/turf/simulated/floor/trench/T = turf_to_check
-			T.update_trench_layers()
-			continue
 
 	update_trench_layers()
 
-/turf/simulated/floor/trench/Crossed(var/mob/living/carbon/human/M)
+/turf/simulated/floor/trench/bear/Crossed(var/mob/living/carbon/human/M)
 	if(istype(M))
 		if(!M.throwing)
 			if(M.client)
@@ -158,13 +114,15 @@
 			var/trench_check = 0 //If we're not up against a trench wall, we don't want to stay zoomed in.
 			for(var/direction in GLOB.cardinal)
 				var/turf/turf_to_check = get_step(M.loc,direction)//So get all of the turfs around us.
-				if(istype(turf_to_check, /turf/simulated/floor/trench))//And if they're a trench, count it.
+				if(istype(turf_to_check, /turf/simulated/floor/trench/bear))//And if they're a trench, count it.
 					trench_check++
 			if(trench_check >= 4)//We're surrounded on all sides by trench. We unzoom.
 				if(M.zoomed)//If we're zoomed that is.
 					M.do_zoom()
 
-/turf/simulated/floor/trench/Uncrossed(var/mob/living/carbon/human/M)
+
+
+/turf/simulated/floor/trench/bear/Uncrossed(var/mob/living/carbon/human/M)
 	if(istype(M))
 		if(M.client)
 			M.fov_mask.screen_loc = "1,1"
