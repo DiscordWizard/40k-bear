@@ -116,7 +116,7 @@
 
 /obj/item/clothing/glasses/blacksun
 	name = "blacksun goggles"
-	desc = "The Blacksun Filter is an advanced Tau optical filter that allows the user not only to see at much greater distances when fighting in nighttime conditions but also filters bright flares of light that could blind them."
+	desc = "The Blacksun Filter is an advanced alien optical filter that allows the user not only to see at much greater distances when fighting in nighttime conditions but also filters bright flares of light that could blind them."
 	icon_state = "blacksun"
 	item_state = "blacksun"
 	origin_tech = list(TECH_MAGNET = 2)
@@ -521,13 +521,13 @@
 
 /obj/item/clothing/glasses/cadiangoggles/elite
 	name = "Mark XIc/NV Visor"
-	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness. This version has built in tactical HUD and Nightvision support, It is issued to Cadian Veterans and Kasrkin Stormtroopers."
+	desc = "The Mark XIc Visor are issued along with the Mark XIc Rebreather as part of the Frigid Survival Kit, It is designed to prevent flare and blindness. This version has built in tactical HUD and Nightvision support, It is issued to Fleet Veterans and Stormtroopers."
 	darkness_view = 5
 	see_invisible = SEE_INVISIBLE_NOLIGHTING
 
 /obj/item/clothing/glasses/astarte/visor
 	name = "Mark VII Visor"
-	desc = "The support system of Astarte's helmet."
+	desc = "The support system of a fleet power armor helmet."
 	icon_state = "hudpatch"
 	item_state = "hudpatch"
 	str_requirement = 25
@@ -540,7 +540,7 @@
 
 /obj/item/clothing/glasses/astarte/visor/apoc
 	name = "Mark VII Visor"
-	desc = "The support system of Astarte's helmet. This one has intergrated medical scanner."
+	desc = "The support system of a fleet power armor helmet. This one has intergrated medical scanner."
 	icon_state = "hudpatch"
 	item_state = "hudpatch"
 	hud = /obj/item/clothing/glasses/hud/health
