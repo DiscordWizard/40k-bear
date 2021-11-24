@@ -36,7 +36,7 @@
 
 /obj/item/clothing/head/hardhat/techpriest
 	name = "augmented head"
-	desc = "The augmented skull and hood signifying one is a priest of the Adeptus Mechanicus."
+	desc = "The augmented skull and hood signifying one is a technician of the Fleet."
 	icon_state = "techpriestnew"
 	item_state = "techpriestnew"
 	brightness_on = 6
