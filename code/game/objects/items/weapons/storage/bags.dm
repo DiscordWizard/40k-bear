@@ -115,7 +115,7 @@
 	name = "Belt Purse"
 	icon = 'icons/obj/thrones.dmi'
 	icon_state = "255"
-	desc = "A large purse for those who are blessed by the Emperor themselves in all their trades"
+	desc = "A large purse for those who are blessed by the Admiral themselves in all their trades"
 	max_storage_space = 20
 	max_w_class = ITEM_SIZE_LARGE
 	w_class = ITEM_SIZE_NORMAL
