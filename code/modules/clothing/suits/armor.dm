@@ -235,7 +235,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/fwarmor
 	name = "fire warrior armor"
-	desc = "The impeccable yellow and brown armor of the Tau warrior caste"
+	desc = "The impeccable yellow and brown armor of the warrior caste"
 	icon_state = "fw_armor"
 	item_state = "fw_armor"
 	armor = list(melee = 55, bullet = 60, laser = 50, energy = 20, bomb = 25, bio = 0, rad = 0)
@@ -282,8 +282,8 @@ obj/item/clothing/suit/armor
 
 // NOBLES & SERVANTS
 /obj/item/clothing/suit/armor/rtcloak
-	name = "Rogue Trader's Cloak"
-	desc = "The distinguished cloak of a Rogue Trader"
+	name = "Noble's Cloak"
+	desc = "The distinguished cloak of a House member"
 	icon_state = "lccoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 25, bullet = 25, laser = 20, energy = 15, bomb = 10, bio = 10, rad = 10)
@@ -291,8 +291,8 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/armor/rtdrip
-	name = "Rogue Trader's Fancy Robes"
-	desc = "The stylish robes of a Rogue Trader"
+	name = "Noble's Fancy Robes"
+	desc = "The stylish robes of a House member"
 	icon_state = "rtdrip"
 	item_state = "rtdrip"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -381,7 +381,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/guardsman/mercenary
 	name = "Mercenary Flak Armour - Medium"
-	desc = "An altered fabrication of Imperial Pattern Flak Armor - this particular version is commonly used by mercenary guilds in service to the renegade houses of the frontier."
+	desc = "An altered fabrication of Fleet Flak Armor - this particular version is commonly used by mercenary guilds in service to the renegade houses of the frontier."
 	icon_state = "merc" // mob/suit.dmi
 	item_state = "merc"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -408,7 +408,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/enforcer
 	name = "Enforcer Patrol Armor - Medium"
-	desc = "The flak armour worn by a Magistratum Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
+	desc = "The flak armour worn by a Fleet Enforcer. Light and robust in the colour blue, designed to protect against blast and small arms fire."
 	icon_state = "Judge"
 	item_state = "Judge"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -418,14 +418,14 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/enforcer/captain
 	name = "Enforcer Patrol Armour - Reinforced"
-	desc = "The flak armour worn by a Magistratum Enforcer Captain. Light and robust in the colour blue, designed to protect against blast and small arms fire."
+	desc = "The flak armour worn by a Fleet Enforcer Captain. Light and robust in the colour blue, designed to protect against blast and small arms fire."
 	armor = list(melee = 45, bullet = 50, laser = 40, energy = 35, bomb = 40, bio = 30, rad = 30)
 
 
 //// ASTRA MILITARUM
 /obj/item/clothing/suit/armor/guardsman
 	name = "Cadian Pattern Flak Armour - Medium"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it standard configuration."
+	desc = "The standard armour found throughout the standard Fleet regiments and conscripts. It is so common that it became a symbol of the Fleet's armed forces as a whole. This one is in it standard configuration."
 	icon_state = "farmor"
 	item_state = "farmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -435,14 +435,14 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/guardsman/carapace
 	name = "Cadian Pattern Flak Armour - Carapace"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. this one is padded with Carapace plates, giving it better protection than average Guardsmen."
+	desc = "The standard armour found throughout the standard Fleet regiments and conscripts. It is so common that it became a symbol of the Fleet's armed forces as a whole. This one is padded with Carapace plates, giving it better protection than average Guardsmen."
 	icon_state = "carapace"
 	item_state = "carapace"
 	armor = list(melee = 48, bullet = 58, laser = 48, energy = 30, bomb = 40, bio = 10, rad = 20)
 
 /obj/item/clothing/suit/armor/flak/heavy
 	name = "Cadian Pattern Flak Armour - Heavy"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it heavy configuration"
+	desc = "The standard armour found throughout the standard Fleet regiments and conscripts. It is so common that it became a symbol of the Fleet's armed forces as a whole. This one is in it heavy configuration"
 	icon_state = "fharmor"
 	item_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -456,7 +456,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/medicae
 	name = "Cadian Pattern Medicae Flak Armour - Light"
-	desc = "The standard armour found throughout the Cadian-oriented PDF and Cadian Regiments, It is so common that it became symbol of the Astra Militarum as a whole. This one is in it light configuration, On it chest and shoulderplate bears the Red Cross of a Combat Medicae."
+	desc = "The standard armour found throughout the standard Fleet regiments and conscripts. It is so common that it became a symbol of the Fleet's armed forces as a whole. This one is in it light configuration, On it chest and shoulderplate bears the Red Cross of a Combat Medicae."
 	icon_state = "medicae"
 	item_state = "medicae"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -469,7 +469,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/CatachanVest
 	name = "Catachan Flak Vest"
-	desc = "Unlike the common Cadian or famous Krieg, the Catachan only wears their lightly protected Flak vest to protect against bruises and sharpnels."
+	desc = "Unlike the common Cadian or famous Krieg, the commando only wears their lightly protected Flak vest to protect against bruises and sharpnels."
 	icon_state = "Catachan_Vest"
 	item_state = "Catachan_Vest"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -481,8 +481,8 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = -1
 
 /obj/item/clothing/suit/armor/valhallanarmor
-	name = "valhallan Greatcoat"
-	desc = "A thick, Fur great coat designed for Valhallan Ice warriors, it is thermally-insulated to protect against extreme cold weather conditions."
+	name = "Winter Greatcoat"
+	desc = "A thick, fur great coat designed for winter troops. It is thermally-insulated to protect against extreme cold weather conditions."
 	icon_state = "valarmor"
 	item_state = "valarmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -492,7 +492,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/krieger
 	name = "Krieg Greatcoat"
-	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks."
+	desc = "Produced out of thick, durable synthetic fabric. Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks."
 	icon_state = "kriegcoat"
 	item_state = "kriegcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -502,7 +502,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/krieger/grenadier
 	name = "Krieg Grenadier Greatcoat"
-	desc = "Produced out of thick, durable synthetic fabric, Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. This one has been plated with Carapace platings, making it extremely protective at the cost of mobility."
+	desc = "Produced out of thick, durable synthetic fabric. Though at the cost of protection, the Greatcoat is waterproof and resistant to most chemical & biological attacks.. It also stinks. This one has been plated with Carapace platings, making it extremely protective at the cost of mobility."
 	icon_state = "grencoat"
 	item_state = "grencoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -514,8 +514,8 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = 1.5
 
 /obj/item/clothing/suit/armor/cadiansgt
-	name = "Cadian Sergeant's Flak Armour"
-	desc = "The well-worn armor of an Cadian Regiment Sergeant, this one is padded with Caraspace plates, giving it better protection than average Guardsmen. It has the three-chevrons marked on it upper chest."
+	name = "Fleet Sergeant's Flak Armour"
+	desc = "The well-worn armor of an Fleet Sergeant. This one is padded with Caraspace plates, giving it better protection than the average conscript's armor. It has the three-chevrons marked on it upper chest."
 	icon_state = "fharmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
 	armor = list(melee = 45, bullet = 55, laser = 45, energy = 25, bomb = 45, bio = 10, rad = 30)
@@ -527,7 +527,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/catachansgt
 	name = "Catachan Sergeant's Flak Vest"
-	desc = "The Imperial Aquila is engraved with the word 'Devil' on this light flak vest."
+	desc = "The fleet's aquila is engraved with the word 'Devil' on this light flak vest."
 	icon_state = "Catachan_Vest"
 	item_state = "Catachan_Vest"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -539,8 +539,8 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = -1
 
 /obj/item/clothing/suit/armor/valhallasgt
-	name = "valhallan Sergeant's Greatcoat"
-	desc = "Though indentical to the other standard Valhallan Guardsman, this one have it sleeves trimmed with red line and a white undershirt, representing their position as Sergeant."
+	name = "Winter Sergeant's Greatcoat"
+	desc = "Though indentical to the other standard winter equipment, this one had its sleeves trimmed with red line and a white undershirt, representing their position as Sergeant."
 	icon_state = "valarmor"
 	item_state = "valarmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -550,7 +550,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/kriegsgt
 	name = "Krieg Watchmaster's Coat"
-	desc = "A ornated uniform with silver-trimming and red waffenfarbe by it collar. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster.... Its still stinks."
+	desc = "A ornated uniform with silver-trimming and red waffenfarbe by it collar. Worn by the senior-enlisted of the Krieg Regiment, The Watchmaster's... Still stinks."
 	icon_state = "kriegcoat"
 	item_state = "kriegcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -560,7 +560,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/commissar
 	name = "Commissar's Trenchcoat"
-	desc = "The Commissar's magnificent, charismatic that strikes dreads and fears into the mind of lowly Imperial Guardsmen and heretics alike. Plated in Caraspace, giving it much more protection than average Guardsman."
+	desc = "The Commissar's magnificent, charismatic that strikes dreads and fears into the mind of lowly conscripts and heretics alike. It's plated in Caraspace, giving it much more protection than average soldier."
 	icon_state = "Commissar4"
 	item_state = "Commissar4"
 	allowed = list(/obj/item/gun/projectile/bolter_pistol)
@@ -580,7 +580,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/armor/commissar/catachan
 	name = "Commissar's Trenchcoat"
-	desc = "What used to be a decorated and custom tailored suitcoat of the Officio Prefectus is now crudely stripped of decoration and cut down to be lighter and more breathable for the jungles of Catachan. Though, wearing something like this out here is more of a power move."
+	desc = "What used to be a decorated and custom tailored suitcoat of the fleet is now crudely stripped of decoration and cut down to be lighter and more breathable for this bravado-fueled officer. Though, wearing something like this out here is more of a power move."
 	icon_state = "catacommissar"
 	item_state = "catacommissar"
 	armor = list(melee = 70, bullet = 35, laser = 25, energy = 25, bomb = 20, bio = 0, rad = 0)
@@ -588,8 +588,8 @@ obj/item/clothing/suit/armor
 // INQUISITION
 
 /obj/item/clothing/suit/armor/agent/caraspace
-	name = "Acolyte's Caraspace Armour"
-	desc = "The formidable, brillantly made Caraspace armour for the Inquistorial Agent, On it, bears the holy symbol of the Inquisition, The Rosette."
+	name = "Agent's Caraspace Armour"
+	desc = "The formidable, brillantly made Caraspace armour for the Fleet Agents. On it bears the symbol of the fleet's intelligence agency, the Rosette."
 	icon_state = "inqcoat"
 	item_state = "inqcoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -599,8 +599,8 @@ obj/item/clothing/suit/armor
 
 
 /obj/item/clothing/suit/armor/agent/coat
-	name = "Acolyte's Caraspace Coat"
-	desc = "The formidable, brillantly made Caraspace armour for the Inquistorial Agent, This one bears many holy seals along with it Rosette, to ward off the corruption of Chaos."
+	name = "Agent's Caraspace Coat"
+	desc = "The Formidable, brillantly made coat of the Fleet Agents. On it bears the symbol of the fleet's intelligence agency, the Rosette."
 	icon_state = "acolytecoat"
 	item_state = "acolytecoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -609,8 +609,8 @@ obj/item/clothing/suit/armor
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/suit/storage/hooded/inquisitor
-	name = "Throne Agent's Ignatus Power Armour"
-	desc = "The Inquisitor's holy armour, forged by the Tech-priest of Mars for his use in his path of destruction toward enemies of our Emperor, Engraved the Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
+	name = "Fleet Agent's Ignatus Power Armour"
+	desc = "The intelligence agency's power armour, forged by the engineers of the fleet for his use in his path of destruction toward the enemies of the admiral and the grand plan. Engraved is the agency's Rosette, it shines brightly as if powered from within, giving it an aura of purpose and authority."
 	icon_state = "inqarmor"
 	item_state = "inqarmor"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -624,8 +624,8 @@ obj/item/clothing/suit/armor
 	slowdown_per_slot[slot_wear_suit] = 1.5
 
 /obj/item/clothing/suit/armor/ordohereticus
-	name = "Throne Agent's Holy Coat"
-	desc = "The Inquisitor's holy coat, forged from a Tech-priest of Mars for his use in his path of holy fire toward enemies of our Emperor, Hanging from the coat a Inquisitorial Rosette, It shines brightly as if it is the Emperor himself is present, For he'll cleanse the darkness."
+	name = "Fleet Agent's Holy Coat"
+	desc = "The intelligence agency's coat, woven by the engineers of the fleet for his use in his quest to burn dissidence towards the Admiral. Hanging from the coat is the agency's Rosette, it shines brightly as if powered from within, giving it an aura of purpose and authority."
 	icon_state = "hereticuscoat"
 	item_state = "hereticuscoat"
 	allowed = list(/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/cell,/obj/item/gun/energy/las/lasgun)
@@ -653,7 +653,7 @@ obj/item/clothing/suit/armor
 
 /obj/item/clothing/suit/storage/hooded/skitarii
 	name = "Skitarii Ceramite War Plate"
-	desc = "Forged by the Mechanicum, These War plate are durable, protective and extremely expensive to produce, Thus only given to the soulless Skitarii."
+	desc = "Forged by the Fleet, these war plates are durable, protective and extremely expensive to produce, thus only given to soulless nulls hardwired to obey their masters."
 	icon_state = "skitsuit"
 	item_state = "skitsuit"
 	canremove = 0
@@ -667,7 +667,7 @@ obj/item/clothing/suit/armor
 // ADEPTA SORORITAS
 /obj/item/clothing/suit/sisterofbattle
 	name = "Order of the Sacred Rose Power Armor"
-	desc = "The Sacred and holy Power Armour adorned by Battle Sister of the Order Of The Sacred Rose, It's illuminate the field with it glorious light, Being near it make you feels safer and secured."
+	desc = "The Sacred and Holy Power Armour adorned by Knights of the Order Of The Sacred Rose. It illuminates the field with its glorious light, making those faithful near it feel as if Eurydale herself was embracing them."
 	icon_state = "sister"
 	item_state = "sister"
 	armor = list(melee = 75, bullet = 70, laser = 60, energy = 20, bomb = 60, bio = 70, rad = 70)
@@ -680,8 +680,8 @@ obj/item/clothing/suit/armor
 	canremove = 0
 
 /obj/item/sobrelic
-	name = "primeval order of our martyred lady chestpiece"
-	desc = "A primeval chestpiece of Adeptus Sororitas power armor, draped in the marks of the Order of Our Martyred Lady. It looks worn down, battle-hardened, and retired for good reason, yet it still radiates with holy energy."
+	name = "primeval order of the allfather chestpiece"
+	desc = "A primeval chestpiece of the Church's power armor, draped in the marks of the Allfather. It looks worn down, battle-hardened, and retired for good reason, yet it still radiates with stubborn holy energy."
 	icon = 'icons/obj/clothing/suits.dmi'
 	icon_state = "ooml"
 	item_state = "ooml"
