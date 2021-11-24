@@ -40,7 +40,7 @@
  */
 /obj/item/clothing/under/rank/chief_medical_officer
 	desc = "It's a jumpsuit worn by those with the experience to be \"Sister Hospitaller\". It provides minor biological protection."
-	name = "Sister Hospitaller's jumpsuit"
+	name = "Hospitaller's jumpsuit"
 	icon_state = "cmo"
 	item_state = "w_suit"
 	worn_state = "cmo"
