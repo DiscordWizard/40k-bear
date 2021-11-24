@@ -190,7 +190,7 @@
 
 /obj/item/clothing/under/rank/krieg_uniform
 	name = "krieg Battle Uniform"
-	desc = "These durable Battle Uniform are used to represent the resilent Krieg Regiment, Though it smells like shit."
+	desc = "These durable Battle Uniform are used to represent the resilent Krieg Regiment, though it smells like shit."
 	icon_state = "krieg"
 	item_state = "krieg"
 	worn_state = "krieg"
@@ -207,8 +207,8 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/rank/valhallan_uniform
-	name = "Valhalla Battle Uniform"
-	desc = "The uniform made out of their planetary predator's furs, durable and warm, made for the cold warriors of Valhalla Regiment."
+	name = "Winter Battle Uniform"
+	desc = "The uniform made out of their planetary predator's furs, durable and warm, made for the cold warriors of the Winter Regiment."
 	icon_state = "krieg"
 	item_state = "krieg"
 	worn_state = "krieg"
@@ -216,8 +216,8 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/under/casual_pants/catachan
-	name = "Catachan Battle Shorts"
-	desc = "Catachan fear no temperature, no boltguns, no lasguns, they don't need shirts, They're Catachan Regiment."
+	name = "Commando Battle Shorts"
+	desc = "Fleet Commando fear no temperature, no boltguns, no lasguns, they don't need shirts. They're the Catachan Regiment."
 	icon_state = "camopants"
 	cold_protection = LOWER_TORSO
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -231,7 +231,7 @@
 
 /obj/item/clothing/under/rank/catachancommissar
 	name = "commissar Field Pants"
-	desc = "What used to be green tailoring of the uniform given by the Officio Prefectus has been cut down and stripped to be the bare essentials, just like that of the Catachans under you. Around your neck being an emblematic symbol of the Emperor as a necklace."
+	desc = "What used to be green tailoring of the uniform given by the fleet has been cut down and stripped to be the bare essentials, just like that of the Catachans under you. Around your neck being an emblematic symbol of the Admiralty as a necklace."
 	icon_state = "catacomm"
 	item_state = "catacomm"
 	worn_state = "catacomm"
@@ -239,8 +239,8 @@
 // Astarte
 
 /obj/item/clothing/under/astarte/bodysuit
-	name = "Astarte Bodysuit"
-	desc = "The bodysuit worn by Astartes underneath their Power Armour."
+	name = "Fleet Bodysuit"
+	desc = "The bodysuit worn by fleet soldiers underneath their Power Armour."
 	icon_state = "swatunder"
 	worn_state = "swatunder"
 	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
@@ -249,7 +249,7 @@
 // Adepta Sororitas
 
 /obj/item/clothing/under/guard/uniform/sisterofbattle
-	name = "Adepta Sororitas Bodysuit"
+	name = "Knight Bodysuit"
 	desc = "If you can inspect this, you're a coomer, do not ERP."
 	armor = list(melee = 5, bullet = 5, laser = 5,energy = 5, bomb = 0, bio = 0, rad = 0)
 	siemens_coefficient = 0.9
