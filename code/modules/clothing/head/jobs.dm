@@ -187,7 +187,7 @@
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer
 	name = "Magistratum Enforcer Helmet"
-	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Imperium, It is painted in a dark blue colour."
+	desc = "The Enforcer Helmet, based on the Cadian-pattern helmet, are issued to local planetary enforcers against criminals of the Fleet. It is painted in a dark blue colour."
 	icon_state = "Jhelm2"
 	item_state = "Jhelm2"
 	armor = list(melee = 38, bullet = 30, laser = 20, energy = 35, bomb = 10, bio = 10, rad = 10)
@@ -196,14 +196,14 @@
 
 /obj/item/clothing/head/helmet/guardhelmet/enforcer/captain
 	name = "Magistratum Captain Helmet"
-	desc = "The Enforcer Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary enforcer Captain's both to show rank and for intimidation, It is painted in a dark blue colour."
+	desc = "The Enforcer Helmet, an upgraded version of the standard Patrol helmet, are issued to local planetary enforcer Captain's both to show rank and for intimidation. It is painted in a dark blue colour."
 	icon_state = "arbiter"
 	item_state = "arbiter"
 	armor = list(melee = 38, bullet = 44, laser = 34, energy = 35, bomb = 20, bio = 50, rad = 50)
 
 /obj/item/clothing/head/helmet/guardhelmet
 	name = "Cadian Pattern Flak Helmet"
-	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Imperial Aquila engraved on it forehead."
+	desc = "The most common pattern within in the Fleet, found throughout occupied space. Fleet flak helmets are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the Fleet's Aquila engraved on its forehead."
 	icon_state = "guard"
 	item_state = "guard"
 	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
@@ -212,7 +212,7 @@
 
 /obj/item/clothing/head/helmet/medicae
 	name = "Cadian Pattern Flak Helmet"
-	desc = "The most common pattern within in the Atra Militarum, Found throughout Imperial Space, The Cadian Flak Helmet are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the red Cross Emblem engraved on it forehead."
+	desc = "The most common pattern within in the Fleet, found throughout occupied space. Fleet flak helmets are cheap and easy to produce, at the cost of being nothing but a glorified bucket. This one has the red Cross Emblem engraved on it forehead."
 	icon_state = "medicae"
 	item_state = "medicae"
 	armor = list(melee = 30, bullet = 35, laser = 25, energy = 35, bomb = 30, bio = 0, rad = 10)
@@ -229,8 +229,8 @@
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
 
 /obj/item/clothing/head/valushanka
-	name = "valhallan Ushanka"
-	desc = "The Ushanka worn by Valhallan Regiment, smells of piss, amasec and sweat. You shouldn't touches it if you're not Valhallan."
+	name = "Winter Regiment Ushanka"
+	desc = "The Ushanka worn by the winter regiments. Smells of piss, amasec and sweat. You shouldn't touch it if you're not a fleet member."
 	icon_state = "valshanka2"
 	var/icon_state_up = "valshanka"
 	flags_inv = HIDEEARS|BLOCKHEADHAIR
@@ -248,7 +248,7 @@
 
 /obj/item/clothing/head/catachan
 	name = "Catachan Headband"
-	desc = "Catachan Regiment refuses to acknowledge any sort of protection in favour of their mentality and physical capabilties, Thus. The iconic red headband go with them anywhere they go.. But does it protects them from Bolters or lasguns? No."
+	desc = "The fleet's commando regiment refuses to acknowledge any sort of protection in favour of their mentality and physical capabilties. Thus, the iconic red headband goes with them anywhere they go.. But does it protect them from bullets or lasguns? No."
 	icon_state = "Catachan_Headband"
 	cold_protection = HEAD
 	min_cold_protection_temperature = SPACE_SUIT_MIN_COLD_PROTECTION_TEMPERATURE
@@ -256,7 +256,7 @@
 
 /obj/item/clothing/head/commissar
 	name = "Commissar's Peaked Cap"
-	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
+	desc = "The fearsome and charismatic peaked cap of a Fleet Commissar, striking dread to the lowly conscripts and the ever-watching heretics."
 	icon_state = "Commissar4Hat"
 	item_state = "Commissar4Hat"
 	cold_protection = HEAD
@@ -265,14 +265,14 @@
 
 /obj/item/clothing/head/commissar/krieg
 	name = "Commissar's Peaked Cap"
-	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
+	desc = "The fearsome and charismatic peaked cap of a Fleet Commissar, striking dread to the lowly conscripts and the ever-watching heretics."
 	icon_state = "KriegissarHat"
 	item_state = "KriegissarHat"
 	armor = list(melee = 15, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/clothing/head/commissar/catachan
 	name = "Commissar's Peaked Cap"
-	desc = "The fearsome and charismatic peaked cap of a Imperial Guard Commissar, Striking dreads to the lowly Guardsmen and the ever-watching heretics."
+	desc = "The fearsome and charismatic peaked cap of a Fleet Commissar, striking dread to the lowly conscripts and the ever-watching heretics."
 	icon_state = "CataCommissarHat"
 	item_state = "CataCommissarHat"
 	armor = list(melee = 15, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
@@ -281,7 +281,7 @@
 
 /obj/item/clothing/head/commissar/adept
 	name = "Adept's Cap"
-	desc = "This cap belongs to a member of the Administratum."
+	desc = "This cap belongs to a member of the Fleet."
 	icon_state = "captain_hat"
 	item_state = "captain_hat"
 	cold_protection = HEAD
@@ -402,15 +402,15 @@
 // The Governor Stuff
 
 /obj/item/clothing/head/rt
-	name = "rogue trader's cap"
-	desc = "A fanciful hat fitting a wealthy Rogue Trader."
+	name = "noble's cap"
+	desc = "A fanciful hat fitting a wealthy Noble."
 	icon_state = "fancyhat"
 	item_state = "fancyhat"
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/clothing/head/rtpimp
-	name = "rogue trader's big cap"
-	desc = "A fanciful hat fitting a wealthy Rogue Trader."
+	name = "noble's big cap"
+	desc = "A fanciful hat fitting a wealthy Noble."
 	icon_state = "rtpimp"
 	item_state = "bighat"
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
@@ -421,14 +421,14 @@
 	icon_state = "officercap"
 
 /obj/item/clothing/head/caphat/cap
-	name = "rogue trader's hat"
-	desc = "The wonderfully fancy hat of a wealthy Rogue Trader."
+	name = "noble's hat"
+	desc = "The wonderfully fancy hat of a wealthy Noble."
 	icon_state = "capcap"
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
 
 /obj/item/clothing/head/tradertricorn
 	name = "fanciful tricorn"
-	desc = " A fanciful, slightly armored, tricorn sold to the Rogue Trader by a back-alley xeno on Ithaka. Legend says it was worn by the Chapter Master of the Iron Snakes before he lost it in a battle with an ancient kraretyer, or perhaps that was just a sales pitch."
+	desc = " A fanciful, slightly armored, tricorn sold to the Noble by a back-alley dealer on the outpost. Legend says it was worn by the Regiment Commander of the Iron Snakes before he lost it in a battle with an ancient kraretyer, or perhaps that was just a sales pitch."
 	icon_state = "tradertricorn"
 	item_state = "tradertricorn"
 	cold_protection = HEAD
@@ -438,7 +438,7 @@
 
 /obj/item/clothing/head/seneschal
 	name = "seneschal's cap"
-	desc = "This hat is the mark of the right-hand of a Rogue Trader. He handles business while the Trader is otherwise occupied."
+	desc = "This hat is the mark of the right-hand of a Noble. He handles business while the Noble is otherwise occupied."
 	icon_state = "chaperon"
 	item_state = "chaperon"
 	armor = list(melee = 25, bullet = 25, laser = 15, energy = 15, bomb = 10, bio = 0, rad = 0)
@@ -447,37 +447,37 @@
 
 /obj/item/clothing/head/cerberus
 	name = "Hound Helm"
-	desc = "A helmet for the Inquisition's hunting hound."
+	desc = "A helmet for the Fleet's hunting hound."
 	icon_state = "cerberus"
 	item_state = "cerberus"
 
 /obj/item/clothing/head/inqhelm
-	name = "Inquisition Retinue Helmet"
-	desc = "An helmet issued to members of the Inquisition."
+	name = "Fleet Retinue Helmet"
+	desc = "A helmet issued to members of the Fleet's agents."
 	icon_state = "inq_helm"
 	item_state = "inq_helm"
 	armor = list(melee = 40, bullet = 40, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/inqhelm/rare
-	name = "Inquisition Shrouded Helmet"
-	desc = "An helmet issued to members of the Inquisition."
+	name = "Fleet Shrouded Helmet"
+	desc = "A helmet issued to members of the Fleet's agents."
 	icon_state = "ihhelmet"
 	item_state = "ihhelmet"
 	armor = list(melee = 40, bullet = 45, laser = 35, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/inqhelm/stealth
-	name = "Inquisition Stealth Helmet"
-	desc = "An helmet issued to members of the Vindicare Temple."
+	name = "Fleet Stealth Helmet"
+	desc = "A helmet issued to more stealth-inclined fleet agents."
 	icon_state = "stealth_rig_sealed"
 	item_state = "stealth_rig_sealed"
 	armor = list(melee = 25, bullet = 50, laser = 45, energy = 20, bomb = 30, bio = 10, rad = 10)
 	siemens_coefficient = 0.9
 
 /obj/item/clothing/head/ordohereticus
- 	name = "Inquisition Holy Hat"
- 	desc = "An hat issued to Ordo Hereticus Inquisitor's."
+ 	name = "Fleet Holy Hat"
+ 	desc = "A hat issued to zealous fleet agents."
  	icon_state = "hereticushat"
  	item_state = "hereticushat"
  	cold_protection = HEAD
@@ -487,7 +487,7 @@
 
 /obj/item/clothing/head/helmet/sisterofbattle
 	name = "Order of the Sacred Rose Power Helmet"
-	desc = "An helmet issued to the Battle Sister of the Adepta Sororitas Militant Wing, This one bears the Sigil of the Order of The Sacred Rose, If you looks closely, you can see it's omits holy power, making you feels safer and secure.</i>"
+	desc = "A helmet issued to the Knights of the Biblio's Church Militant Wing. This one bears the Sigil of Eurydale. If you looks closely, you can feel it omit holy power, making you feel safer and secure.</i>"
 	icon_state = "sister"
 	item_state = "sister"
 	armor = list(melee = 55, bullet = 55, laser = 45, energy = 40, bomb = 40, bio = 0, rad = 0)
