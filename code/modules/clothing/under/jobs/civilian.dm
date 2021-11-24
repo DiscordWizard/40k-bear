@@ -35,7 +35,7 @@
 	worn_state = "captain"
 
 /obj/item/clothing/under/rank/roguetrader
-	desc = "It's a distinguished jumpsuit with a marvelous sash denoting the rank of \"Rogue Trader\"."
+	desc = "It's a distinguished jumpsuit with a marvelous sash denoting the rank of \"Noble\"."
 	name = "Rogue Trader's jumpsuit"
 	icon_state = "magistrate"
 	item_state = "magistrate"
@@ -129,7 +129,7 @@
 	starting_accessories = list(/obj/item/clothing/accessory/black)
 
 /obj/item/clothing/under/rank/principalagent
-	desc = "A slick bodyglove befitting of an agent of the Inquisition"
+	desc = "A slick bodyglove befitting of an agent of the fleet"
 	name = "principal agent's bodyglove"
 	icon_state = "combat"
 	item_state = "combat"
@@ -138,7 +138,7 @@
 
 
 /obj/item/clothing/under/rank/inquisitor
-	desc = "A slick bodyglove befitting of an agent of the Inquisition"
+	desc = "A slick bodyglove befitting of an agent of the fleet"
 	name = "inquisitor's bodyglove"
 	icon_state = "assistant_formal"
 	item_state = "assistant_formal"
