@@ -8,3 +8,8 @@
 	layer = 4
 	bound_height = 128
 	bound_width = 128
+
+/obj/structure/statue/ester
+	name = "statue of Ester"
+	icon = 'z_modular_bear/icons/obj/structures/64x64.dmi'
+	icon_state = "ester"
