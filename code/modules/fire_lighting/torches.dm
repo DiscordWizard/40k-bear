@@ -47,7 +47,7 @@
 	//else if(!oxy_mole)
 	//	snuff()
 */
-	if(prob(0.05)) //Needs playtesting. This seems a little high. bearhammer edit moved from 1 to 0.05
+	if(prob(0.2)) //Needs playtesting. This seems a little high. bearhammer edit moved from 1 to 0.2
 		if(istype(src.loc, /obj/structure/torchwall))
 			return //Please don't put out torches that are on the walls.
 		visible_message("A rush of wind puts out the torch.")
