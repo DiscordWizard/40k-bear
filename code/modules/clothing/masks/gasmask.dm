@@ -45,7 +45,7 @@
 	armor = list(melee = 15, bullet = 15, laser = 15, energy = 0, bomb = 0, bio = 75, rad = 0)
 
 /obj/item/clothing/mask/gas/security/agent
-	name = "inquisition gas mask"
+	name = "fleet agent gas mask"
 	icon_state = "agent_mask"
 	item_state = "agent_mask"
 	siemens_coefficient = 0.7
@@ -199,7 +199,7 @@
 
 /obj/item/clothing/mask/gas/half/cadianrespirator
 	name = "Mark IXc Rebreather"
-	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows Guardsmen to operate in Airless condition for limited period."
+	desc = "Cadian-pattern Rebreather made for protection against common toxic gasses as well allows conscripts to operate in airless conditions for a limited period of time."
 	icon_state = "ig_halfgas"
 	item_state = "ig_halfgas"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 95, rad = 0)
@@ -207,7 +207,7 @@
 
 /obj/item/clothing/mask/gas/krieg
 	name = "Mark IXb Gas Mask"
-	desc = "Designed specifically to fit in with the Mark IX Helmet issued to Krieg Guardsman."
+	desc = "Designed specifically to fit in with the Mark IX Helmet issued to fleet conscripts."
 	icon_state = "kriegmask"
 	item_state = "kriegmask"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 95, rad = 0)
@@ -215,7 +215,7 @@
 
 /obj/item/clothing/mask/gas/commissar
 	name = "Mark IXb/C Gas Mask"
-	desc = "Krieg Regiment Commissar are issued with the same pattern of Gas mask like the others, However this one have slight different hue."
+	desc = "Krieg Regiment Commissars are issued with the same pattern of Gas mask like the others. However this one has a slightly different hue."
 	icon_state = "commask"
 	item_state = "commask"
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 0, bio = 95, rad = 0)
