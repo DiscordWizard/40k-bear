@@ -42,12 +42,12 @@
 
 /obj/item/material/sword/replica/officersword/marine
 	name = "marine NCO's sword"
-	desc = "A polished sword issued to SCG Marine NCOs."
+	desc = "A polished sword issued to fleet marine NCOs."
 	icon_state = "marinesword"
 
 /obj/item/material/sword/replica/officersword/marineofficer
 	name = "marine officer's sword"
-	desc = "A curved sword issued to SCG Marine officers."
+	desc = "A curved sword issued to marine officers of the fleet."
 	icon_state = "marineofficersword"
 	item_state = "marineofficersword"
 
@@ -133,7 +133,7 @@
 /obj/item/toy/katana/seolite
 	name = "seolite blade"
 	color = "grey"
-	desc = "A fine blade far exceeding the craftsmanship of the mechanicus."
+	desc = "A fine blade far exceeding the craftsmanship of the fleet's engineers."
 	force = 35
 	throwforce = 20
 
@@ -153,7 +153,7 @@
 
 /obj/item/melee/classic_baton/daemonhammer
 	name = "daemonhammer"
-	desc = "A power weapon of incredible legend and stature amongst the Ordos Malleus, this Daemonhammer has been used by countless Inquisitor's in their conflict against the unholy creatures of chaos."
+	desc = "A power weapon of incredible legend and stature amongst the fleet's officers, this Daemonhammer has been used by countless agents in their conflict against the unnatural beings of Biblio."
 	icon_state = "thunder_hammer"
 	item_state = "thunder_hammer"
 	wielded_icon = "thunder_hammer-w"
@@ -189,7 +189,7 @@
 
 /obj/item/melee/inqcs
 	name = "Drusian Pattern Chainsword"
-	desc = "Nicknamed the 'Crusader', It's a common Chainsword pattern issued to Inquisitorial agents of the Inquisition in the Koronus Expanse, Designed solely to smite the filthy xenos."
+	desc = "Nicknamed the 'Crusader', It's a common Chainsword pattern issued to fleet agents of the occupation outpost in Biblio, Designed solely to smite the mystic and rebellious."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "inqchainsword"
 	item_state = "inqchainsword"
@@ -209,7 +209,7 @@
 
 /obj/item/melee/pcsword
 	name = "Mark I Pattern Chainsword"
-	desc = "The standard issued chainsword of the Adeptus Astartes since Millenias ago, Forged by the finest Warsmith, these Chainsword have seen the test of time."
+	desc = "The standard issued chainsword of the fleet since anyone can remember, Forged by the finest weaponsmiths, these Chainswords have seen the test of time."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "pcsword"
 	item_state = "pcsword"
@@ -229,7 +229,7 @@
 
 /obj/item/melee/pcsword/eviscerator
 	name = "Eviscerator Pattern Chainsword"
-	desc = "Favoured by Ecclesiarchy Zealots and Ordo Hereticus Members, It's a absurdly large, two-handed chainsword, equipped with a crude disruption field found commonly on power weapon, Though extremely unwieldly, It is a powerful sword, And in the hands of an Astarte, it's truly shines on the Battlefield."
+	desc = "Favoured both by the Church of Biblio and fleet agents, it's an absurdly large, two-handed chainsword, equipped with a crude disruption field found commonly on power weapons. Though extremely unwieldly, it is a powerful sword, and in the hands of a skilled warrior it truly shines on the battlefield."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "eviscerator"
 	item_state = "eviscerator"
