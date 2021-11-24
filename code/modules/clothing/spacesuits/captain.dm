@@ -12,7 +12,7 @@
 //Captain's space suit This is not the proper path but I don't currently know enough about how this all works to mess with it.
 /obj/item/clothing/suit/armor/captain
 	name = "Captain's armor"
-	desc = "A bulky, heavy-duty piece of exclusive corporate armor. YOU are in charge!"
+	desc = "A bulky, heavy-duty piece of exclusive fleet armor. YOU are in charge!"
 	icon_state = "caparmor"
 	item_state_slots = list(
 		slot_l_hand_str = "capspacesuit",
