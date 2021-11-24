@@ -24,7 +24,7 @@
 	item_state = "stick"
 
 /obj/item/staff/ministorumstaff
-	name = "pirestess' staff"
+	name = "priestess' staff"
 	desc = "A staff with a golden handle carrying the holy book of the four gods."
 	icon = 'icons/obj/weapons/melee/misc.dmi'
 	icon_state = "ministorum_staff"
