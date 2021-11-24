@@ -74,7 +74,7 @@
 
 /obj/item/clothing/shoes/workboots
 	name = "techno-boots"
-	desc = "Cybernetic legs scurry the Tech-priest where he is needed."
+	desc = "Cybernetic legs scurry the technician where he is needed."
 	icon_state = "techpriest"
 	item_state = "techpriest"
 	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
@@ -132,7 +132,7 @@
 
 /obj/item/clothing/shoes/jackboots/cadian
 	name = "Mars Pattern Combat Boots"
-	desc = "Astra Militarum's common combat boots, found worn by most Imperial Agencies and Astra Militarum."
+	desc = "Fleet's common combat boots, found worn by most officers and conscripts."
 	icon_state = "jackboots"
 	item_state = "jackboots"
 	armor = list(melee = 5, bullet = 5, laser = 5, energy = 5, bomb = 10, bio = 0, rad = 0)
@@ -141,7 +141,7 @@
 
 /obj/item/clothing/shoes/jackboots/krieg
 	name = "Krieg Pattern Combat Boots"
-	desc = "The Krieg Regiment, unlike most of the Astra Militarum, prefer their less protective but more mobile boots over the standard Mars Pattern used by the Munitorium."
+	desc = "The Krieg Regiment, unlike most of the other conscripts, prefer their less protective but more mobile boots over the standard design used by the rest of the armed forces."
 	icon_state = "kriegboots"
 	item_state = "kriegboots"
 	armor = list(melee = 5, bullet = 5, laser = 5, energy = 5, bomb = 10, bio = 0, rad = 0)
@@ -150,7 +150,7 @@
 
 /obj/item/clothing/shoes/commissar
 	name = "boots of the commissar"
-	desc = "Knee high riding boots of an officer of the Officio Prefectus."
+	desc = "Knee high riding boots of an officer of the Fleet."
 	icon_state = "comm_boots"
 	item_state = "comm_boots"
 	species_restricted = null
@@ -158,8 +158,8 @@
 // Astarte Stuff
 
 /obj/item/clothing/shoes/astarte/boots
-	name = "Astarte Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine."
+	name = "Fleet Mark VII Combat Boots"
+	desc = "Boots of the fleet's power armor corps."
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
 	str_requirement = 25
@@ -190,26 +190,26 @@
 		return
 	..()
 /obj/item/clothing/shoes/astarte/boots/smurfs
-	name = "Astarte Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine, This one is painted in XIIIth Chapter Ultramarines's colour scheme."
+	name = "Fleet Mark VII Combat Boots"
+	desc = "Boots of the fleet's power armor corps. These are painted in the XIIIth division's Ultramarines colour scheme."
 	icon_state = "umboots"
 	item_state = "umboots"
 
 /obj/item/clothing/shoes/astarte/boots/bloodraven
-	name = "Astarte Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine, This one is painted in Chapter Blood Ravens's colour scheme."
+	name = "Fleet Mark VII Combat Boots"
+	desc = "Boots of the fleet's power armor corps. These are painted in the XXVIIIth division's Blood Ravens colour scheme."
 	icon_state = "brboots"
 	item_state = "brboots"
 
 /obj/item/clothing/shoes/astarte/boots/sallys
-	name = "Astarte Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine, This one is painted in XVIIIth Chapter Salamanders's colour scheme."
+	name = "Fleet Mark VII Combat Boots"
+	desc = "Boots of the fleet's power armor corps. These are painted in XVIIIth division's Salamanders colour scheme."
 	icon_state = "sl_boots"
 	item_state = "sl_boots"
 
 /obj/item/clothing/shoes/astarte/boots/raven
-	name = "Astarte Mark VII Combat Boots"
-	desc = "Boots of the Emperor's Space Marine, This one is painted in XIXth Chapter Raven Guard's colour scheme."
+	name = "Fleet Mark VII Combat Boots"
+	desc = "Boots of the fleet's power armor corps. These are painted in XIXth division's Raven Guard colour scheme."
 	icon_state = "rg_lib"
 	item_state = "rg_lib"
 
@@ -223,8 +223,8 @@
 	canremove = 0
 
 /obj/item/clothing/shoes/technoboots
-	name = "Mars Pattern Advanced Boots"
-	desc = "Forged by the finest alloys in the Galaxy, designed for the Adeptus Mechanicus Tech-Priest and Adepts, Resilent against most known firearms."
+	name = "Standard Pattern Advanced Boots"
+	desc = "Forged by the finest alloys in the Galaxy, designed for the fleet's combat technicians and elite soldiers, resilent against most known firearms."
 	icon_state = "techpriest"
 	item_state = "techpriest"
 	armor = list(melee = 40, bullet = 0, laser = 0, energy = 15, bomb = 20, bio = 0, rad = 20)
@@ -235,7 +235,7 @@
 
 /obj/item/clothing/shoes/sisterofbattle
 	name = "Order of the Sacred Rose Power Boots"
-	desc = "A pair of Power Boots issued to the Battle Sisters of the Order Of The Sacred Rose of the Adepta Sororitas.</i>"
+	desc = "A pair of Power Boots issued to the Knights of the Order Of The Sacred Rose of the Biblio's Church.</i>"
 	icon_state = "sister"
 	item_state = "sister"
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
@@ -266,7 +266,7 @@
 //Inquisition Stuff
 
 /obj/item/clothing/shoes/hereticusboots
-	name = "Ordo Hereticus Shoes"
+	name = "Fleet agent's Shoes"
 	desc = "Tall plasteel boots with black paint."
 	icon_state = "inqshoes"
 	item_state = "inqshoes"
