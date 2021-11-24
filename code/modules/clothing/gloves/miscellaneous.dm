@@ -91,8 +91,8 @@
 
 
 /obj/item/clothing/gloves/thick/techpriest
-	name = "cyborg tech priest hands"
-	desc = "The augmented palms and fingers of a tech priest. Designed to allow the Priest to safely work on any machine."
+	name = "cyborg fleet technician hands"
+	desc = "The augmented palms and fingers of a fleet technician. Designed to allow the engineer to safely work on any machine."
 	canremove = 0
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
@@ -166,7 +166,7 @@
 
 /obj/item/clothing/gloves/combat/cadian
 	name = "Mars Pattern Combat Gloves"
-	desc = "The Astra Militarum standard issued gloves, found virtually everywhere in Imperial Space. Protect against most weather conditions and light bruises."
+	desc = "The fleet power armor corps standard issued gloves, found virtually everywhere in Fleet Space. Protects against most weather conditions and light bruises."
 	icon_state = "work"
 	item_state = "wgloves"
 	siemens_coefficient = 0
@@ -179,7 +179,7 @@
 
 /obj/item/clothing/gloves/combat/krieg
 	name = "Krieg Pattern Combat Gloves"
-	desc = "The Krieg Guardsman's distinct gloves designed to be resistant against all common chemical and biological attacks, It's also works well as a alternative to hauling corpses due to it distinct smell."
+	desc = "The fleet conscript's distinct gloves, designed to be resistant against all common chemical and biological attacks. It also works well as an alternative to hauling corpses due to its distinct smell."
 	icon_state = "krieggloves"
 	item_state = "krieggloves"
 	siemens_coefficient = 0
@@ -192,7 +192,7 @@
 
 /obj/item/clothing/gloves/sisterofbattle
 	name = "Order of the Sacred Rose Power Gauntlets"
-	desc = "Gauntlets of the Adepta Sororitas's Order Of Sacred Rose Battle Sisters, Part of their Power Armour System."
+	desc = "Gauntlets of the Biblio's Church Order Of Sacred Rose Knights, part of their Power Armour system."
 	icon_state = "sister"
 	item_state = "sister"
 	armor = list(melee = 50, bullet = 50, laser = 50, energy = 40, bomb = 40, bio = 0, rad = 0)
